@@ -62,11 +62,11 @@ export const WelcomeScreen: React.FC<WelcomeScreenProps> = ({ onStart, onLoginSu
       {/* Fullbleed Travel Background Image with Gradient Overlay */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=85"
-          alt="Tropical beach paradise"
-          className="w-full h-full object-cover object-center"
+          src="/images/vietnam-hero.png"
+          alt="Phong cảnh Việt Nam tuyệt đẹp"
+          className="w-full h-full object-cover object-top"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#0A1680]/60 via-transparent to-[#FCFDFF] via-45% to-80%" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#0A1680]/50 via-transparent to-[#FCFDFF] via-40% to-75%" />
         <div className="absolute inset-0 bg-gradient-to-t from-[#FCFDFF] via-[#FCFDFF]/95 to-transparent h-1/2 bottom-0 top-auto" />
       </div>
 
@@ -85,14 +85,13 @@ export const WelcomeScreen: React.FC<WelcomeScreenProps> = ({ onStart, onLoginSu
 
       {/* Bottom Interactive Welcome Sheet */}
       <section className="relative z-20 px-6 pb-6 pt-2 flex flex-col justify-end text-center">
-        {/* Mascot Greeting */}
         {/* Mascot Greeting with Brand Aura */}
         <div className="relative flex justify-center mb-1.5">
-          <div className="absolute w-32 h-32 rounded-full mascot-halo pointer-events-none -top-2" />
+          <div className="absolute w-36 h-36 rounded-full mascot-halo pointer-events-none -top-2" />
           <img
-            src="/images/mascot-waving.png"
+            src="/images/mascot-hero.png"
             alt="Bé Sao Aly - Bạn đồng hành TravAly"
-            className="relative w-28 h-auto object-contain drop-shadow-md animate-mascot-float"
+            className="relative w-32 h-auto object-contain drop-shadow-md animate-mascot-float"
           />
         </div>
 
