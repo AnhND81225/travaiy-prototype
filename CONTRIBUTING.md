@@ -5,7 +5,7 @@
 1. Pull `main` mới nhất và tạo nhánh `feature/...` hoặc `fix/...`.
 2. Sửa code, chạy `npm run lint`, `npm test`, `npm run build`.
 3. Push nhánh và mở pull request. Dùng link Vercel Preview để cùng kiểm tra.
-4. Chủ repo review và merge vào `main` để phát hành production.
+4. Chủ repo review và chọn **Create a merge commit** bằng tài khoản của mình để merge vào `main`, phát hành production.
 
 ## Các phần chính
 
@@ -22,3 +22,5 @@ Giữ các font và màu hiện có. Kiểm tra giao diện trong khung điện 
 ## Vercel
 
 Repository này được nối với dự án Vercel `travaiy-prototype`. `main` là nhánh production; link chính là https://travaiy-prototype.vercel.app. Build dùng `npm ci` rồi `npm run build`, xuất thư mục `dist`.
+
+Vercel Hobby chỉ tự deploy commit của chủ dự án trong repo riêng tư. Preview của thành viên khác có thể bị chặn; các thành viên vẫn chạy local và mở PR để review. Xem https://vercel.com/docs/deployments/troubleshoot-project-collaboration#hobby-teams.
