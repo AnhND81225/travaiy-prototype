@@ -80,18 +80,25 @@ export const DeviceFrame: React.FC<DeviceFrameProps> = ({
   ];
 
   return (
-    <div className="w-full h-[100dvh] sm:h-auto sm:min-h-screen bg-[#E8EEF8] flex flex-col items-center justify-start sm:justify-center p-0 sm:py-4 sm:px-4 overflow-hidden sm:overflow-y-auto">
+    <div className="relative w-full h-[100dvh] sm:h-screen bg-gradient-to-br from-[#EBF2FE] via-[#F4F7FD] to-[#FEF8E7] flex flex-col items-center justify-start sm:justify-center p-0 sm:py-2 sm:px-4 overflow-hidden">
+      {/* Decorative Brand Gradient Orbs based on Mascot Colors */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="hidden sm:block absolute -top-32 -left-32 w-[420px] h-[420px] rounded-full bg-[#93B2F8]/25 blur-3xl" />
+        <div className="hidden sm:block absolute -bottom-32 -right-32 w-[420px] h-[420px] rounded-full bg-[#FBEDB0]/45 blur-3xl" />
+        <div className="hidden sm:block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] rounded-full bg-white/40 blur-2xl" />
+      </div>
+
       {/* Top Floating Dev & Navigator Toolbar */}
       <aside
         aria-label="Dev Toolbar"
-        className="w-full max-w-[480px] shrink-0 px-2 py-1.5 sm:mb-2 sm:px-3 flex items-center justify-between gap-2 z-40 bg-white/80 sm:bg-transparent backdrop-blur-xs sm:backdrop-blur-none border-b sm:border-none border-slate-200/80"
+        className="w-full max-w-[480px] shrink-0 px-2 py-1.5 sm:mb-2 sm:px-3 flex items-center justify-between gap-2 z-40 bg-white/85 sm:bg-transparent backdrop-blur-xs sm:backdrop-blur-none border-b sm:border-none border-slate-200/80"
       >
         <div className="flex items-center gap-1.5">
           {/* Brand Tag */}
-          <div className="flex items-center gap-1 px-2.5 py-1 rounded-full bg-white shadow-2xs border border-slate-200">
-            <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+          <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-white shadow-2xs border border-slate-200">
+            <img src="/images/app-icon-dark.png" alt="TravAly" className="w-4 h-4 rounded-md object-contain" />
             <span className="text-[11px] sm:text-[12px] font-bold text-[#0A1680] font-heading">
-              TravAIy
+              TravAly
             </span>
           </div>
 

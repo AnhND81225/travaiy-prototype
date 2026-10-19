@@ -146,23 +146,30 @@ export const PackingListScreen: React.FC<PackingListScreenProps> = ({
 
       {/* Main Content */}
       <main className="flex-1 min-h-0 overflow-y-auto no-scrollbar px-5 pt-3 space-y-4 pb-28">
-        {/* Progress Card */}
-        <div className="p-4 rounded-3xl bg-white border border-slate-200/90 shadow-xs">
-          <div className="flex items-center justify-between mb-2">
-            <div>
-              <span className="text-xs text-slate-500 block font-medium">Tiến độ chuẩn bị</span>
-              <h3 className="text-[16px] font-bold text-slate-900 font-heading">
-                {progressPercent === 100 ? 'Đã xếp xong tất cả! 🎉' : `Đã hoàn thành ${progressPercent}%`}
-              </h3>
+        {/* Progress Card with Mascot */}
+        <div className="p-4 rounded-3xl bg-white border border-[#E8EEFB] shadow-xs relative overflow-hidden">
+          <div className="flex items-center justify-between mb-3 relative z-10">
+            <div className="flex items-center gap-3">
+              <img
+                src="/images/mascot-suitcase.png"
+                alt="Bé Sao Aly kéo vali"
+                className="w-12 h-12 object-contain animate-mascot-float drop-shadow-xs shrink-0"
+              />
+              <div>
+                <span className="text-[11px] text-[#454652] block font-medium">Bé Sao Aly đồng hành</span>
+                <h3 className="text-[15px] font-bold text-[#0A1680] font-heading">
+                  {progressPercent === 100 ? 'Sẵn sàng lên đường! 🎉' : `Đã chuẩn bị ${progressPercent}%`}
+                </h3>
+              </div>
             </div>
-            <span className="text-2xl font-black text-[#0A1680] font-heading">
-              {completedCount} <span className="text-sm font-normal text-slate-400">/ {items.length}</span>
+            <span className="text-xl font-black text-[#0A1680] font-heading shrink-0">
+              {completedCount} <span className="text-xs font-normal text-slate-400">/ {items.length}</span>
             </span>
           </div>
 
-          <div className="w-full h-2.5 rounded-full bg-slate-100 overflow-hidden">
+          <div className="w-full h-2 rounded-full bg-slate-100 overflow-hidden relative z-10">
             <div
-              className="h-full bg-gradient-to-r from-[#0A1680] to-emerald-500 rounded-full transition-all duration-300"
+              className="h-full bg-gradient-to-r from-[#0A1680] via-[#93B2F8] to-emerald-500 rounded-full transition-all duration-300"
               style={{ width: `${progressPercent}%` }}
             />
           </div>
@@ -243,8 +250,14 @@ export const PackingListScreen: React.FC<PackingListScreenProps> = ({
             </div>
           ))}
           {filteredItems.length === 0 && (
-            <div className="py-8 text-center text-slate-400 text-xs">
-              Chưa có món đồ nào trong danh mục này. Hãy nhập thêm bên dưới.
+            <div className="py-10 text-center flex flex-col items-center justify-center gap-2">
+              <img
+                src="/images/mascot-cool.png"
+                alt="Bé Sao Aly"
+                className="w-14 h-14 object-contain animate-mascot-float opacity-80"
+              />
+              <p className="text-slate-600 text-xs font-semibold">Chưa có món đồ nào trong danh mục này</p>
+              <span className="text-[11px] text-slate-400">Bấm nút bên dưới để thêm món đồ cùng Bé Sao nhé!</span>
             </div>
           )}
         </div>

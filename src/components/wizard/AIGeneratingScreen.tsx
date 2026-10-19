@@ -60,9 +60,7 @@ export const AIGeneratingScreen: React.FC<AIGeneratingScreenProps> = ({
             </h1>
           </div>
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-full bg-[#0A1680] flex items-center justify-center text-white text-xs font-bold font-heading">
-              👤
-            </div>
+            <img src="/images/app-icon-dark.png" alt="TravAly" className="w-8 h-8 rounded-xl object-contain shadow-xs" />
           </div>
         </div>
       </header>
@@ -71,11 +69,15 @@ export const AIGeneratingScreen: React.FC<AIGeneratingScreenProps> = ({
       <main className="px-5 pt-4 pb-6 flex-1 min-h-0 overflow-y-auto flex flex-col gap-4 max-w-md mx-auto w-full text-center">
         {/* Spinner Header */}
         <div className="flex flex-col items-center justify-center pt-2 text-center">
-          <div className="relative w-20 h-20 mb-3 flex items-center justify-center">
-            <div className="absolute w-16 h-16 rounded-full border-2 border-[#0A1680]/10" />
-            <div className="absolute w-16 h-16 rounded-full border-2 border-[#0A1680] border-t-transparent animate-spin" />
-            <div className="relative w-12 h-12 rounded-full bg-[#FBEDB0]/80 flex items-center justify-center shadow-xs border border-[#F1B94C]/40">
-              <span className="text-[#0A1680] text-xl animate-pulse">✦</span>
+          <div className="relative w-24 h-24 mb-3 flex items-center justify-center">
+            <div className="absolute w-20 h-20 rounded-full border-2 border-[#0A1680]/15" />
+            <div className="absolute w-20 h-20 rounded-full border-2 border-[#0A1680] border-t-transparent animate-spin" />
+            <div className="relative w-16 h-16 rounded-full bg-[#FBEDB0]/70 flex items-center justify-center shadow-xs border border-[#F1B94C]/40 overflow-hidden p-1">
+              <img
+                src={currentStep === 5 ? '/images/mascot-cool.png' : '/images/mascot-map.png'}
+                alt="TravAly AI Mascot"
+                className="w-12 h-12 object-contain animate-mascot-float"
+              />
             </div>
           </div>
 

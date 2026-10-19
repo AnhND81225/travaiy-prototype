@@ -714,10 +714,10 @@ export default function App() {
         <Route
           path="/wizard/ai-generating"
           element={
-            confirmedAccess?.tripId!==draftId||confirmedAccess.mode!=='ai'||wizardData.planningMode!=='ai'?<Navigate to="/wizard/summary" replace/>:<AIGeneratingScreen
+            <AIGeneratingScreen
               key={generationRequestId}
               onComplete={finishGeneration}
-              onCancel={() => navigate('/wizard/subscription')}
+              onCancel={() => navigate('/wizard/summary')}
             />
           }
         />

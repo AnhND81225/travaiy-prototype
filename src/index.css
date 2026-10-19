@@ -1,4 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300..1000;1,300..1000&family=Plus+Jakarta+Sans:ital,wght@0,500;0,600;0,700;0,800;1,700&display=swap');
 @import "tailwindcss";
+
+@font-face {
+  font-family: 'SVN-Freude';
+  src: local('SVN-Freude'),
+       url('/fonts/SVN-Freude.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
 @theme {
   --color-primary: #0A1680;
@@ -28,7 +38,7 @@
   --color-brand-destructive: #BA1A1A;
   --color-brand-success: #16A34A;
   
-  --font-sans: 'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-sans: 'Nunito', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-heading: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
@@ -74,16 +84,222 @@
   }
 }
 
+body,
+.travel-screen,
+.travel-screen p,
+.travel-screen span:not(.font-heading),
+.travel-screen div:not(.font-heading),
+.travel-screen button:not(.font-heading):not(.travaiy-pill-btn),
+.travel-screen a:not(.font-heading),
+.travel-screen label,
+.travel-screen input,
+.travel-screen textarea,
+.travel-screen small,
+.travel-screen b:not(h1 b):not(h2 b):not(h3 b),
+.travel-screen li {
+  font-family: 'Nunito', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, sans-serif;
   background-color: #FCFDFF;
   color: #191C1E;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-h1, h2, h3, h4, .font-heading {
+h1, h2, h3, h4, h5, h6, .font-heading, .travaiy-pill-btn, .home-wordmark {
   font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
 }
+
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-6px) rotate(1.2deg);
+  }
+}
+
+.animate-mascot-float {
+  animation: floatSlow 3.2s ease-in-out infinite;
+}
+
+/* ==========================================================
+   TRAVALY MASCOT COLOR HARMONY SYSTEM
+   Palette:
+   - #0A1680 (Bleu Océan): Chữ tiêu đề, nút bấm chính, viền active
+   - #93B2F8 (Bleu Ciel): Nền thẻ xanh mát, viền phụ, hiệu ứng viền
+   - #FBEDB0 (Butter Yellow): Thân Bé Sao, điểm nhấn ấm, thẻ vàng dịu
+   - #F1B94C (Orange Pastel): Má hồng Bé Sao, điểm nhấn hành động, badge nổi bật
+   - #FCFDFF (Blanc Cassé): Nền canvas sạch sẽ, không mỏi mắt
+   ========================================================== */
+
+/* Mascot aura & halo effect */
+.mascot-halo {
+  background: radial-gradient(circle, rgba(251, 237, 176, 0.45) 0%, rgba(147, 178, 248, 0.15) 50%, transparent 75%);
+}
+
+/* Home Screen: Thẻ & Nút phối theo màu Bé Sao */
+.home-top {
+  background: linear-gradient(180deg, #FFFFFF 0%, rgba(252, 253, 255, 0.85) 100%);
+}
+
+.home-search {
+  background: #FFFFFF !important;
+  border: 1.5px solid #DCE7FA !important;
+  box-shadow: 0 4px 18px -4px rgba(10, 22, 128, 0.05) !important;
+  transition: all 0.2s ease;
+}
+.home-search:hover {
+  border-color: #93B2F8 !important;
+  box-shadow: 0 6px 20px -4px rgba(10, 22, 128, 0.08) !important;
+}
+.home-search .home-search-arrow {
+  background: #FBEDB0 !important;
+  color: #0A1680 !important;
+  transition: transform 0.2s ease;
+}
+.home-search:hover .home-search-arrow {
+  transform: scale(1.05);
+}
+
+/* Quick Links: Thiết kế đồng bộ, thanh lịch và sạch sẽ */
+.home-quick-links button {
+  background: #FFFFFF !important;
+  border: 1.5px solid #DCE7FA !important;
+  color: #0A1680 !important;
+  box-shadow: 0 3px 12px -3px rgba(10, 22, 128, 0.05);
+  transition: all 0.2s ease;
+}
+.home-quick-links button:hover {
+  border-color: #93B2F8 !important;
+  transform: translateY(-1px);
+}
+.home-quick-links button svg {
+  color: #0A1680 !important;
+}
+
+/* Thẻ chuyến đi đang tiếp tục */
+.home-active-trip > button {
+  background: #FFFFFF !important;
+  border: 1.5px solid #DCE7FA !important;
+  box-shadow: 0 4px 18px -4px rgba(10, 22, 128, 0.05);
+  transition: all 0.2s ease;
+}
+.home-active-trip > button:hover {
+  border-color: #93B2F8 !important;
+}
+.home-active-trip .travel-eyebrow {
+  color: #0A1680 !important;
+  font-weight: 800 !important;
+}
+
+/* Thẻ Địa điểm bạn muốn ghé */
+.home-saved-link {
+  background: #FFFFFF !important;
+  border: 1.5px solid #DCE7FA !important;
+  color: #0A1680 !important;
+  font-weight: 650 !important;
+  box-shadow: 0 3px 14px -3px rgba(10, 22, 128, 0.05);
+  transition: all 0.2s ease;
+}
+.home-saved-link:hover {
+  border-color: #93B2F8 !important;
+  transform: translateY(-1px);
+}
+
+/* Nút Hero chính */
+.home-hero-copy button .travel-arrow {
+  background: #EFF3FF !important;
+  color: #0A1680 !important;
+}
+
+/* Thông báo hộp thoại */
+.home-notification {
+  background: #F0F5FF !important;
+  border: 1px solid rgba(147, 178, 248, 0.35) !important;
+}
+.home-notification b {
+  color: #0A1680 !important;
+}
+
+/* Chips du lịch có viền thương hiệu */
+.travel-chips > button {
+  background: #FFFFFF !important;
+  border: 1px solid #DDE7FA !important;
+  color: #454652 !important;
+}
+.travel-chips > button.active {
+  background: #0A1680 !important;
+  color: #FFFFFF !important;
+  border-color: #0A1680 !important;
+  box-shadow: 0 3px 10px rgba(10, 22, 128, 0.2);
+}
+
+/* ==========================================================
+   MASCOT GOLDEN ACCENTS & RADIANT TOUCHES
+   ========================================================== */
+
+/* 3. Ngôi sao đánh giá & chỉ số */
+.stay-title-row > span,
+.star-rating,
+.destination-stars,
+svg.lucide-star {
+  color: #F1B94C !important;
+}
+
+/* 4. Timeline lộ trình ngày & tiến độ: Chấm tiến trình & thanh đo màu Bé Sao vàng ấm */
+.daily-timeline-dot {
+  background: #F1B94C !important;
+  border: 2px solid #FCFDFF !important;
+  box-shadow: 0 0 0 3px rgba(241, 185, 76, 0.3) !important;
+}
+
+.daily-rail > button.active .day-rail-dot {
+  background: #F1B94C !important;
+  box-shadow: 0 0 6px #F1B94C !important;
+}
+
+.trip-progress-card [role=progressbar] > span {
+  background: linear-gradient(90deg, #F1B94C 0%, #E29B12 100%) !important;
+  box-shadow: 0 0 8px rgba(241, 185, 76, 0.3) !important;
+}
+
+/* 5. Thẻ Gợi ý AI & Thẻ nổi bật với viền ánh vàng */
+.ai-mascot-card,
+.mascot-gold-card {
+  background: linear-gradient(135deg, #FFFDF5 0%, #FFF9E6 60%, #F5F8FF 100%) !important;
+  border: 1.5px solid rgba(241, 185, 76, 0.45) !important;
+  box-shadow: 0 4px 18px -4px rgba(241, 185, 76, 0.12) !important;
+}
+
+/* 6. Huy hiệu vàng ấm (Warm Gold Badge) */
+.badge-gold,
+.ai-companion-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 8px;
+  border-radius: 9999px;
+  background: #FFF8E6;
+  border: 1px solid rgba(241, 185, 76, 0.6);
+  color: #8C5900;
+  font-size: 10px;
+  font-weight: 750;
+}
+
+/* 7. Hào quang thương hiệu nhẹ nhàng phía sau Bé Sao */
+.mascot-halo {
+  background: radial-gradient(circle, rgba(251, 237, 176, 0.4) 0%, rgba(147, 178, 248, 0.15) 60%, transparent 80%);
+}
+
+/* 8. Focus & Active glow */
+.travel-screen button:focus-visible,
+.travel-screen a:focus-visible,
+.travel-screen [role=button]:focus-visible {
+  outline: 3px solid #F1B94C !important;
+  outline-offset: 3px;
+}
+

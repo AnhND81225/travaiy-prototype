@@ -75,14 +75,8 @@ export const WelcomeScreen: React.FC<WelcomeScreenProps> = ({ onStart, onLoginSu
 
       {/* Brand Header */}
       <div className="relative z-20 flex items-center justify-center pt-3">
-        <div className="flex items-center space-x-2 bg-white/20 backdrop-blur-md px-4 py-1.5 rounded-full border border-white/30 shadow-sm">
-          <span className="text-[22px] font-extrabold tracking-tight text-white leading-none font-heading">
-            TravAIy
-          </span>
-          <svg className="w-5 h-5 text-white stroke-white fill-none stroke-[1.8] -rotate-12" viewBox="0 0 24 24">
-            <path d="M2.5 11.5L21.5 2.5L13.5 21.5L10 14L2.5 11.5Z" strokeLinejoin="round" />
-            <path d="M21.5 2.5L10 14" strokeLinecap="round" />
-          </svg>
+        <div className="flex items-center justify-center bg-white/90 backdrop-blur-md px-4 py-1.5 rounded-full border border-white/60 shadow-sm">
+          <img src="/images/logo-wordmark.png" alt="TravAly Logo" className="h-[22px] w-auto object-contain" />
         </div>
       </div>
 
@@ -91,8 +85,19 @@ export const WelcomeScreen: React.FC<WelcomeScreenProps> = ({ onStart, onLoginSu
 
       {/* Bottom Interactive Welcome Sheet */}
       <section className="relative z-20 px-6 pb-6 pt-2 flex flex-col justify-end text-center">
+        {/* Mascot Greeting */}
+        {/* Mascot Greeting with Brand Aura */}
+        <div className="relative flex justify-center mb-1.5">
+          <div className="absolute w-32 h-32 rounded-full mascot-halo pointer-events-none -top-2" />
+          <img
+            src="/images/mascot-waving.png"
+            alt="Bé Sao Aly - Bạn đồng hành TravAly"
+            className="relative w-28 h-auto object-contain drop-shadow-md animate-mascot-float"
+          />
+        </div>
+
         {/* Title & Tag */}
-        <div className="space-y-2.5 mb-6">
+        <div className="space-y-2 mb-6">
           <h2 className="text-[30px] sm:text-[32px] leading-[1.2] font-extrabold text-[#0A1680] tracking-tight font-heading">
             Lên lịch cho chuyến đi của bạn
           </h2>
@@ -110,7 +115,7 @@ export const WelcomeScreen: React.FC<WelcomeScreenProps> = ({ onStart, onLoginSu
             className="w-full h-[48px] bg-[#0A1680] hover:bg-[#071060] active:scale-[0.98] transition-all text-white font-bold text-[15px] rounded-full shadow-lg shadow-[#0A1680]/25 flex items-center justify-center space-x-2 font-heading tracking-wide cursor-pointer"
           >
             <span className="leading-none">Lên kế hoạch</span>
-            <svg className="w-4 h-4 ml-1 stroke-white fill-none stroke-[2]" viewBox="0 0 24 24">
+            <svg className="w-4 h-4 ml-1 stroke-[#FBEDB0] fill-none stroke-[2.2]" viewBox="0 0 24 24">
               <path d="M5 12h14m-6-6l6 6-6 6" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           </button>
@@ -179,13 +184,16 @@ export const WelcomeScreen: React.FC<WelcomeScreenProps> = ({ onStart, onLoginSu
               </button>
             </div>
 
-            <div className="mb-5 text-left">
-              <h3 className="text-[22px] font-bold text-[#0A1680] font-heading tracking-tight leading-tight">
-                Chào mừng trở lại!
-              </h3>
-              <p className="text-[13px] text-slate-500 mt-1">
-                Đăng nhập để tiếp tục hành trình của bạn với TravAIy
-              </p>
+            <div className="mb-5 text-left flex items-start justify-between">
+              <div>
+                <h3 className="text-[22px] font-bold text-[#0A1680] font-heading tracking-tight leading-tight">
+                  Chào mừng trở lại!
+                </h3>
+                <p className="text-[13px] text-slate-500 mt-1">
+                  Đăng nhập để tiếp tục hành trình cùng TravAly
+                </p>
+              </div>
+              <img src="/images/mascot-cool.png" alt="TravAly Mascot" className="w-12 h-12 object-contain shrink-0 ml-2" />
             </div>
 
             <form onSubmit={handleLoginSubmit} className="space-y-3.5 text-left">
@@ -335,13 +343,16 @@ export const WelcomeScreen: React.FC<WelcomeScreenProps> = ({ onStart, onLoginSu
               </button>
             </div>
 
-            <div className="mb-4 text-left">
-              <h3 className="text-[22px] font-bold text-[#0A1680] font-heading tracking-tight leading-tight">
-                Tạo tài khoản mới
-              </h3>
-              <p className="text-[13px] text-slate-500 mt-1">
-                Cùng AI kiến tạo những chuyến du lịch đáng nhớ
-              </p>
+            <div className="mb-4 text-left flex items-start justify-between">
+              <div>
+                <h3 className="text-[22px] font-bold text-[#0A1680] font-heading tracking-tight leading-tight">
+                  Tạo tài khoản mới
+                </h3>
+                <p className="text-[13px] text-slate-500 mt-1">
+                  Cùng bé Sao Aly kiến tạo những chuyến du lịch đáng nhớ
+                </p>
+              </div>
+              <img src="/images/mascot-suitcase.png" alt="TravAly Mascot" className="w-12 h-12 object-contain shrink-0 ml-2" />
             </div>
 
             <form onSubmit={handleSignupSubmit} className="space-y-3 text-left">

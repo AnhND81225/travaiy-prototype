@@ -177,6 +177,28 @@ export const TripRecapFinalScreen: React.FC<TripRecapFinalScreenProps> = ({
               </span>
             </div>
           </div>
+
+          {/* Mascot Watermark inside Story */}
+          <div className="absolute bottom-4 right-4 z-30 pointer-events-none opacity-90">
+            <img
+              src="/images/mascot-waving.png"
+              alt="TravAly Mascot"
+              className="w-10 h-10 object-contain drop-shadow-lg animate-mascot-float"
+            />
+          </div>
+        </div>
+
+        {/* Mascot Celebration Banner */}
+        <div className="w-full mt-3 p-3 rounded-2xl bg-white/5 border border-white/10 flex items-center gap-3">
+          <img
+            src="/images/mascot-suitcase.png"
+            alt="Bé Sao Aly chúc mừng"
+            className="w-10 h-10 object-contain shrink-0 drop-shadow-xs"
+          />
+          <div className="min-w-0">
+            <p className="text-[12px] font-bold text-white font-heading">Chuyến đi đáng nhớ cùng TravAly!</p>
+            <p className="text-[10px] text-slate-300">Bé Sao Aly chúc bạn lưu giữ trọn vẹn những khoảnh khắc đẹp nhất.</p>
+          </div>
         </div>
 
         {/* Music Track Bar */}

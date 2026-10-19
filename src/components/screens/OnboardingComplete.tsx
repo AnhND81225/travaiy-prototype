@@ -21,12 +21,16 @@ export const OnboardingComplete: React.FC<OnboardingCompleteProps> = ({
 
         {/* Hero Illustration / Celebration Header */}
         <div className="flex flex-col items-center justify-center pt-8 pb-3 px-6 text-center">
-          <img src="/images/lumi-wave.png" alt="Lumi chúc mừng bạn hoàn tất hồ sơ" className="w-28 h-28 object-contain"/>
+          <img
+            src="/images/mascot-suitcase.png"
+            alt="Bé Sao Aly chúc mừng bạn hoàn tất hồ sơ"
+            className="w-28 h-28 object-contain animate-mascot-float drop-shadow-md"
+          />
           <h1 className="text-[#0A1680] text-[22px] font-bold tracking-tight mt-4 font-heading">
             {userName ? `Sẵn sàng rồi, ${userName}!` : 'Hồ sơ du lịch đã sẵn sàng!'}
           </h1>
           <p className="text-slate-500 text-[13px] font-normal leading-relaxed mt-1 max-w-[280px]">
-            Lumi đã ghi nhớ sở thích của bạn.
+            Bé Sao Aly đã ghi nhớ trọn vẹn sở thích của bạn!
           </p>
         </div>
 

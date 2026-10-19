@@ -11,7 +11,7 @@ export const BottomNav: React.FC<BottomNavProps> = ({ activeTab, onTabChange }) 
     <div className="absolute bottom-4 left-0 right-0 w-full flex justify-center z-40 pointer-events-none px-3">
       <nav
         aria-label="Thanh điều hướng"
-        className="pointer-events-auto w-[276px] h-[64px] bg-white/95 backdrop-blur-xl border border-white/80 rounded-full shadow-xl shadow-[#0A1680]/15 px-2.5 flex justify-between items-center transition-all duration-300"
+        className="pointer-events-auto w-[276px] h-[64px] bg-white/95 backdrop-blur-xl border border-[#93B2F8]/35 rounded-full shadow-xl shadow-[#0A1680]/12 px-2.5 flex justify-between items-center transition-all duration-300"
       >
         {/* 1. Trang chủ */}
         {activeTab === 'home' ? (
@@ -25,6 +25,7 @@ export const BottomNav: React.FC<BottomNavProps> = ({ activeTab, onTabChange }) 
               <polyline points="9 22 9 12 15 12 15 22" />
             </svg>
             <span className="text-[12px] font-bold tracking-tight">Trang chủ</span>
+            <span className="w-1.5 h-1.5 rounded-full bg-[#F1B94C] shrink-0 shadow-2xs" />
           </button>
         ) : (
           <button
@@ -52,6 +53,7 @@ export const BottomNav: React.FC<BottomNavProps> = ({ activeTab, onTabChange }) 
               <path d="M5 12h14" />
             </svg>
             <span className="text-[12px] font-bold tracking-tight">Tạo chuyến</span>
+            <span className="w-1.5 h-1.5 rounded-full bg-[#F1B94C] shrink-0 shadow-2xs" />
           </button>
         ) : (
           <button
@@ -80,6 +82,7 @@ export const BottomNav: React.FC<BottomNavProps> = ({ activeTab, onTabChange }) 
               <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76" />
             </svg>
             <span className="text-[12px] font-bold tracking-tight">Khám phá</span>
+            <span className="w-1.5 h-1.5 rounded-full bg-[#F1B94C] shrink-0 shadow-2xs" />
           </button>
         ) : (
           <button
@@ -107,6 +110,7 @@ export const BottomNav: React.FC<BottomNavProps> = ({ activeTab, onTabChange }) 
               <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
             </svg>
             <span className="text-[12px] font-bold tracking-tight">Chuyến đi</span>
+            <span className="w-1.5 h-1.5 rounded-full bg-[#F1B94C] shrink-0 shadow-2xs" />
           </button>
         ) : (
           <button
@@ -134,6 +138,7 @@ export const BottomNav: React.FC<BottomNavProps> = ({ activeTab, onTabChange }) 
               <circle cx="12" cy="7" r="4" />
             </svg>
             <span className="text-[12px] font-bold tracking-tight">Tài khoản</span>
+            <span className="w-1.5 h-1.5 rounded-full bg-[#F1B94C] shrink-0 shadow-2xs" />
           </button>
         ) : (
           <button
