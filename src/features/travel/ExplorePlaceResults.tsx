@@ -1,0 +1,8 @@
+import {Star,MapPin,ArrowUpRight} from 'lucide-react';
+import {MOCK_PLACES} from '../../data/mockData';
+import {Image} from './UI';
+import './explore-place-results.css';
+export function ExplorePlaceResults({category,query,onOpen}:{category:string;query:string;onOpen:(id:string)=>void}){
+ const places=MOCK_PLACES.filter(p=>(p.category===category||(category==='Check-in'&&p.tags.some(tag=>/check-in/i.test(tag))))&&`${p.name} ${p.city}`.toLocaleLowerCase('vi').includes(query.toLocaleLowerCase('vi'))).sort((a,b)=>Number(b.category===category)-Number(a.category===category));
+ return <section className="explore-place-results"><div className="explore-results-title"><div><small>KHÁM PHÁ THEO SỞ THÍCH</small><h2>{category} <span>{places.length} địa điểm</span></h2></div><MapPin size={19}/></div><p className="travel-footnote">Ảnh, giá và đánh giá minh họa cho bản demo.</p><div className="explore-place-cards">{places.map(place=><button type="button" key={place.id} onClick={()=>onOpen(place.id)} aria-label={`Xem chi tiết ${place.name}`}><div className="explore-place-photo"><Image src={place.images[0]} alt={place.name}/><span>{place.city}</span><small>Ảnh minh họa</small></div><div className="explore-place-copy"><div><h3>{place.name}</h3><ArrowUpRight size={16}/></div><p><Star size={12} fill="#F1B94C" stroke="#F1B94C"/><b>{place.rating}</b><span>({place.reviewsCount} đánh giá mẫu)</span></p><small>{place.tags.slice(0,2).join(' · ')}</small><strong>{place.priceRange}</strong></div></button>)}</div>{!places.length&&<p className="travel-footnote">Chưa tìm thấy địa điểm phù hợp. Thử tên hoặc thành phố khác.</p>}</section>;
+}

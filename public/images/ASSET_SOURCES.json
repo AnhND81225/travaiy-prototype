@@ -1,0 +1,52 @@
+[
+  {
+    "asset": "room",
+    "bytes": 144390,
+    "source": "https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=1000&auto=format&fit=crop&q=85"
+  },
+  {
+    "asset": "room2",
+    "bytes": 106791,
+    "source": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=1000&auto=format&fit=crop&q=85"
+  },
+  {
+    "asset": "resort",
+    "bytes": 215185,
+    "source": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=1000&auto=format&fit=crop&q=85"
+  },
+  {
+    "asset": "beach",
+    "bytes": 106156,
+    "source": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1000&auto=format&fit=crop&q=85"
+  },
+  {
+    "asset": "bridge",
+    "bytes": 158035,
+    "source": "https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?w=1000&auto=format&fit=crop&q=85"
+  },
+  {
+    "asset": "bay",
+    "bytes": 151321,
+    "source": "https://images.unsplash.com/photo-1528127269322-539801943592?w=1000&auto=format&fit=crop&q=85"
+  },
+  {
+    "asset": "food",
+    "bytes": 459928,
+    "source": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=1000&auto=format&fit=crop&q=85"
+  },
+  {
+    "asset": "town.png",
+    "source": "Generated with imagegen",
+    "note": "Hoi An inspired travel illustration, not documentary photo"
+  },
+  {
+    "asset": "vietnam-hero.png",
+    "source": "Generated with imagegen",
+    "note": "Vietnam inspired cinematic landscape, not documentary photo"
+  },
+  {
+    "asset": "dalat-cabin.png",
+    "source": "Generated using imagegen",
+    "note": "Fictional Da Lat-inspired pine-hill homestay illustration. Not a real hotel photo."
+  }
+]

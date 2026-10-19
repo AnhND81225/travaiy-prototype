@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #0A1680;
+  --color-secondary: #93B2F8;
+  --color-highlight: #FBEDB0;
+  --color-accent: #F1B94C;
+  --color-canvas: #FCFDFF;
+  --color-surface: #FFFFFF;
+  --color-border: #E8EEFB;
+  --color-text-primary: #191C1E;
+  --color-text-secondary: #454652;
+  --color-destructive: #BA1A1A;
+  --color-success: #16A34A;
+
+  --color-brand-primary: #0A1680;
+  --color-brand-ocean: #0A1680;
+  --color-brand-secondary: #93B2F8;
+  --color-brand-sky: #93B2F8;
+  --color-brand-butter: #FBEDB0;
+  --color-brand-accent: #F1B94C;
+  --color-brand-gold: #F1B94C;
+  --color-brand-canvas: #FCFDFF;
+  --color-brand-surface: #FFFFFF;
+  --color-brand-border: #E8EEFB;
+  --color-brand-text-primary: #191C1E;
+  --color-brand-text-secondary: #454652;
+  --color-brand-destructive: #BA1A1A;
+  --color-brand-success: #16A34A;
+  
+  --font-sans: 'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-heading: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .travaiy-card {
+    background-color: #FFFFFF;
+    border: 1px solid #E8EEFB;
+    box-shadow: 0 4px 20px -2px rgba(10, 22, 128, 0.06);
+    border-radius: 1.25rem; /* 20px */
+  }
+
+  .travaiy-pill-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    min-height: 48px;
+    border-radius: 9999px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 700;
+    font-size: 0.9375rem;
+    transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .travaiy-scrim {
+    background-color: rgba(10, 22, 128, 0.45);
+    backdrop-filter: blur(3px);
+  }
+
+  .travaiy-sheet {
+    background-color: #FFFFFF;
+    border-top-left-radius: 28px;
+    border-top-right-radius: 28px;
+    box-shadow: 0 -8px 30px rgba(10, 22, 128, 0.12);
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: #FCFDFF;
+  color: #191C1E;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, .font-heading {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+}

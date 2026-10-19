@@ -1,0 +1,15 @@
+node_modules/
+build/
+dist/
+coverage/
+.DS_Store
+*.log
+.env*
+!.env.example
+.vercel
+
+# Local tooling and archived handoffs
+.idea/
+*.zip
+/ai-studio-handoff/
+/TRAVAIY_TODAY_FIX_ONLY/

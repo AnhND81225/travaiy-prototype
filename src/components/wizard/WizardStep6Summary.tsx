@@ -1,0 +1,18 @@
+import {useState} from 'react';
+import {Sparkles,PencilLine,Check,ChevronRight,CalendarDays,Users,Wallet,BedDouble,MapPin,SlidersHorizontal} from 'lucide-react';
+import type {TripWizardData} from '../../types/travel';
+import type {PlanningMode} from '../../features/travel/wizardFlow';
+import {STAYS} from '../../features/travel/fixtures';
+import {TravelHeader,Pill,Image} from '../../features/travel/UI';
+import '../../features/travel/product-polish.css';
+import './planning-method.css';
+export function WizardStep6Summary({data,onChooseMode,onEditStep,onBack}:{data:TripWizardData;onChooseMode:(mode:PlanningMode)=>void;onEditStep:(step:number)=>void;onBack:()=>void}){
+ const [mode,setMode]=useState<PlanningMode|null>(data.planningMode||null);const stay=STAYS.find(s=>s.id===data.stayId);
+ const rows=[{icon:MapPin,title:'Địa điểm muốn ghé',value:data.mustVisitPlaces.length?`${data.mustVisitPlaces.length} điểm đã chọn`:'Để AI gợi ý địa điểm',edit:6},{icon:CalendarDays,title:'Ngày & giờ',value:`${data.startDate} → ${data.endDate} · ${data.departureTime} – ${data.returnTime}`,edit:2},{icon:Users,title:'Đồng hành',value:data.companionType==='solo'?'Một mình':`Nhóm ${data.companionCount} người`,edit:3},{icon:Wallet,title:'Ngân sách',value:`${data.budgetAmount.toLocaleString('vi-VN')}đ / người`,edit:4},{icon:BedDouble,title:'Chỗ ở',value:stay?.name||'Không qua đêm',edit:7}];
+ return <div className="travel-screen polish-screen"><TravelHeader title="Chọn cách lên lịch" subtitle="Bước 7/8 · Thông tin chuyến đi đã sẵn sàng" onBack={onBack}/><main className="travel-scroll polish-stack method-screen-body">
+ <button className="method-trip-context" onClick={()=>onEditStep(1)}>{data.destinationImage&&<Image src={data.destinationImage} alt={data.destination}/>}<span><b>{data.destination}</b><small>{data.durationText} · {data.companionType==='solo'?'Solo':`Nhóm ${data.companionCount} người`}</small></span><ChevronRight size={17}/></button>
+ <div className="planning-method-options">{([{id:'ai',title:'Để AI xếp lịch',text:'Sắp xếp các điểm đã chọn theo từng ngày.',icon:Sparkles},{id:'manual',title:'Tự xếp lịch',text:'Lịch trống theo ngày, bạn tự thêm giờ và điểm ghé.',icon:PencilLine}] as const).map(option=><button key={option.id} aria-pressed={mode===option.id} onClick={()=>setMode(option.id)} className={`planning-method-option ${option.id}`}><span className="planning-method-icon"><option.icon size={25}/></span><span><h2>{option.title}</h2><p>{option.text}</p>{option.id==='manual'&&<small>Không trừ lượt AI</small>}</span><span className="planning-method-check">{mode===option.id&&<Check size={14}/>}</span></button>)}</div>
+ <details className="method-trip-details"><summary>Xem / sửa thông tin chuyến đi<ChevronRight size={15}/></summary><div>{rows.map(row=><button key={row.title} className="method-info-row" onClick={()=>onEditStep(row.edit)}><row.icon size={17}/><span><b>{row.title}</b><small>{row.value}</small></span><ChevronRight size={14}/></button>)}{data.mustVisitPlaces.length>0&&<p className="method-selected-places">{data.mustVisitPlaces.join(' · ')}</p>}</div></details>
+ <button className="method-dna" onClick={()=>onEditStep(5)}><SlidersHorizontal size={18}/><span><b>Sở thích từ DNA du lịch</b><small>{data.interests.length?data.interests.join(' · '):'Có thể tùy chỉnh nếu muốn'}</small></span><ChevronRight size={14}/></button>
+ </main><footer className="wizard-footer"><p className="travel-footnote mb-2">Bước tiếp theo: chọn gói cho chuyến đi.</p><Pill disabled={!mode} onClick={()=>{if(mode)onChooseMode(mode);}}>Chọn gói và tiếp tục <ChevronRight size={17}/></Pill></footer></div>;
+}

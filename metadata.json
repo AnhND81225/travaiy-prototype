@@ -1,0 +1,6 @@
+{
+  "name": "TravAIy - AI Travel Companion",
+  "description": "Cá nhân hóa lịch trình, khám phá điểm đến thịnh hành và lưu giữ khoảnh khắc du lịch cùng AI.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
