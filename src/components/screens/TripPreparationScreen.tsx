@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { IOSStatusBar } from '../common/IOSStatusBar';
 import { BottomNav } from '../common/BottomNav';
 import { NavTab } from '../../types/travel';
+import { TripWorkspaceNav } from '../../features/travel/TripWorkspaceNav';
 
 interface TripPreparationScreenProps {
   onNavigateTab: (tab: NavTab) => void;
@@ -67,6 +68,8 @@ export const TripPreparationScreen: React.FC<TripPreparationScreenProps> = ({
           </div>
         </div>
       </header>
+
+      <TripWorkspaceNav />
 
       {/* Main Content */}
       <main className="flex-1 min-h-0 overflow-y-auto no-scrollbar px-5 pt-3 space-y-4 pb-28">

@@ -58,8 +58,8 @@ import { TripPreparationScreen } from './components/screens/TripPreparationScree
 import { PackingListScreen } from './components/screens/PackingListScreen';
 
 // Live Trip & Companion Screens
-import { TodayAdaptiveScreen as TodayScheduleScreen, AdaptiveReviewScreen } from './features/travel/AdaptiveScreens';
 import { GroupSpaceScreen } from './components/screens/GroupSpaceScreen';
+import { GroupChatScreen } from './components/screens/GroupChatScreen';
 import { GroupPollScreen } from './components/screens/GroupPollScreen';
 import { GroupLocationScreen } from './components/screens/GroupLocationScreen';
 import { GroupExpenseSplitScreen } from './components/screens/GroupExpenseSplitScreen';
@@ -110,7 +110,7 @@ const SCREEN_ROUTES: Record<ScreenId, string> = {
   'itinerary-edit': '/trip/edit/1',
   'trip-preparation': '/trip/preparation',
   'packing-list': '/trip/packing-list',
-  'today-schedule': '/trip/today',
+  'today-schedule': '/trip/day/1',
   'adaptive-schedule': '/trip/adaptive',
   'group-space': '/trip/group',
   'group-poll': '/trip/group/poll',
@@ -173,6 +173,12 @@ function DayItineraryWrapper({
       onBack={onBack}
     />
   );
+}
+
+/** Keeps old deep links working while adaptive actions now live in the selected day. */
+function AdaptiveRouteRedirect() {
+  const { adaptive } = useTravel();
+  return <Navigate to={`/trip/day/${adaptive?.dayNumber ?? 1}`} replace />;
 }
 
 function ItineraryEditWrapper({ onBack }: { onBack: () => void }) {
@@ -282,7 +288,7 @@ export default function App() {
     if (pathname.startsWith('/trip/edit/')) return 'itinerary-edit';
     if (pathname === '/trip/preparation') return 'trip-preparation';
     if (pathname === '/trip/packing-list') return 'packing-list';
-    if (pathname === '/trip/today') return 'today-schedule';
+    if (pathname === '/trip/today') return 'day-itinerary';
     if (pathname === '/trip/adaptive') return 'adaptive-schedule';
     if (pathname === '/trip/adaptive-preview') return 'adaptive-preview-skip';
     if (pathname === '/trip/group') return 'group-space';
@@ -733,7 +739,7 @@ export default function App() {
               onEditTrip={() => navigate('/trip/edit/1')}
               onOpenPreparation={() => navigate('/trip/preparation')}
               onOpenPackingList={() => navigate('/trip/packing-list')}
-              onOpenTodaySchedule={() => navigate('/trip/today')}
+              onOpenTodaySchedule={() => navigate('/trip/day/1')}
               onOpenGroupSpace={() => navigate('/trip/group')}
               onOpenExpenses={() => navigate('/trip/expenses')}
               onOpenJournal={() => navigate('/trip/journal')}
@@ -755,6 +761,7 @@ export default function App() {
             />
           }
         />
+        <Route path="/trip/day" element={<Navigate to="/trip/day/1" replace />} />
 
         {/* 22. Itinerary Edit Screen (Image 21/22) */}
         <Route
@@ -785,24 +792,9 @@ export default function App() {
           }
         />
 
-        {/* 25. Today Live Schedule Screen (Image 29/30/31) */}
-        <Route
-          path="/trip/today"
-          element={
-            <TodayScheduleScreen
-              onNavigateTab={handleNavTab}
-            />
-          }
-        />
+        <Route path="/trip/today" element={<Navigate to="/trip/day/1" replace />} />
 
-        {/* 26. Adaptive AI Schedule Screen (Image 19/20) */}
-        <Route
-          path="/trip/adaptive"
-          element={
-            <AdaptiveReviewScreen
-            />
-          }
-        />
+        <Route path="/trip/adaptive" element={<AdaptiveRouteRedirect />} />
 
         {/* 27. Group Space Screen (Image 21/22) */}
         <Route
@@ -811,12 +803,15 @@ export default function App() {
             <GroupSpaceScreen
               onBack={() => navigate('/trip/overview')}
               onOpenPoll={() => navigate('/trip/group/poll')}
+              onOpenChat={() => navigate('/trip/group/chat')}
               onOpenLocation={() => navigate('/trip/group/location')}
               onOpenExpenseSplit={() => navigate('/trip/group/expense-split')}
-              onOpenSchedule={() => navigate('/trip/today')}
+              onOpenSchedule={() => navigate('/trip/day/1')}
             />
           }
         />
+
+        <Route path="/trip/group/chat" element={<GroupChatScreen onBack={() => navigate('/trip/group')} />} />
 
         {/* 28. Group Poll Screen (Image 21/22) */}
         <Route
@@ -848,15 +843,7 @@ export default function App() {
         />
 
         {/* 32. Photobooth Screen (Image 25/26) */}
-        <Route
-          path="/trip/photobooth"
-          element={
-            <PhotoboothScreen
-              onBack={() => navigate('/trip/journal')}
-              onSaveToJournal={() => navigate('/trip/journal')}
-            />
-          }
-        />
+        <Route path="/trip/photobooth" element={<Navigate to="/trip/camera" replace />} />
 
         {/* 33. Journal & Trip Album Screen (Image 29/30) */}
         <Route
@@ -987,14 +974,7 @@ export default function App() {
           }
         />
 
-        {/* 44. Adaptive Schedule Preview Skip Screen */}
-        <Route
-          path="/trip/adaptive-preview"
-          element={
-            <AdaptiveReviewScreen
-            />
-          }
-        />
+        <Route path="/trip/adaptive-preview" element={<AdaptiveRouteRedirect />} />
 
         {/* 45. User Profile & Travel DNA Settings */}
         <Route

@@ -14,3 +14,8 @@ test('empty or entirely locked plan has no proposal',()=>{
  const empty={...INITIAL_PLAN,daysSchedule:INITIAL_PLAN.daysSchedule.map(d=>({...d,items:[]}))};assert.equal(createAdaptiveSuggestion(empty,'delay','empty'),null);
  const locked={...INITIAL_PLAN,daysSchedule:INITIAL_PLAN.daysSchedule.map(d=>({...d,items:d.items.map(i=>({...i,locked:true}))}))};assert.equal(createAdaptiveSuggestion(locked,'rain','locked'),null);
 });
+test('rain proposal keeps a mappable indoor replacement',()=>{
+ const suggestion=createAdaptiveSuggestion(INITIAL_PLAN,'rain','rain-map');assert.ok(suggestion);
+ const change=suggestion.changes[0];assert.ok(change.after?.location);
+ assert.equal(change.after?.placeName,'Bảo tàng Điêu khắc Chăm (gợi ý mẫu)');
+});

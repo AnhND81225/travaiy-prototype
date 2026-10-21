@@ -11,7 +11,7 @@ export function ReviewHub(){const nav=useNavigate();const flows=[
  ['Camera & photobooth','/trip/camera','Chọn ảnh hoặc mở camera. Chuyển tab Photobooth để ghép 3 ảnh và lưu album.'],
  ['Gói chuyến đi trong Tài khoản','/profile','Xem gói và số lượt AI đang dùng cho chuyến hiện tại.'],
  ['Chọn khách sạn trước khi tiếp tục','/wizard/stay','Chuyến qua đêm cần chọn chỗ ở. Không còn nút Chọn sau. Chuyến trong ngày không cần khách sạn.'],
- ['AI thích nghi','/trip/today','Bấm Thử tình huống, chọn mưa/trễ/nghỉ. Xem card trên Home, mở thông báo, so sánh, áp dụng rồi hoàn tác.'],
+ ['AI thích nghi','/trip/day/1','Mở Lịch trình, chọn mưa/trễ/nghỉ ngay trong ngày. Xem gợi ý, áp dụng hoặc hoàn tác tại chỗ.'],
  ['Chuyến đi của tôi','/trips','Mở chuyến đã lưu, tiếp tục nháp, đổi trạng thái và tạo chuyến mới.'],
  ['Khám phá điểm đến','/explore','Chọn một thành phố bất kỳ, xem chi tiết rồi tạo plan hoặc mở địa điểm.'],
  ['Chọn gói & hạn mức AI','/wizard/summary','Chọn Miễn phí, tạo thành công 3 lần. Lần 4 gặp hết lượt. Chọn gói rồi tiếp tục thẳng, không có bước thanh toán.'],

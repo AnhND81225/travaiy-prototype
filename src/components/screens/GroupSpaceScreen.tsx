@@ -1,10 +1,12 @@
 import { useTravel } from '../../features/travel/TravelContext';
 import React, { useState } from 'react';
 import { IOSStatusBar } from '../common/IOSStatusBar';
+import { TripWorkspaceNav } from '../../features/travel/TripWorkspaceNav';
 
 interface GroupSpaceScreenProps {
   onBack: () => void;
   onOpenPoll: () => void;
+  onOpenChat: () => void;
   onOpenLocation: () => void;
   onOpenExpenseSplit: () => void;
   onOpenSchedule: () => void;
@@ -13,6 +15,7 @@ interface GroupSpaceScreenProps {
 export const GroupSpaceScreen: React.FC<GroupSpaceScreenProps> = ({
   onBack,
   onOpenPoll,
+  onOpenChat,
   onOpenLocation,
   onOpenExpenseSplit,
   onOpenSchedule,
@@ -26,8 +29,8 @@ export const GroupSpaceScreen: React.FC<GroupSpaceScreenProps> = ({
   const [showEndTripModal, setShowEndTripModal] = useState(false);
   const [toastMessage, setToastMessage] = useState<string | null>(null);
 
-  const [tripTitle, setTripTitle] = useState('{plan.title}');
-  const [tripDates, setTripDates] = useState('{plan.dates}');
+  const [tripTitle, setTripTitle] = useState(plan.title);
+  const [tripDates, setTripDates] = useState(plan.dates);
 
   const showToast = (msg: string) => {
     setToastMessage(msg);
@@ -66,8 +69,10 @@ export const GroupSpaceScreen: React.FC<GroupSpaceScreenProps> = ({
         </div>
       </header>
 
+      <TripWorkspaceNav />
+
       {/* Main Container */}
-      <main className="flex-1 min-h-0 overflow-y-auto no-scrollbar px-5 pt-3 pb-24 flex flex-col gap-3.5">
+      <main className="flex-1 min-h-0 overflow-y-auto no-scrollbar px-5 pt-3 pb-7 flex flex-col gap-3.5">
         {/* 1. Header & Cover Card Đà Nẵng */}
         <div className="relative w-full rounded-[28px] overflow-hidden shadow-md h-[270px] select-none border border-slate-200/40">
           <img
@@ -276,17 +281,18 @@ export const GroupSpaceScreen: React.FC<GroupSpaceScreenProps> = ({
           </button>
         </div>
 
-        {/* 5. CTA Nhắn tin nhóm */}
-        <div className="pt-1">
-          <button
-            type="button"
-            onClick={onOpenPoll}
-            className="w-full h-12 bg-[#0A1680] text-white rounded-full font-heading font-bold text-[15px] flex items-center justify-center space-x-2 shadow-md hover:bg-[#071060] active:scale-[0.98] transition-all cursor-pointer"
-          >
-            <span>💬 Nhắn tin nhóm</span>
-          </button>
-        </div>
       </main>
+
+      {/* CTA cố định: nội dung phía trên vẫn có thể cuộn hết, không bị che. */}
+      <footer className="shrink-0 border-t border-[#e7ebf4] bg-[#f8f9fb]/95 px-5 pt-3 pb-5 backdrop-blur-xl">
+        <button
+          type="button"
+          onClick={onOpenChat}
+          className="w-full h-12 bg-[#0A1680] text-white rounded-full font-heading font-bold text-[15px] flex items-center justify-center space-x-2 shadow-md hover:bg-[#071060] active:scale-[0.98] transition-all cursor-pointer"
+        >
+          <span>💬 Nhắn tin nhóm</span>
+        </button>
+      </footer>
 
       {/* Sheet 1: Chỉnh sửa thông tin nhóm */}
       {showEditTripModal && (

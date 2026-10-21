@@ -35,7 +35,7 @@ export function TripsScreen({onNew,onManual,onContinueDraft,draft,onNavigateTab}
            <div className="trips-card-caption"><span><CalendarDays size={14}/>{trip.dates}</span><span className="trips-open-arrow"><ArrowUpRight size={18}/></span></div>
          </button>
          <details className="trips-manage"><summary>Quản lý chuyến đi</summary><div>
-           {status!=='active'&&<button type="button" onClick={()=>{setTripStatuses(p=>({...p,[trip.id]:'active'}));setPlan(trip);nav('/trip/today');}}>Bắt đầu chuyến đi</button>}
+           {status!=='active'&&<button type="button" onClick={()=>{setTripStatuses(p=>({...p,[trip.id]:'active'}));setPlan(trip);nav('/trip/day/1');}}>Bắt đầu chuyến đi</button>}
            {status!=='completed'&&<button type="button" onClick={()=>setTripStatuses(p=>({...p,[trip.id]:'completed'}))}>Đánh dấu đã kết thúc</button>}
            {status==='completed'&&<span>Chuyến đi đã được lưu trong hồ sơ.</span>}
          </div></details>

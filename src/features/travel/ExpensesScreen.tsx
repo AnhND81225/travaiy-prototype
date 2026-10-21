@@ -3,6 +3,7 @@ import {useNavigate} from 'react-router-dom';
 import {Plus, X, Wallet, Users, Check, Utensils, BedDouble, Car, Ticket, ShoppingBag} from 'lucide-react';
 import {ModalSheet} from '../../components/common/ModalSheet';
 import {TravelHeader, Pill} from './UI';
+import {TripWorkspaceNav} from './TripWorkspaceNav';
 import {useTravel,useStored} from './TravelContext';
 import {EXPENSE_MEMBERS as members, splitEqually, expenseBalances, type Expense} from './expenseModel';
 import './product-polish.css';
@@ -18,7 +19,7 @@ export function ExpensesScreen({scope,onBack}:{scope:'personal'|'group';onBack:(
  const value=Number(amount);const valid=Number.isSafeInteger(value)&&value>0&&value<=100000000000&&participantIds.length>0;const shares=valid?splitEqually(value,participantIds):{};
  const add=(e:React.FormEvent)=>{e.preventDefault();if(!title.trim()||!valid){setError('Nhập tên, số tiền hợp lệ và chọn ít nhất một người.');return;}setExpenses(old=>[{id:crypto.randomUUID(),tripId:plan.id,scope,title:title.trim(),amount:value,category,payerId:scope==='personal'?'you':payerId,participantIds:scope==='personal'?['you']:participantIds,createdAt:new Date().toISOString()},...old]);setAdding(false);setTitle('');setAmount('');setError('');};
  const name=(id:string)=>members.find(m=>m.id===id)?.name||id;
- return <div className="travel-screen polish-screen"><TravelHeader title="Chi tiêu chuyến đi" subtitle={plan.destination} onBack={onBack}/><main className="travel-scroll polish-stack">
+ return <div className="travel-screen polish-screen"><TravelHeader title="Chi tiêu chuyến đi" subtitle={plan.destination} onBack={onBack}/><TripWorkspaceNav/><main className="travel-scroll polish-stack">
   <div className="polish-segments" aria-label="Loại chi tiêu">{(['personal','group'] as const).map(s=><button key={s} aria-pressed={scope===s} onClick={()=>nav(s==='personal'?'/trip/expenses':'/trip/group/expense-split')}>{s==='personal'?<Wallet size={15}/>:<Users size={15}/>} {s==='personal'?'Cá nhân':'Nhóm'}</button>)}</div>
   <section className={`spend-summary ${scope==='group'?'group':''}`}><span className="flex items-center gap-1.5"><img src="/images/app-icon-dark.png" alt="" className="w-4 h-4 rounded object-contain"/>{scope==='group'?'Tổng chi nhóm':'Tổng chi cá nhân'}</span><strong>{money(total)}</strong><div><span>{list.length} khoản chi</span>{scope==='group'&&<span>{members.length} thành viên</span>}</div><button className="spend-budget-button" onClick={()=>{setBudgetInput(budget?String(budget):'');setEditingBudget(true);}}>{budget?`Ngân sách ${money(budget)} · ${total>budget?'Vượt '+money(total-budget):'Còn '+money(budget-total)}`:'＋ Đặt ngân sách'}</button>{budget>0&&<div className="spend-budget-track" role="progressbar" aria-label="Ngân sách đã sử dụng" aria-valuenow={Math.min(total,budget)} aria-valuemin={0} aria-valuemax={budget}><span style={{width:`${Math.min(100,total/budget*100)}%`,background:total>budget?'#b65c4c':'#0a1680'}}/></div>}</section>
   <div className="spend-category-strip">{categories.map(c=>{const subtotal=list.filter(e=>e.category===c.name).reduce((n,e)=>n+e.amount,0);return <div key={c.name}><span style={{background:c.color+'25',color:c.color}}><c.icon size={17}/></span><small>{c.name}</small><b>{money(subtotal)}</b></div>;})}</div>
