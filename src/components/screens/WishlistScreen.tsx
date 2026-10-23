@@ -244,11 +244,11 @@ export const WishlistScreen: React.FC<WishlistScreenProps> = ({
             <div className="py-16 text-center flex flex-col items-center justify-center gap-3">
               <img
                 src="/images/mascot-map.png"
-                alt="Bé Sao Aly"
+                alt="Bé Sao Lumi"
                 className="w-16 h-16 object-contain animate-mascot-float"
               />
               <h3 className="text-base font-bold text-[#0A1680] font-heading">Chưa có bộ sưu tập nào</h3>
-              <p className="text-xs text-slate-500 max-w-[240px]">Cùng Bé Sao Aly tạo bộ sưu tập đầu tiên để gom các điểm đến yêu thích nhé!</p>
+              <p className="text-xs text-slate-500 max-w-[240px]">Cùng Bé Sao Lumi tạo bộ sưu tập đầu tiên để gom các điểm đến yêu thích nhé!</p>
             </div>
           )}
         </div>
@@ -291,7 +291,7 @@ export const WishlistScreen: React.FC<WishlistScreenProps> = ({
             <div className="py-16 text-center flex flex-col items-center justify-center gap-3">
               <img
                 src="/images/mascot-cool.png"
-                alt="Bé Sao Aly"
+                alt="Bé Sao Lumi"
                 className="w-16 h-16 object-contain animate-mascot-float"
               />
               <h3 className="text-base font-bold text-[#0A1680] font-heading">Chưa có địa điểm đã lưu</h3>

@@ -5,6 +5,7 @@ import {PlaceSelectionScreen} from './features/travel/PlaceSelectionScreen';
 import {ProfileNameScreen} from './features/travel/ProfileNameScreen';
 import {ManualPlanScreen} from './features/travel/ManualPlanScreen';
 import {RoutePlannerScreen} from './features/travel/RoutePlannerScreen';
+import {AlyAssistant} from './features/travel/AlyAssistant';
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
@@ -1002,6 +1003,7 @@ export default function App() {
         {/* Catch-all fallback */}
         <Route path="*" element={<Navigate to="/home" replace />} />
       </Routes>
+      <AlyAssistant/>
     </DeviceFrame>
   );
 }

@@ -192,12 +192,12 @@ export const TripRecapFinalScreen: React.FC<TripRecapFinalScreenProps> = ({
         <div className="w-full mt-3 p-3 rounded-2xl bg-white/5 border border-white/10 flex items-center gap-3">
           <img
             src="/images/mascot-suitcase.png"
-            alt="Bé Sao Aly chúc mừng"
+            alt="Bé Sao Lumi chúc mừng"
             className="w-10 h-10 object-contain shrink-0 drop-shadow-xs"
           />
           <div className="min-w-0">
             <p className="text-[12px] font-bold text-white font-heading">Chuyến đi đáng nhớ cùng TravAly!</p>
-            <p className="text-[10px] text-slate-300">Bé Sao Aly chúc bạn lưu giữ trọn vẹn những khoảnh khắc đẹp nhất.</p>
+            <p className="text-[10px] text-slate-300">Bé Sao Lumi chúc bạn lưu giữ trọn vẹn những khoảnh khắc đẹp nhất.</p>
           </div>
         </div>
 

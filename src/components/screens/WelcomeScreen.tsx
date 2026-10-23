@@ -90,7 +90,7 @@ export const WelcomeScreen: React.FC<WelcomeScreenProps> = ({ onStart, onLoginSu
           <div className="absolute w-36 h-36 rounded-full mascot-halo pointer-events-none -top-2" />
           <img
             src="/images/mascot-hero.png"
-            alt="Bé Sao Aly - Bạn đồng hành TravAly"
+            alt="Bé Sao Lumi - Bạn đồng hành TravAly"
             className="relative w-32 h-auto object-contain drop-shadow-md animate-mascot-float"
           />
         </div>
@@ -348,7 +348,7 @@ export const WelcomeScreen: React.FC<WelcomeScreenProps> = ({ onStart, onLoginSu
                   Tạo tài khoản mới
                 </h3>
                 <p className="text-[13px] text-slate-500 mt-1">
-                  Cùng bé Sao Aly kiến tạo những chuyến du lịch đáng nhớ
+                  Cùng bé Sao Lumi kiến tạo những chuyến du lịch đáng nhớ
                 </p>
               </div>
               <img src="/images/mascot-suitcase.png" alt="TravAly Mascot" className="w-12 h-12 object-contain shrink-0 ml-2" />
