@@ -67,11 +67,8 @@ export const CommunityFeedScreen: React.FC<CommunityFeedScreenProps> = ({
         </div>
       </header>
 
-      {/* Main Container */}
-      <main className="flex-1 min-h-0 overflow-y-auto no-scrollbar px-5 pt-3 pb-28 flex flex-col gap-4">
-        {localPosts.map(post=><article key={post.id} className="adaptive-change"><b>Bạn · {post.audience}</b><p>{post.text}</p><p>{post.location} · {post.tags.join(' ')}</p><small>Lưu trên trình duyệt này · {new Date(post.createdAt).toLocaleString('vi-VN')}</small><button className="wizard-text-button" onClick={()=>setLocalPosts(p=>p.filter(x=>x.id!==post.id))}>Gỡ bài khỏi bản demo</button></article>)}
         {/* Feed Tabs */}
-        <div className="flex items-center gap-2 overflow-x-auto no-scrollbar pb-1">
+        <nav aria-label="Bộ lọc cộng đồng" className="shrink-0 flex items-center gap-2 overflow-x-auto no-scrollbar px-5 py-3 bg-[#f5faff]">
           {[
             { id: 'kham-pha', label: 'Khám phá' },
             { id: 'theo-doi', label: 'Đang theo dõi' },
@@ -82,6 +79,7 @@ export const CommunityFeedScreen: React.FC<CommunityFeedScreenProps> = ({
               <button
                 key={tab.id}
                 type="button"
+                aria-pressed={isActive}
                 onClick={() => setActiveTab(tab.id as any)}
                 className={`h-9 px-5 rounded-full font-heading text-xs font-bold shrink-0 transition-all cursor-pointer ${
                   isActive
@@ -93,7 +91,11 @@ export const CommunityFeedScreen: React.FC<CommunityFeedScreenProps> = ({
               </button>
             );
           })}
-        </div>
+        </nav>
+
+      {/* Feed content scrolls without compressing the filter bar. */}
+      <main className="flex-1 min-h-0 overflow-y-auto no-scrollbar px-5 pt-1 pb-36 space-y-4">
+        {localPosts.map(post=><article key={post.id} className="adaptive-change"><b>Bạn · {post.audience}</b><p>{post.text}</p><p>{post.location} · {post.tags.join(' ')}</p><small>Lưu trên trình duyệt này · {new Date(post.createdAt).toLocaleString('vi-VN')}</small><button className="wizard-text-button" onClick={()=>setLocalPosts(p=>p.filter(x=>x.id!==post.id))}>Gỡ bài khỏi bản demo</button></article>)}
 
         {/* Feed Posts List */}
         <div className="flex flex-col gap-5 items-center w-full">
@@ -254,8 +256,10 @@ export const CommunityFeedScreen: React.FC<CommunityFeedScreenProps> = ({
           </article>
         </div>
 
-        {/* Floating Create Post Button */}
-        <div className="fixed bottom-24 right-5 z-30">
+      </main>
+
+        {/* Keep the create action beside Lumi, outside the scrolling feed. */}
+        <div className="absolute bottom-[102px] left-5 z-30">
           <button
             type="button"
             onClick={onCreatePost}
@@ -265,7 +269,6 @@ export const CommunityFeedScreen: React.FC<CommunityFeedScreenProps> = ({
             <span>Tạo bài viết</span>
           </button>
         </div>
-      </main>
 
       {/* POPUP 1: Bottom Sheet Comments */}
       {showCommentsModal && (
