@@ -17,6 +17,14 @@ export default defineConfig(() => {
       hmr: process.env.DISABLE_HMR !== 'true',
       // Disable file watching when DISABLE_HMR is true to save CPU during agent edits.
       watch: process.env.DISABLE_HMR === 'true' ? null : {},
+      // Cấu hình Proxy chuyển tiếp request /api sang Backend (Spring Boot/NodeJS) tránh CORS ở môi trường Dev
+      proxy: {
+        '/api': {
+          target: process.env.VITE_BACKEND_PROXY_URL || 'http://127.0.0.1:18080',
+          changeOrigin: true,
+          secure: false,
+        },
+      },
     },
   };
 });
