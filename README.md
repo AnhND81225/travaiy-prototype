@@ -15,6 +15,8 @@ npm run dev
 
 Mở địa chỉ Vite in ra trong terminal (mặc định http://localhost:3000). Hiện tại không cần API key. Dữ liệu của người dùng lưu riêng trên trình duyệt; đây chưa phải backend dùng chung. AI, gói chuyến đi, ảnh và đánh giá là dữ liệu minh họa.
 
+Nút **Hỏi Lumi** chỉ hiện ở `/home` sau khi bấm **Vào trang chủ** ở cuối onboarding hoặc đăng nhập thành công. Trạng thái được lưu trên trình duyệt và xóa khi đăng xuất; nút ẩn ở các trang khác, kể cả các bước onboarding.
+
 ## Kiểm tra
 
 ```sh

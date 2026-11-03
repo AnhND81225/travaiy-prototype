@@ -195,6 +195,7 @@ function NewTripEntry({onStart}:{onStart:()=>void}){const started=useRef(false);
 export default function App() {
   const navigate = useNavigate();
   const location = useLocation();
+  const [homeUnlocked, setHomeUnlocked] = useStored<boolean>('travaiy-home-unlocked-v1', false);
 
   const [userPreferences, setUserPreferences] = useStored<UserPreferences>('travaiy-user-preferences-v1', INITIAL_PREFERENCES);
   const editingTravelDNA = new URLSearchParams(location.search).get('from') === 'profile';
@@ -402,6 +403,7 @@ export default function App() {
               onStart={() => navigate('/onboarding/name')}
               onLoginSuccess={(name) => {
                 if (name) setUserName(name);
+                setHomeUnlocked(true);
                 navigate('/home');
               }}
             />
@@ -475,7 +477,10 @@ export default function App() {
             <OnboardingComplete
               preferences={userPreferences}
               userName={userName}
-              onFinish={() => navigate('/home')}
+              onFinish={() => {
+                setHomeUnlocked(true);
+                navigate('/home');
+              }}
             />
           }
         />
@@ -989,6 +994,7 @@ export default function App() {
               onEditName={() => navigate('/onboarding/name?from=profile')}
               onLogout={() => {
                 setUserName('Khách');
+                setHomeUnlocked(false);
                 navigate('/welcome');
               }}
               onOpenWishlist={() => navigate('/wishlist')}
@@ -1003,7 +1009,7 @@ export default function App() {
         {/* Catch-all fallback */}
         <Route path="*" element={<Navigate to="/home" replace />} />
       </Routes>
-      <AlyAssistant/>
+      {homeUnlocked && location.pathname === '/home' && <AlyAssistant/>}
     </DeviceFrame>
   );
 }
