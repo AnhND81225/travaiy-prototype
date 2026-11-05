@@ -20,7 +20,7 @@ export const GroupPollScreen: React.FC<GroupPollScreenProps> = ({ onBack }) => {
   const [pollOptions, setPollOptions] = useState<PollOption[]>([
     {
       id: 1,
-      name: 'Hải sản Năm Đảnh',
+      name: 'Bữa tối Sài Gòn',
       tagline: 'Hải sản tươi sống • View biển',
       image: 'https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=700&q=80',
       votes: 3,
@@ -33,7 +33,7 @@ export const GroupPollScreen: React.FC<GroupPollScreenProps> = ({ onBack }) => {
     {
       id: 2,
       name: 'Mì Quảng Bà Mua',
-      tagline: 'Đặc sản Đà Nẵng • Vị đậm đà',
+      tagline: 'Đặc sản TP.HCM • Vị đậm đà',
       image: 'https://images.unsplash.com/photo-1582878826629-29b7ad1cdc43?auto=format&fit=crop&w=700&q=80',
       votes: 2,
       totalVotes: 6,
@@ -75,7 +75,7 @@ export const GroupPollScreen: React.FC<GroupPollScreenProps> = ({ onBack }) => {
     {
       sender: 'Linh Chi',
       time: '2 phút trước',
-      text: 'Hải sản Năm Đảnh ngon lắm, mình đi rồi nè! 😋🦀',
+      text: 'Bữa tối Sài Gòn ngon lắm, mình đi rồi nè! 😋🦀',
       avatar: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCANPLlSnUDlymN7kdv5lycVO8No5OObky32lrx2sMZSBCue4zyhZsOAKmTJqO2-q1BMxLBo_uswsDOQCQB3y7fLKrA6LWNtQbK02HzCITtufOYUFUeh3f81aNBQxKO4UmbxqzyHiNMLnqhZAkZKtn91BVNbak5XGjZ5hriZGz0DEMbk8P1uapfvL25ZhsbPuN9GNjLAWYDtT84pe6LRllOAiuGkS2W0oIjmAAihtBj4ZjIj7DVzA',
     },
     {
@@ -640,7 +640,7 @@ export const GroupPollScreen: React.FC<GroupPollScreenProps> = ({ onBack }) => {
                 type="button"
                 onClick={() => {
                   setShowClosePollModal(false);
-                  showToast('Đã đóng bình chọn! Món Hải sản Năm Đảnh thắng phiếu 🎉');
+                  showToast('Đã đóng bình chọn! Món Bữa tối Sài Gòn thắng phiếu 🎉');
                 }}
                 className="w-full h-12 rounded-full bg-rose-600 text-white font-heading font-semibold text-[15px] shadow-md hover:bg-rose-700 cursor-pointer"
               >

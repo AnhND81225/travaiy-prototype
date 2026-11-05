@@ -1,3 +1,4 @@
+import {liveError} from '../../features/travel/livePlanning';
 import React, { useState } from 'react';
 import { IOSStatusBar } from '../common/IOSStatusBar';
 import { ModalSheet } from '../common/ModalSheet';
@@ -8,7 +9,7 @@ import { optimizePlan } from '../../features/travel/model';
 
 interface ItineraryEditScreenProps {
   initialDay?: number;
-  onSave: (updatedPlan: TripPlan) => void;
+  onSave: (updatedPlan: TripPlan) => void | Promise<void>;
   onCancel: () => void;
 }
 
@@ -17,6 +18,8 @@ export const ItineraryEditScreen: React.FC<ItineraryEditScreenProps> = ({
   onSave,
   onCancel,
 }) => {
+  const [saving,setSaving]=useState(false);
+  const save=async()=>{if(saving)return;setSaving(true);try{await onSave(tripPlan);}catch(error){showToast(liveError(error));}finally{setSaving(false);}};
   const [activeDay, setActiveDay] = useState<number>(initialDay);
   const {plan:activePlan} = useTravel();
   const [tripPlan, setTripPlan] = useState<TripPlan>(activePlan);
@@ -93,7 +96,7 @@ export const ItineraryEditScreen: React.FC<ItineraryEditScreenProps> = ({
       cost: '100.000đ',
       duration: '1.5 giờ',
       image: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80',
-      address: 'Đà Nẵng',
+      address: 'TP.HCM',
     };
 
     const newItems = [...currentDay.items, newItem].sort((a, b) => a.time.localeCompare(b.time));
@@ -122,7 +125,8 @@ export const ItineraryEditScreen: React.FC<ItineraryEditScreenProps> = ({
           </h1>
 
           <button
-            onClick={() => onSave(tripPlan)}
+            disabled={saving}
+            onClick={()=>void save()}
             type="button"
             className="px-3.5 py-1.5 rounded-full bg-[#0A1680] text-white text-[12px] font-bold shadow-xs hover:bg-[#071060] transition-colors font-heading cursor-pointer"
           >
@@ -263,7 +267,7 @@ export const ItineraryEditScreen: React.FC<ItineraryEditScreenProps> = ({
             </label>
             <input
               type="text"
-              placeholder="VD: Quán chè Liên, Cà phê Sơn Trà..."
+              placeholder="VD: Quán chè Liên, Cà phê Thảo Cầm Viên..."
               value={newPlaceName}
               onChange={(e) => setNewPlaceName(e.target.value)}
               className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 text-xs focus:outline-none focus:border-[#0A1680]"
@@ -326,7 +330,8 @@ export const ItineraryEditScreen: React.FC<ItineraryEditScreenProps> = ({
           {currentDay.items.length} điểm trong ngày
         </span>
         <button
-          onClick={() => onSave(tripPlan)}
+          disabled={saving}
+            onClick={()=>void save()}
           type="button"
           className="px-5 py-2.5 rounded-full bg-[#0A1680] text-white text-xs font-bold font-heading shadow-md hover:bg-[#071060] cursor-pointer"
         >

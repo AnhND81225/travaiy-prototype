@@ -9,7 +9,7 @@ import './destination-social.css';
 type Review = { name: string; initials: string; rating: number; style: string; text: string };
 type Article = { id: string; title: string; author: string; category: string; image?: string; summary: string; paragraphs: string[]; sample: boolean };
 const reviewsByCity: Record<string, Review[]> = {
-  'Đà Nẵng': [
+  'TP.HCM': [
     { name: 'Minh Anh', initials: 'MA', rating: 5, style: 'Đi cùng bạn bè', text: 'Mình thích dành buổi sáng đi biển, chiều ghé quán cà phê. Lịch có khoảng nghỉ nên cả nhóm không bị mệt.' },
     { name: 'Hoàng Nam', initials: 'HN', rating: 4, style: 'Đi một mình', text: 'Mình muốn gom các điểm gần nhau trong một ngày hơn. Nếu đi lại, mình sẽ để thêm thời gian cho việc di chuyển.' },
     { name: 'Linh Chi', initials: 'LC', rating: 5, style: 'Đi cùng gia đình', text: 'Gia đình mình thích lịch nhẹ nhàng, giữ giờ ăn và về nghỉ sớm. Có lịch để cả nhà cùng xem rất tiện.' },
@@ -20,7 +20,7 @@ const reviewsByCity: Record<string, Review[]> = {
   ],
 };
 function sampleArticles(city: string): Article[] {
-  const photo = city === 'Đà Nẵng' ? images.bridge : city === 'Đà Lạt' ? images.dalatCabin : city === 'Hội An' ? images.town : images.beach;
+  const photo = city === 'TP.HCM' ? images.bridge : city === 'Đà Lạt' ? images.dalatCabin : city === 'Hội An' ? images.town : images.beach;
   return [
     { id: `${city}-slow`, title: `Một chuyến ${city} theo nhịp riêng`, author: 'Linh Chi', category: 'Nhật ký chuyến đi', image: photo, summary: 'Một lịch trình vừa đủ, có thời gian nghỉ và những khoảng trống để khám phá.', paragraphs: [`Trong câu chuyện mẫu này, Linh Chi lên một chuyến đi đến ${city} với mục tiêu tận hưởng thay vì ghé thật nhiều điểm.`, 'Buổi sáng dành cho hoạt động chính, buổi trưa nghỉ ngơi, buổi chiều chọn một điểm yêu thích. Những khung giờ còn lại để cả nhóm tự quyết định theo sức khỏe và sở thích.', 'Bạn có thể bắt đầu một plan riêng từ điểm đến này rồi thêm những địa điểm mình muốn ghé. Nội dung này minh họa cách trình bày nhật ký, không phải đánh giá hay hướng dẫn du lịch đã xác thực.'], sample: true },
     { id: `${city}-friends`, title: `Lên kế hoạch đi ${city} cùng bạn bè`, author: 'Minh Anh', category: 'Kinh nghiệm lên lịch', image: city === 'Đà Lạt' ? images.hero : images.food, summary: 'Cách thống nhất điểm muốn đi và giữ lịch thoải mái cho cả nhóm.', paragraphs: ['Đây là bài viết mẫu cho luồng cộng đồng của Travaiy.', `Khi thử tạo chuyến ${city}, mỗi thành viên chọn một điểm mình muốn ghé. Nhóm giữ chung khung giờ ăn, thêm khoảng nghỉ và chỉ chọn vài hoạt động chính mỗi ngày.`, 'Nếu thời tiết hoặc giờ khởi hành thay đổi, nhóm xem đề xuất điều chỉnh, so sánh với lịch cũ rồi cùng quyết định. Bạn có thể thử luồng này trong tính năng AI thích nghi của bản demo.'], sample: true },

@@ -186,7 +186,7 @@ export const TripPlannerScreen: React.FC<TripPlannerScreenProps> = ({
               <div>
                 <label className="text-[12px] font-bold text-slate-600 mb-1 block">Điểm đến</label>
                 <div className="grid grid-cols-4 gap-2">
-                  {['Đà Lạt', 'Phú Quốc', 'Hội An', 'Đà Nẵng'].map((dest) => (
+                  {['Đà Lạt', 'Phú Quốc', 'Hội An', 'TP.HCM'].map((dest) => (
                     <button
                       key={dest}
                       type="button"

@@ -1,6 +1,9 @@
 import { useNavigate } from 'react-router-dom';
 import React, { useState } from 'react';
 import { IOSStatusBar } from '../common/IOSStatusBar';
+import {aiApi} from '../../features/ai/api';
+import {httpClient} from '../../api/core/httpClient';
+import {liveError} from '../../features/travel/livePlanning';
 
 interface WelcomeScreenProps {
   onStart: () => void;
@@ -21,40 +24,43 @@ export const WelcomeScreen: React.FC<WelcomeScreenProps> = ({ onStart, onLoginSu
   const [signupEmail, setSignupEmail] = useState('');
   const [signupPassword, setSignupPassword] = useState('');
   const [agreeTerms, setAgreeTerms] = useState(true);
+  const [submitting, setSubmitting] = useState(false);
 
   const showToast = (msg: string) => {
     setToastMessage(msg);
     setTimeout(() => setToastMessage(null), 2500);
   };
 
-  const handleLoginSubmit = (e: React.FormEvent) => {
+  const handleLoginSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    showToast('Đăng nhập thành công! Chào mừng bạn quay trở lại.');
-    setActiveSheet('none');
-    setTimeout(() => {
+    if (submitting) return;
+    setSubmitting(true);
+    try {
+      await aiApi.login(loginEmail.trim(), loginPassword);
+      setActiveSheet('none');
       onLoginSuccess(loginEmail.split('@')[0] || 'Hoàng Nam');
-    }, 600);
+    } catch (error) { showToast(liveError(error)); }
+    finally { setSubmitting(false); }
   };
 
-  const handleSignupSubmit = (e: React.FormEvent) => {
+  const handleSignupSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!agreeTerms) {
       showToast('Vui lòng đồng ý với điều khoản sử dụng');
       return;
     }
-    showToast('Tạo tài khoản thành công!');
-    setActiveSheet('none');
-    setTimeout(() => {
-      onLoginSuccess(signupName || 'Thành viên mới');
-    }, 600);
+    if (submitting) return;
+    setSubmitting(true);
+    try {
+      await httpClient.post('/auth/register', {email: signupEmail.trim(), password: signupPassword, displayName: signupName}, {skipAuth: true});
+      showToast('Đã gửi yêu cầu đăng ký. Hãy xác minh email trước khi đăng nhập.');
+      setLoginEmail(signupEmail); setActiveSheet('login');
+    } catch (error) { showToast(liveError(error)); }
+    finally { setSubmitting(false); }
   };
 
   const handleSocialLogin = (provider: string) => {
-    showToast(`Đăng nhập ${provider} thành công!`);
-    setActiveSheet('none');
-    setTimeout(() => {
-      onLoginSuccess(provider === 'Google' ? 'Minh Anh' : 'Quốc Bảo');
-    }, 600);
+    showToast(`Đăng nhập ${provider} chưa được cấu hình. Vui lòng dùng email và mật khẩu.`);
   };
 
   return (
@@ -198,11 +204,12 @@ export const WelcomeScreen: React.FC<WelcomeScreenProps> = ({ onStart, onLoginSu
             <form onSubmit={handleLoginSubmit} className="space-y-3.5 text-left">
               <div>
                 <label className="block text-[13px] font-medium text-slate-700 mb-1">
-                  Email hoặc Số điện thoại
+                  Email
                 </label>
                 <div className="relative">
                   <input
-                    type="text"
+                    type="email"
+                    aria-label="Email"
                     required
                     value={loginEmail}
                     onChange={(e) => setLoginEmail(e.target.value)}
@@ -231,6 +238,7 @@ export const WelcomeScreen: React.FC<WelcomeScreenProps> = ({ onStart, onLoginSu
                   <input
                     type={showPassword ? 'text' : 'password'}
                     required
+                    aria-label="Mật khẩu"
                     value={loginPassword}
                     onChange={(e) => setLoginPassword(e.target.value)}
                     placeholder="Nhập mật khẩu của bạn"
@@ -258,6 +266,7 @@ export const WelcomeScreen: React.FC<WelcomeScreenProps> = ({ onStart, onLoginSu
 
               <button
                 type="submit"
+                disabled={submitting}
                 className="w-full h-[48px] bg-[#0A1680] hover:bg-[#071060] active:scale-[0.98] transition-all text-white font-bold text-[15px] rounded-full shadow-md flex items-center justify-center space-x-2 mt-4 font-heading"
               >
                 <span>Đăng nhập</span>
@@ -369,7 +378,7 @@ export const WelcomeScreen: React.FC<WelcomeScreenProps> = ({ onStart, onLoginSu
 
               <div>
                 <label className="block text-[13px] font-medium text-slate-700 mb-1">
-                  Email hoặc Số điện thoại
+                  Email
                 </label>
                 <input
                   type="text"
@@ -387,10 +396,10 @@ export const WelcomeScreen: React.FC<WelcomeScreenProps> = ({ onStart, onLoginSu
                   <input
                     type={showSignupPassword ? 'text' : 'password'}
                     required
-                    minLength={6}
-                    value={signupPassword}
+                    minLength={12}
+                  value={signupPassword}
                     onChange={(e) => setSignupPassword(e.target.value)}
-                    placeholder="Tối thiểu 6 ký tự"
+                    placeholder="Tối thiểu 12 ký tự"
                     className="w-full h-[48px] pl-4 pr-11 rounded-[16px] bg-slate-50 border border-slate-200 text-[14px] text-slate-800 focus:outline-none focus:border-[#0A1680] focus:bg-white transition-colors"
                   />
                   <button
@@ -433,6 +442,7 @@ export const WelcomeScreen: React.FC<WelcomeScreenProps> = ({ onStart, onLoginSu
 
               <button
                 type="submit"
+                disabled={submitting}
                 className="w-full h-[48px] bg-[#0A1680] hover:bg-[#071060] active:scale-[0.98] transition-all text-white font-bold text-[15px] rounded-full shadow-md flex items-center justify-center space-x-2 mt-4 font-heading"
               >
                 <span>Đăng ký tài khoản</span>
@@ -479,7 +489,7 @@ export const WelcomeScreen: React.FC<WelcomeScreenProps> = ({ onStart, onLoginSu
               Khôi phục mật khẩu
             </h3>
             <p className="text-[13px] text-slate-500 mt-1 mb-4">
-              Nhập email hoặc số điện thoại đã đăng ký để nhận mã OTP xác thực.
+              Bản demo chưa hỗ trợ khôi phục mật khẩu qua email.
             </p>
             <input
               type="text"
@@ -489,12 +499,12 @@ export const WelcomeScreen: React.FC<WelcomeScreenProps> = ({ onStart, onLoginSu
             <button
               type="button"
               onClick={() => {
-                showToast('Mã OTP đã được gửi đến email/SĐT của bạn!');
+                showToast('Chức năng khôi phục mật khẩu chưa được bật trong bản demo.');
                 setActiveSheet('login');
               }}
               className="w-full h-[48px] bg-[#0A1680] text-white font-bold text-[15px] rounded-full shadow-md font-heading"
             >
-              Gửi mã khôi phục
+              Quay lại đăng nhập
             </button>
           </div>
         </div>

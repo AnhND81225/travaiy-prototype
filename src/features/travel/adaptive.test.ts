@@ -17,5 +17,5 @@ test('empty or entirely locked plan has no proposal',()=>{
 test('rain proposal keeps a mappable indoor replacement',()=>{
  const suggestion=createAdaptiveSuggestion(INITIAL_PLAN,'rain','rain-map');assert.ok(suggestion);
  const change=suggestion.changes[0];assert.ok(change.after?.location);
- assert.equal(change.after?.placeName,'Bảo tàng Điêu khắc Chăm (gợi ý mẫu)');
+ assert.equal(change.after?.placeName,'Bảo tàng Thành phố Hồ Chí Minh (gợi ý mẫu)');
 });

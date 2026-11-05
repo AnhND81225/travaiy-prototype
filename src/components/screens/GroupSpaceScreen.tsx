@@ -73,11 +73,11 @@ export const GroupSpaceScreen: React.FC<GroupSpaceScreenProps> = ({
 
       {/* Main Container */}
       <main className="flex-1 min-h-0 overflow-y-auto no-scrollbar px-5 pt-3 pb-7 flex flex-col gap-3.5">
-        {/* 1. Header & Cover Card Đà Nẵng */}
+        {/* 1. Header & Cover Card TP.HCM */}
         <div className="relative w-full rounded-[28px] overflow-hidden shadow-md h-[270px] select-none border border-slate-200/40">
           <img
             src="https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?auto=format&fit=crop&w=1200&q=80"
-            alt="Đà Nẵng"
+            alt="TP.HCM"
             className="absolute inset-0 w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex flex-col justify-between p-5">
@@ -376,7 +376,7 @@ export const GroupSpaceScreen: React.FC<GroupSpaceScreenProps> = ({
               </button>
             </div>
             <p className="text-[12px] text-slate-500">
-              Gửi mã hoặc liên kết này cho bạn bè cùng đi Đà Nẵng để tham gia nhóm.
+              Gửi mã hoặc liên kết này cho bạn bè cùng đi TP.HCM để tham gia nhóm.
             </p>
             <div className="bg-slate-50 rounded-2xl p-4 flex flex-col items-center justify-center space-y-2 border border-slate-200">
               <span className="text-[11px] font-medium text-slate-400 uppercase tracking-wider">Mã tham gia</span>
@@ -563,7 +563,7 @@ export const GroupSpaceScreen: React.FC<GroupSpaceScreenProps> = ({
                 type="button"
                 onClick={() => {
                   setShowLeaveGroupModal(false);
-                  showToast('Đã rời khỏi nhóm Đà Nẵng.');
+                  showToast('Đã rời khỏi nhóm TP.HCM.');
                   onBack();
                 }}
                 className="flex-1 h-11 rounded-full bg-rose-600 text-white font-heading font-bold text-xs shadow-md"

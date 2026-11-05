@@ -656,7 +656,7 @@ export const SearchFilterScreen: React.FC<SearchFilterScreenProps> = ({
             <div className="p-4 space-y-1.5 overflow-y-auto">
               {[
                 'Đà Lạt, Lâm Đồng',
-                'Đà Nẵng',
+                'TP.HCM',
                 'Phú Quốc, Kiên Giang',
                 'Hội An, Quảng Nam',
                 'Nha Trang, Khánh Hòa',

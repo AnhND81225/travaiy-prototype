@@ -5,7 +5,7 @@ export type PlanningMode='ai'|'manual';
 export type AccessPurpose='create'|'upgrade';
 export type ConfirmedWizardAccess={tripId:string;mode:PlanningMode;tier:'free'|'solo'|'group'};
 export function requiredWizardStep(data:TripWizardData):string|null{
- if(!data.destination.trim())return '/wizard/destination';
+ if(data.destination!=='TP.HCM')return '/wizard/destination';
  if(!Number.isFinite(Date.parse(isoDate(data.startDate)))||!Number.isFinite(Date.parse(isoDate(data.endDate)))||wizardDateError(data)||!/^([01]\d|2[0-3]):[0-5]\d$/.test(data.departureTime)||!/^([01]\d|2[0-3]):[0-5]\d$/.test(data.returnTime))return '/wizard/dates';
  if(!['solo','group'].includes(data.companionType)||(data.companionType==='group'&&data.companionCount<2))return '/wizard/companions';
  if(!Number.isFinite(data.budgetAmount)||data.budgetAmount<=0)return '/wizard/budget';

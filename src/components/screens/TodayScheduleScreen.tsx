@@ -41,7 +41,7 @@ export const TodayScheduleScreen: React.FC<TodayScheduleScreenProps> = ({
   const handleCheckin = () => {
     setIsCheckedIn(true);
     setShowDelayBanner(false);
-    showToast('Đã đánh dấu đến Sơn Trà trong lịch mẫu.');
+    showToast('Đã đánh dấu đến Thảo Cầm Viên trong lịch mẫu.');
   };
 
   return (
@@ -61,7 +61,7 @@ export const TodayScheduleScreen: React.FC<TodayScheduleScreenProps> = ({
             <div>
               <div className="flex items-center gap-1">
                 <span className="font-heading font-bold text-[18px] text-[#191c1e] leading-tight">
-                  Đà Nẵng
+                  TP.HCM
                 </span>
                 <span className="text-xs text-slate-400">▾</span>
               </div>
@@ -124,7 +124,7 @@ export const TodayScheduleScreen: React.FC<TodayScheduleScreenProps> = ({
                   </span>
                 </div>
                 <p className="text-[12px] text-slate-900 font-bold today-wrap mt-0.5 font-heading">
-                  Bạn vẫn muốn đến Sơn Trà chứ?
+                  Bạn vẫn muốn đến Thảo Cầm Viên chứ?
                 </p>
               </div>
             </div>
@@ -158,7 +158,7 @@ export const TodayScheduleScreen: React.FC<TodayScheduleScreenProps> = ({
               <span className="today-hero-sample">Lịch mẫu</span>
             </div>
             <div className="today-hero-info">
-              <h2>Bán đảo Sơn Trà</h2>
+              <h2>Thảo Cầm Viên</h2>
               <p>Khoảng 8 km · 20 phút di chuyển (mẫu)</p>
               <div className="today-hero-actions">
                 <button type="button" onClick={handleCheckin} aria-pressed={isCheckedIn} className="today-checkin">{isCheckedIn?'✓ Đã đến nơi':'✓ Đánh dấu đến nơi'}</button>
@@ -191,7 +191,7 @@ export const TodayScheduleScreen: React.FC<TodayScheduleScreenProps> = ({
           >
             <img
               src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=200&q=80"
-              alt="Bãi biển Mỹ Khê"
+              alt="Công viên Tao Đàn"
               className="w-16 h-16 rounded-[16px] object-cover shrink-0"
             />
             <div className="flex-1 min-w-0">
@@ -204,7 +204,7 @@ export const TodayScheduleScreen: React.FC<TodayScheduleScreenProps> = ({
                 </span>
               </div>
               <p className="text-[14px] font-bold text-slate-900 font-heading truncate mt-0.5">
-                Bãi biển Mỹ Khê
+                Công viên Tao Đàn
               </p>
               <p className="text-[11px] text-slate-500 truncate">
                 Tắm biển, lướt ván & ngắm hoàng hôn
@@ -242,7 +242,7 @@ export const TodayScheduleScreen: React.FC<TodayScheduleScreenProps> = ({
                 Ăn tối cùng nhóm
               </p>
               <p className="text-[11px] text-slate-500 truncate">
-                Hải sản Năm Đảnh & ngắm Cầu Rồng phun lửa
+                Bữa tối Sài Gòn & ngắm Bến Bạch Đằng phun lửa
               </p>
             </div>
           </div>
@@ -263,7 +263,7 @@ export const TodayScheduleScreen: React.FC<TodayScheduleScreenProps> = ({
               <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 flex items-center gap-3 text-xs">
                 <span className="font-bold text-[#0A1680] px-2 py-0.5 rounded-full bg-blue-100">08:00</span>
                 <div className="min-w-0 flex-1">
-                  <p className="font-bold text-slate-800 truncate">Cà phê sáng & điểm tâm Cầu Rồng</p>
+                  <p className="font-bold text-slate-800 truncate">Cà phê sáng & điểm tâm Bến Bạch Đằng</p>
                   <p className="text-[11px] text-slate-400 truncate">Bún chả cá & Cà phê muối</p>
                 </div>
                 <span className="text-[10px] text-slate-400">Đã qua</span>
@@ -271,7 +271,7 @@ export const TodayScheduleScreen: React.FC<TodayScheduleScreenProps> = ({
               <div className="p-3 rounded-xl bg-blue-50/60 border border-[#0A1680]/20 flex items-center gap-3 text-xs">
                 <span className="font-bold text-white px-2 py-0.5 rounded-full bg-[#0A1680]">10:30</span>
                 <div className="min-w-0 flex-1">
-                  <p className="font-bold text-[#0A1680] truncate">Bán đảo Sơn Trà & Chùa Linh Ứng</p>
+                  <p className="font-bold text-[#0A1680] truncate">Thảo Cầm Viên & Chùa Linh Ứng</p>
                   <p className="text-[11px] text-slate-500 truncate">Đang diễn ra • Đỉnh Bàn Cờ</p>
                 </div>
                 <span className="text-[10px] font-bold text-amber-700 bg-amber-100 px-2 py-0.5 rounded-full">Hiện tại</span>
@@ -280,7 +280,7 @@ export const TodayScheduleScreen: React.FC<TodayScheduleScreenProps> = ({
                 <span className="font-bold text-[#0A1680] px-2 py-0.5 rounded-full bg-blue-100">12:30</span>
                 <div className="min-w-0 flex-1">
                   <p className="font-bold text-slate-800 truncate">Ăn trưa Bánh tráng thịt heo Đại Lộc</p>
-                  <p className="text-[11px] text-slate-400 truncate">Đặc sản Đà Nẵng</p>
+                  <p className="text-[11px] text-slate-400 truncate">Đặc sản TP.HCM</p>
                 </div>
                 <span className="text-[10px] text-slate-400">Kế tiếp</span>
               </div>
@@ -329,7 +329,7 @@ export const TodayScheduleScreen: React.FC<TodayScheduleScreenProps> = ({
 
               <button
                 type="button"
-                onClick={() => showToast('Đang tìm quán ăn ngon gần Sơn Trà & Mỹ Khê 🍜')}
+                onClick={() => showToast('Đang tìm quán ăn ngon gần Thảo Cầm Viên & Tao Đàn 🍜')}
                 className="flex flex-col items-center gap-1 p-2 rounded-xl hover:bg-slate-50 cursor-pointer"
               >
                 <div className="w-9 h-9 rounded-full bg-amber-100 flex items-center justify-center text-amber-700 text-sm">
@@ -375,7 +375,7 @@ export const TodayScheduleScreen: React.FC<TodayScheduleScreenProps> = ({
                 </div>
                 <div>
                   <h3 className="text-[16px] font-bold text-slate-900 font-heading">
-                    Thời tiết Đà Nẵng (mẫu)
+                    Thời tiết TP.HCM (mẫu)
                   </h3>
                   <p className="text-[11px] text-slate-500">Dữ liệu minh họa · chưa nối dịch vụ thời tiết</p>
                 </div>
@@ -428,14 +428,14 @@ export const TodayScheduleScreen: React.FC<TodayScheduleScreenProps> = ({
           </div>
       </ModalSheet>
 
-      {/* POPUP 2: Route Options Sheet (Chỉ đường: Bán đảo Sơn Trà) */}
+      {/* POPUP 2: Route Options Sheet (Chỉ đường: Thảo Cầm Viên) */}
       <ModalSheet isOpen={showRouteOptions} onClose={()=>setShowRouteOptions(false)} title="Tùy chọn chỉ đường" showHandleBar={false} contentClassName="today-sheet">
           <div className="today-sheet-content relative w-full bg-white rounded-t-[28px] p-5 pb-8 shadow-2xl flex flex-col gap-3.5 z-10 animate-in slide-in-from-bottom duration-200">
             <div className="w-12 h-1.5 bg-slate-200 rounded-full mx-auto shrink-0" />
             <div className="flex items-center justify-between">
               <div>
                 <h3 className="text-[16px] font-bold text-slate-900 font-heading">
-                  Chỉ đường: Bán đảo Sơn Trà
+                  Chỉ đường: Thảo Cầm Viên
                 </h3>
                 <p className="text-[11px] text-slate-500">Khoảng cách minh họa: 8 km. Chưa dùng vị trí thực.</p>
               </div>
@@ -507,7 +507,7 @@ export const TodayScheduleScreen: React.FC<TodayScheduleScreenProps> = ({
               <button
                 type="button"
                 onClick={() => {
-                  showToast('Bắt đầu điều hướng đến Bán đảo Sơn Trà! 🧭');
+                  showToast('Bắt đầu điều hướng đến Thảo Cầm Viên! 🧭');
                   setShowRouteOptions(false);
                 }}
                 className="flex-1 h-11 rounded-full bg-[#0A1680] text-white font-heading font-bold text-xs shadow-md hover:bg-[#071060] cursor-pointer"
@@ -537,7 +537,7 @@ export const TodayScheduleScreen: React.FC<TodayScheduleScreenProps> = ({
 
             <div>
               <h3 className="text-[17px] font-bold text-slate-900 font-heading">
-                Bạn vẫn muốn đến Sơn Trà chứ?
+                Bạn vẫn muốn đến Thảo Cầm Viên chứ?
               </h3>
               <p className="text-[12px] text-slate-500 mt-1">
                 Xem trước phương án điều chỉnh thời gian trước khi áp dụng vào lịch trình.
@@ -560,7 +560,7 @@ export const TodayScheduleScreen: React.FC<TodayScheduleScreenProps> = ({
                 onClick={() => {
                   setShowDelayPrompt(false);
                   setShowDelayBanner(false);
-                  showToast('Đã bỏ qua Sơn Trà, chuyển thẳng đến Bãi biển Mỹ Khê! 🏖️');
+                  showToast('Đã bỏ qua Thảo Cầm Viên, chuyển thẳng đến Công viên Tao Đàn! 🏖️');
                 }}
                 className="w-full h-11 rounded-full border border-slate-200 bg-white text-slate-700 font-heading font-semibold text-xs hover:bg-slate-50 cursor-pointer"
               >
@@ -599,10 +599,10 @@ export const TodayScheduleScreen: React.FC<TodayScheduleScreenProps> = ({
                   <span className="text-[10px] text-slate-400">10 phút trước</span>
                 </div>
                 <p className="font-bold text-slate-900 text-[13px] mt-1 font-heading">
-                  Nhắc nhở: Di chuyển đến Bãi biển Mỹ Khê
+                  Nhắc nhở: Di chuyển đến Công viên Tao Đàn
                 </p>
                 <p className="text-[11px] text-slate-500 mt-0.5">
-                  Thời gian di chuyển ước tính 20 phút từ Sơn Trà. Hãy chuẩn bị đồ bơi và kem chống nắng!
+                  Thời gian di chuyển ước tính 20 phút từ Thảo Cầm Viên. Hãy chuẩn bị đồ bơi và kem chống nắng!
                 </p>
               </div>
 
@@ -612,7 +612,7 @@ export const TodayScheduleScreen: React.FC<TodayScheduleScreenProps> = ({
                   <span className="text-[10px] text-slate-400">1 giờ trước</span>
                 </div>
                 <p className="font-bold text-slate-900 text-[13px] mt-1 font-heading">
-                  Chiều có mưa nhẹ tại Sơn Trà
+                  Chiều có mưa nhẹ tại Thảo Cầm Viên
                 </p>
                 <p className="text-[11px] text-slate-500 mt-0.5">
                   Mưa có thể kéo dài tầm 30-40 phút quanh khu vực Chùa Linh Ứng. Bạn nên căn thời gian tham quan.
@@ -658,7 +658,7 @@ export const TodayScheduleScreen: React.FC<TodayScheduleScreenProps> = ({
                   </div>
                   <div>
                     <div className="flex items-center gap-1.5">
-                      <span className="font-bold text-[13px] text-slate-900 font-heading">Đà Nẵng (Hiện tại)</span>
+                      <span className="font-bold text-[13px] text-slate-900 font-heading">TP.HCM (Hiện tại)</span>
                       <span className="px-2 py-0.2 rounded-full bg-[#0A1680] text-white text-[9px] font-bold">Đang đi</span>
                     </div>
                     <p className="text-[11px] text-slate-500">Lịch minh họa • 6 thành viên mẫu</p>

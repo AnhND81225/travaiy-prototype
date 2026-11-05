@@ -129,7 +129,7 @@ export const TravelDocumentDetailScreen: React.FC<TravelDocumentDetailScreenProp
                   DAD
                 </span>
                 <span className="font-bold text-[15px] text-slate-800 mt-1">07:35</span>
-                <span className="text-[11px] text-slate-500">Đà Nẵng</span>
+                <span className="text-[11px] text-slate-500">TP.HCM</span>
               </div>
             </div>
 

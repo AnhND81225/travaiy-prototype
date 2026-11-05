@@ -52,7 +52,7 @@ export const TripSubscriptionScreen: React.FC<TripSubscriptionScreenProps> = ({
                 Gói chuyến đi
               </h1>
               <span className="text-[11px] text-slate-500 font-medium truncate">
-                Đà Nẵng 3N2Đ (12 – 14 Thg 6, 2025)
+                TP.HCM 3N2Đ (12 – 14 Thg 6, 2025)
               </span>
             </div>
           </div>
@@ -91,7 +91,7 @@ export const TripSubscriptionScreen: React.FC<TripSubscriptionScreenProps> = ({
             </div>
             <div className="flex flex-col min-w-0">
               <span className="font-heading text-[15px] font-bold text-slate-900 truncate">
-                Đà Nẵng 3N2Đ
+                TP.HCM 3N2Đ
               </span>
               <span className="text-[12px] text-slate-500 truncate">
                 12 – 14 Thg 6, 2025 · 3 ngày 2 đêm
@@ -348,7 +348,7 @@ export const TripSubscriptionScreen: React.FC<TripSubscriptionScreenProps> = ({
               <div className="flex items-start justify-between">
                 <div>
                   <span className="text-[11px] text-slate-500 font-semibold uppercase tracking-wider">Chuyến đi</span>
-                  <h4 className="font-heading text-[15px] font-bold text-slate-900">Đà Nẵng 3N2Đ</h4>
+                  <h4 className="font-heading text-[15px] font-bold text-slate-900">TP.HCM 3N2Đ</h4>
                   <span className="text-[12px] text-slate-500">12 – 14 Thg 6, 2025 · 3N2Đ</span>
                 </div>
                 <div className="text-right">

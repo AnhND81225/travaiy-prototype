@@ -51,7 +51,7 @@ export const DeviceFrame: React.FC<DeviceFrameProps> = ({
     { id: 'wizard-preferences', label: 'Sở thích (Tùy chọn)', tag: 'Sở thích' },
     { id: 'wizard-summary', label: 'Chọn cách lên lịch (Bước 7/8)', tag: 'Wizard 7' },
     { id: 'ai-generating', label: '19. AI đang tạo lịch trình (Animation)', tag: 'AI Tạo' },
-    { id: 'trip-overview', label: '20. Tổng quan chuyến đi (Đà Nẵng 3N2Đ)', tag: 'Tổng quan' },
+    { id: 'trip-overview', label: '20. Tổng quan chuyến đi (TP.HCM 3N2Đ)', tag: 'Tổng quan' },
     { id: 'day-itinerary', label: '21. Lịch trình chi tiết theo ngày', tag: 'Theo ngày' },
     { id: 'itinerary-edit', label: '22. Chỉnh sửa & Tối ưu lộ trình', tag: 'Sửa lịch' },
     { id: 'trip-preparation', label: '23. Chuẩn bị trước chuyến đi', tag: 'Chuẩn bị' },
@@ -75,7 +75,7 @@ export const DeviceFrame: React.FC<DeviceFrameProps> = ({
     { id: 'travel-document-detail', label: '41. Chi tiết vé máy bay (62_BoardingPass)', tag: 'Vé bay' },
     { id: 'trip-subscription', label: '42. Gói chuyến đi & Nâng cấp (50_Subscription)', tag: 'Gói chuyến' },
     { id: 'ai-itinerary-proposal', label: '43. Đề xuất lịch trình từ AI (Proposal Draft)', tag: 'Bản nháp AI' },
-    { id: 'adaptive-preview-skip', label: '44. Xem trước điều chỉnh (Bỏ Sơn Trà)', tag: 'Bỏ điểm trễ' },
+    { id: 'adaptive-preview-skip', label: '44. Xem trước điều chỉnh (Bỏ Thảo Cầm Viên)', tag: 'Bỏ điểm trễ' },
     { id: 'profile', label: '45. Tài khoản & DNA Du lịch', tag: 'Tài khoản' },
   ];
 

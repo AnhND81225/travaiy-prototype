@@ -1,42 +1,36 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { IOSStatusBar } from '../common/IOSStatusBar';
+import {liveError} from '../../features/travel/livePlanning';
 
 interface AIGeneratingScreenProps {
   onComplete: () => void;
   onCancel: () => void;
+  task: () => Promise<void>;
 }
 
 export const AIGeneratingScreen: React.FC<AIGeneratingScreenProps> = ({
   onComplete,
   onCancel,
+  task,
 }) => {
   const [currentStep, setCurrentStep] = useState(3);
   const [showCancelDialog, setShowCancelDialog] = useState(false);
+  const [error, setError] = useState('');
+  const [attempt, setAttempt] = useState(0);
+  const taskRef = useRef(task); taskRef.current = task;
 
   const completeRef=useRef(onComplete);completeRef.current=onComplete;
   const finished=useRef(false);
-  const complete=()=>{if(!finished.current){finished.current=true;completeRef.current();}};
+  const complete=()=>{if(currentStep === 5 && !finished.current){finished.current=true;completeRef.current();}};
 
   useEffect(() => {
-    if(showCancelDialog)return;
-    const timer1 = setTimeout(() => {
-      setCurrentStep(4);
-    }, 1500);
-
-    const timer2 = setTimeout(() => {
-      setCurrentStep(5);
-    }, 2800);
-
-    const timer3 = setTimeout(() => {
-      complete();
-    }, 3800);
-
-    return () => {
-      clearTimeout(timer1);
-      clearTimeout(timer2);
-      clearTimeout(timer3);
-    };
-  }, [showCancelDialog]);
+    let cancelled = false;
+    setError(''); setCurrentStep(3);
+    taskRef.current().then(() => {
+      if (!cancelled) setCurrentStep(5);
+    }).catch(error => { if (!cancelled) setError(liveError(error)); });
+    return () => { cancelled = true; };
+  }, [attempt]);
 
   return (
     <div className="relative w-full h-full min-h-0 bg-[#FCFDFF] flex flex-col overflow-hidden select-none text-slate-800">
@@ -244,14 +238,15 @@ export const AIGeneratingScreen: React.FC<AIGeneratingScreenProps> = ({
         {/* Action Button: Xem & Duyệt ngay */}
         <div className="flex flex-col gap-2 pt-2">
           <button
-            onClick={complete}
+            onClick={error ? () => setAttempt(value => value + 1) : complete}
+            disabled={!error && currentStep !== 5}
             type="button"
             className="w-full py-3.5 px-4 rounded-xl bg-[#0A1680] text-white font-bold text-[15px] flex items-center justify-center gap-2 hover:opacity-95 active:scale-95 transition-all shadow-md cursor-pointer font-heading"
           >
-            <span>Xem &amp; Duyệt lịch trình ngay →</span>
+            <span>{error ? 'Thử lại' : currentStep === 5 ? 'Xem & Duyệt lịch trình →' : 'Đang chờ kết quả AI…'}</span>
           </button>
           <p className="text-center text-[12px] text-slate-400">
-            Bản xem trước dùng dữ liệu mẫu · tự động chuyển khi hoàn tất
+            {error || 'Kết quả chỉ sẵn sàng sau khi máy chủ kiểm tra lịch trình.'}
           </p>
         </div>
       </main>
@@ -271,7 +266,7 @@ export const AIGeneratingScreen: React.FC<AIGeneratingScreenProps> = ({
               Hủy tạo lịch trình?
             </h3>
             <p className="text-[13px] text-slate-600 leading-relaxed mb-5">
-              Quá trình phân tích và tối ưu tuyến đường sẽ dừng lại. Bạn có thể tạo lại bất cứ lúc nào.
+              Bạn có thể quay lại chỉnh thông tin. Yêu cầu đã gửi vẫn có thể tiếp tục xử lý trên máy chủ.
             </p>
             <div className="flex flex-col w-full gap-2">
               <button

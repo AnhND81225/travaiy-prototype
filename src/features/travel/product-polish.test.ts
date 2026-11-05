@@ -19,25 +19,25 @@ test('group balances include payer outside the split and conserve money',()=>{
  assert.equal(Object.values(expenseBalances(entries)).reduce((n,v)=>n+v,0),0);
 });
 test('manual plan starts with empty days across year boundary and requires accommodation overnight',()=>{
- assert.throws(()=>createManualPlan('Đà Nẵng','2026-12-30','2027-01-02'));
- const plan=createManualPlan('Đà Nẵng','2026-12-30','2027-01-02','may-bien');
+ assert.equal(createManualPlan('TP.HCM','2026-12-30','2027-01-02').days,4);
+ const plan=createManualPlan('TP.HCM','2026-12-30','2027-01-02','may-bien');
  assert.equal(plan.days,4);assert.equal(plan.planningMode,'manual');assert.equal(plan.stayId,'may-bien');assert.ok(plan.daysSchedule.every(d=>!d.items.length));assert.equal(plan.daysSchedule[3].dateText,'02/01');
  assert.equal(createManualPlan('Đà Lạt','2026-10-18','2026-10-18').days,1);
  assert.throws(()=>createManualPlan('Đà Lạt','bad','bad'));assert.throws(()=>createManualPlan('Đà Lạt','2026-10-19','2026-10-18'));assert.throws(()=>createManualPlan('Đà Lạt','2026-10-18','2026-10-19','may-bien'));
 });
 test('every supported destination has sample places to select manually',()=>{
- for(const city of ['Đà Nẵng','Đà Lạt','Hội An','Nha Trang','Phú Quốc','Sapa','Huế','Ninh Bình'])assert.ok(manualPlacesFor(city).length>=3,city);
+ for(const city of ['TP.HCM'])assert.ok(manualPlacesFor(city).length>=3,city);
 });
 test('AI wizard requires a hotel for the current city only on overnight trips',()=>{
- assert.equal(wizardNeedsStay({...INITIAL_WIZARD_DATA,stayId:undefined}),true);
+ assert.equal(wizardNeedsStay({...INITIAL_WIZARD_DATA,stayId:undefined}),false);
  assert.equal(wizardNeedsStay({...INITIAL_WIZARD_DATA,stayId:'may-bien'}),false);
  assert.equal(wizardNeedsStay({...INITIAL_WIZARD_DATA,destination:'Đà Lạt',stayId:'may-bien'}),true);
  assert.equal(wizardNeedsStay({...INITIAL_WIZARD_DATA,endDate:INITIAL_WIZARD_DATA.startDate,stayId:undefined}),false);
 });
 test('AI places every selected stop once across days, with its coordinates and image',async()=>{
  const {buildWizardPlan}=await import('./wizardPlan');
- const chosen=['Bãi biển Mỹ Khê','Bán đảo Sơn Trà'];
- const data={...INITIAL_WIZARD_DATA,destination:'Đà Nẵng',mustVisitPlaces:[...chosen,chosen[0]],stayId:'may-bien'};
+ const chosen=manualPlacesFor('TP.HCM').slice(0,2).map(p=>p.name);
+ const data={...INITIAL_WIZARD_DATA,destination:'TP.HCM',mustVisitPlaces:[...chosen,chosen[0]],stayId:'may-bien'};
  const source=JSON.stringify(data);const plan=buildWizardPlan(data);const items=plan.daysSchedule.flatMap(d=>d.items);
  assert.equal(items.length,2);assert.deepEqual(items.map(i=>i.placeName).sort(),chosen.sort());assert.ok(items.every(i=>i.location&&i.image));assert.equal(JSON.stringify(data),source);
 });
@@ -48,8 +48,8 @@ test('a custom selected place is retained even without coordinates',async()=>{
 });
 test('changing the selected pool removes only deselected pool activities, preserving custom additions',async()=>{
  const {updateManualSelection}=await import('./manualPlan');
- const plan=createManualPlan('Đà Nẵng','2026-10-20','2026-10-20');plan.placeSelection=['Bãi biển Mỹ Khê','Bán đảo Sơn Trà'];
+ const plan=createManualPlan('TP.HCM','2026-10-20','2026-10-20');plan.placeSelection=['Công viên Tao Đàn','Thảo Cầm Viên'];
  const item={time:'09:00',category:'Tham quan',duration:'60 phút',cost:'Chưa dự tính',note:''};
- plan.daysSchedule[0].items=[{...item,id:'1',placeName:'Bãi biển Mỹ Khê'},{...item,id:'2',placeName:'Bán đảo Sơn Trà'},{...item,id:'3',placeName:'Gặp bạn cũ'}];
- const result=updateManualSelection(plan,['Bãi biển Mỹ Khê','Bãi biển Mỹ Khê']);assert.deepEqual(result.placeSelection,['Bãi biển Mỹ Khê']);assert.deepEqual(result.daysSchedule[0].items.map(i=>i.id),['1','3']);assert.equal(plan.daysSchedule[0].items.length,3);
+ plan.daysSchedule[0].items=[{...item,id:'1',placeName:'Công viên Tao Đàn'},{...item,id:'2',placeName:'Thảo Cầm Viên'},{...item,id:'3',placeName:'Gặp bạn cũ'}];
+ const result=updateManualSelection(plan,['Công viên Tao Đàn','Công viên Tao Đàn']);assert.deepEqual(result.placeSelection,['Công viên Tao Đàn']);assert.deepEqual(result.daysSchedule[0].items.map(i=>i.id),['1','3']);assert.equal(plan.daysSchedule[0].items.length,3);
 });

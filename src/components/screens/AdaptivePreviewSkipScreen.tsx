@@ -74,7 +74,7 @@ export const AdaptivePreviewSkipScreen: React.FC<AdaptivePreviewSkipScreenProps>
             <div className="flex items-center space-x-2">
               <span className="w-2.5 h-2.5 rounded-full bg-[#0A1680]" />
               <h3 className="text-sm font-bold text-[#0A1680] font-heading">
-                Nhánh 2: Bỏ Sơn Trà hôm nay
+                Nhánh 2: Bỏ Thảo Cầm Viên hôm nay
               </h3>
             </div>
             <span className="text-[11px] font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 px-2.5 py-0.5 rounded-full flex items-center gap-1 font-heading">
@@ -94,9 +94,9 @@ export const AdaptivePreviewSkipScreen: React.FC<AdaptivePreviewSkipScreenProps>
                 <div className="flex flex-col">
                   <div className="flex items-center gap-2">
                     <span className="text-xs font-semibold text-slate-400 line-through">09:30</span>
-                    <span className="text-xs font-bold text-slate-400 line-through font-heading">Bán đảo Sơn Trà</span>
+                    <span className="text-xs font-bold text-slate-400 line-through font-heading">Thảo Cầm Viên</span>
                     <span className="text-[10px] font-semibold text-rose-600 bg-rose-50 border border-rose-200 px-2 py-0.5 rounded-md font-heading">
-                      Bỏ Sơn Trà hôm nay
+                      Bỏ Thảo Cầm Viên hôm nay
                     </span>
                   </div>
                   <p className="text-[11px] text-slate-400 line-through mt-0.5">Tham quan, chụp ảnh Linh Ứng</p>
@@ -129,7 +129,7 @@ export const AdaptivePreviewSkipScreen: React.FC<AdaptivePreviewSkipScreenProps>
                 <div className="flex flex-col">
                   <div className="flex items-center gap-2">
                     <span className="text-xs font-bold text-slate-700 font-heading">15:00 – 17:30</span>
-                    <span className="text-xs font-bold text-slate-800 font-heading">Bãi biển Mỹ Khê</span>
+                    <span className="text-xs font-bold text-slate-800 font-heading">Công viên Tao Đàn</span>
                   </div>
                   <p className="text-[11px] text-slate-500 mt-0.5">
                     Tắm biển, dạo mát · <span className="text-slate-600 font-medium">Giữ nguyên lịch trình</span>
@@ -170,7 +170,7 @@ export const AdaptivePreviewSkipScreen: React.FC<AdaptivePreviewSkipScreenProps>
             🎟️
           </div>
           <p className="text-xs text-slate-700 leading-snug">
-            Điểm <strong>Sơn Trà miễn phí tham quan</strong>. Không phát sinh chi phí hủy vé hay phụ thu phát sinh.
+            Điểm <strong>Thảo Cầm Viên chưa xác minh giá vé</strong>. Không phát sinh chi phí hủy vé hay phụ thu phát sinh.
           </p>
         </section>
       </main>

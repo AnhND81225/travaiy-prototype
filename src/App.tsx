@@ -1,3 +1,4 @@
+import {CompanionBanner} from './features/travel/CompanionBanner';
 import {AIGeneratingScreen} from './components/wizard/AIGeneratingScreen';
 import {TripMemoriesScreen,TripJourneyMapScreen} from './features/travel/TripMemoriesScreen';
 import {requiredWizardStep,destinationAfterAccess,manualEditorRedirect,type ConfirmedWizardAccess,type AccessPurpose,type PlanningMode} from './features/travel/wizardFlow';
@@ -36,6 +37,9 @@ import { OnboardingStep3 } from './components/screens/OnboardingStep3';
 import { OnboardingStep4 } from './components/screens/OnboardingStep4';
 import { OnboardingComplete } from './components/screens/OnboardingComplete';
 import { HomeScreen } from './components/screens/HomeScreen';
+import {generateLivePlan,saveLiveEdits} from './features/travel/livePlanning';
+import type {ActivePlan} from './features/travel/model';
+import {TokenStorage} from './api/core/apiConfig';
 import { ExploreScreen } from './components/screens/ExploreScreen';
 import { MapViewScreen } from './components/screens/MapViewScreen';
 import { PlaceDetailScreen } from './components/screens/PlaceDetailScreen';
@@ -183,11 +187,11 @@ function AdaptiveRouteRedirect() {
 }
 
 function ItineraryEditWrapper({ onBack }: { onBack: () => void }) {
-  const {setPlan} = useTravel();
+  const {plan,setPlan} = useTravel();
   const navigate = useNavigate();
   const { dayNumber } = useParams<{ dayNumber: string }>();
   const day = dayNumber ? parseInt(dayNumber, 10) : 1;
-  return <ItineraryEditScreen initialDay={day} onSave={(updatedPlan) => { setPlan(updatedPlan); navigate(`/trip/day/${day}`); }} onCancel={() => navigate(`/trip/day/${day}`)} />;
+  return <ItineraryEditScreen initialDay={day} onSave={async(updatedPlan) => { setPlan(plan.backendTripId?await saveLiveEdits(updatedPlan,plan):updatedPlan); navigate(`/trip/day/${day}`); }} onCancel={() => navigate(`/trip/day/${day}`)} />;
 }
 
 function NewTripEntry({onStart}:{onStart:()=>void}){const started=useRef(false);useEffect(()=>{if(!started.current){started.current=true;onStart();}},[onStart]);return null;}
@@ -208,15 +212,18 @@ export default function App() {
   const [generationRequestId,setGenerationRequestId]=useStored<string>('travaiy-ai-request-v1','');
   const [wizardData, setWizardData] = useStored<TripWizardData>('travaiy-wizard-data-v1',INITIAL_WIZARD_DATA);
   const {plan,setPlan,trips,accessFor,accessLimit,selectAccess,consumeAI} = useTravel();
+  const [generatedPlan,setGeneratedPlan] = useStored<ActivePlan|null>('travaiy-generated-live-plan',null);
   const wizardPlan = useMemo(() => ({...buildWizardPlan(wizardData),id:draftId}), [wizardData,draftId]);
-  const approveWizardPlan = () => {if(wizardNeedsStay(wizardData)){navigate('/wizard/stay');return;}if(wizardDateError(wizardData)){navigate('/wizard/dates');return;}setPlan(wizardPlan);setDraftPending(false); navigate('/trip/overview');};
+  const approveWizardPlan = () => {if(wizardNeedsStay(wizardData)){navigate('/wizard/stay');return;}if(wizardDateError(wizardData)){navigate('/wizard/dates');return;}if(!generatedPlan)return;setPlan(generatedPlan);setDraftPending(false); navigate('/trip/overview');};
   const startNewTrip=()=>{
+    setGeneratedPlan(null);
     const interests=userPreferences.interests.flatMap(value=>/Ăn|cà phê/i.test(value)?['Ẩm thực']:/Thiên nhiên/i.test(value)?['Thiên nhiên']:/Văn hóa/i.test(value)?['Văn hóa']:/Chụp ảnh/i.test(value)?['Chụp ảnh']:/Nghỉ dưỡng|thư giãn/i.test(value)?['Thư giãn']:[]);
-    setWizardData({...INITIAL_WIZARD_DATA,planningMode:undefined,interests:[...new Set(interests)],mustVisitPlaces:[]});setDraftId(`trip-${Date.now()}`);setDraftPending(true);setWizardAccessPlan(null);setConfirmedAccess(null);setAccessPurpose('create');setGenerationRequestId('');navigate('/wizard/destination');
+    setWizardData({...INITIAL_WIZARD_DATA,destination:'TP.HCM',startDate:new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Ho_Chi_Minh'}).format(new Date()),endDate:new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Ho_Chi_Minh'}).format(new Date()),durationText:'1 ngày',planningMode:undefined,interests:[...new Set(interests)],mustVisitPlaces:[]});setDraftId(`trip-${Date.now()}`);setDraftPending(true);setWizardAccessPlan(null);setConfirmedAccess(null);setAccessPurpose('create');setGenerationRequestId('');navigate('/wizard/destination');
   };
   const startGeneration=(tier:TripAccessPlan)=>{
+    if(!TokenStorage.isAuthenticated()){sessionStorage.setItem('travaiy-return-after-login','/wizard/summary');navigate('/welcome');return;}
+    setGeneratedPlan(null);
     const required=requiredWizardStep(wizardData);if(required){navigate(required);return;}
-    const access=accessFor(draftId);if(access.used>=accessLimit(tier)){navigate('/wizard/ai-limit');return;}
     setGenerationRequestId(`request-${Date.now()}`);navigate('/wizard/ai-generating');
   };
   const continueAfterAccess=(tier:TripAccessPlan)=>{
@@ -234,12 +241,11 @@ export default function App() {
   };
   const choosePlanningMode=(mode:PlanningMode)=>{
     const required=requiredWizardStep(wizardData);if(required){navigate(required);return;}
-    setWizardData(prev=>({...prev,planningMode:mode}));setConfirmedAccess(null);setAccessPurpose('create');navigate('/wizard/subscription');
+    setWizardData(prev=>({...prev,planningMode:mode}));setAccessPurpose('create');if(mode==='ai'){setConfirmedAccess({tripId:draftId,mode:'ai',tier:'free'});startGeneration('free');}else{setConfirmedAccess(null);navigate('/wizard/subscription');}
   };
   const manualRedirect=manualEditorRedirect(wizardData,draftId,confirmedAccess);
   const finishGeneration=()=>{
     if(confirmedAccess?.tripId!==draftId||confirmedAccess.mode!=='ai'||wizardData.planningMode!=='ai'){navigate('/wizard/summary');return;}
-    if(!consumeAI(draftId,generationRequestId)){navigate('/wizard/ai-limit');return;}
     navigate('/wizard/ai-proposal');
   };
   const upgradeCurrentTrip=()=>{
@@ -338,6 +344,7 @@ export default function App() {
   };
 
   const handleCreatePlanFromPlace = (place: Place) => {
+    if(place.city!=='TP.HCM'){startNewTrip();return;}
     if(!draftPending||wizardData.destination!==place.city){setDraftId(`trip-${Date.now()}`);setWizardAccessPlan(null);}
     setDraftPending(true);
     const destination = MOCK_DESTINATIONS.find(dest => dest.title.includes(place.city));
@@ -372,6 +379,7 @@ export default function App() {
       onToggleSimulatorMode={() => setIsSimulatorMode(!isSimulatorMode)}
     >
       <Routes>
+        <Route path="/ai" element={<Navigate to="/home" replace/>}/>
         <Route path="/onboarding/name" element={<ProfileNameScreen name={userName} onBack={()=>navigate(editingTravelDNA?'/profile':'/welcome')} onSave={name=>{setUserName(name);navigate(editingTravelDNA?'/profile':'/onboarding/step-1');}}/>}/>
         <Route path="/trips/:tripId/memories/map" element={<TripJourneyMapScreen/>}/>
         <Route path="/trips/:tripId/memories" element={<TripMemoriesScreen/>}/>
@@ -404,7 +412,7 @@ export default function App() {
               onLoginSuccess={(name) => {
                 if (name) setUserName(name);
                 setHomeUnlocked(true);
-                navigate('/home');
+                const next=sessionStorage.getItem('travaiy-return-after-login');sessionStorage.removeItem('travaiy-return-after-login');navigate(next||'/home');
               }}
             />
           }
@@ -644,7 +652,7 @@ export default function App() {
               onHotelBudgetChange={value=>setWizardData(prev=>({...prev,hotelBudgetPerNight:value}))}
               onRoomsChange={value=>setWizardData(prev=>({...prev,stayRoomCount:value}))}
               onChange={(budget) => setWizardData((prev) => ({ ...prev, ...budget }))}
-              onNext={() => navigate('/wizard/stay')}
+              onNext={() => navigate(wizardData.destination==='TP.HCM'?'/wizard/preferences':'/wizard/stay')}
               onBack={() => navigate('/wizard/companions')}
             />
           }
@@ -705,7 +713,7 @@ export default function App() {
                     break;
                 }
               }}
-              onBack={() => navigate('/wizard/stay')}
+              onBack={() => navigate(wizardData.destination==='TP.HCM'?'/wizard/budget':'/wizard/stay')}
             />
           }
         />
@@ -728,6 +736,7 @@ export default function App() {
           element={
             <AIGeneratingScreen
               key={generationRequestId}
+              task={async()=>{const result=await generateLivePlan(generationRequestId,wizardData,userPreferences,wizardPlan);setGeneratedPlan(result);}}
               onComplete={finishGeneration}
               onCancel={() => navigate('/wizard/summary')}
             />
@@ -969,12 +978,12 @@ export default function App() {
         <Route
           path="/wizard/ai-proposal"
           element={
-            <AIItineraryProposalScreen
-              draft={wizardPlan}
+            !generatedPlan?<Navigate to="/wizard/summary" replace/>:<AIItineraryProposalScreen
+              draft={generatedPlan||wizardPlan}
               onBack={() => navigate('/wizard/summary')}
               onApprove={approveWizardPlan}
-              onAdjust={() => {setPlan(wizardPlan);setDraftPending(false);navigate('/trip/edit/1');}}
-              onRegenerate={() => navigate('/wizard/subscription')}
+              onAdjust={() => {if(!generatedPlan)return;setPlan(generatedPlan);setDraftPending(false);navigate('/trip/edit/1');}}
+              onRegenerate={() => startGeneration('free')}
               remaining={Math.max(0,accessLimit(accessFor(draftId).tier)-accessFor(draftId).used)}
             />
           }
@@ -993,6 +1002,7 @@ export default function App() {
               onEditPreferences={() => navigate('/onboarding/step-1?from=profile')}
               onEditName={() => navigate('/onboarding/name?from=profile')}
               onLogout={() => {
+                TokenStorage.clearTokens();
                 setUserName('Khách');
                 setHomeUnlocked(false);
                 navigate('/welcome');
@@ -1010,6 +1020,7 @@ export default function App() {
         <Route path="*" element={<Navigate to="/home" replace />} />
       </Routes>
       {homeUnlocked && location.pathname === '/home' && <AlyAssistant/>}
+      <CompanionBanner/>
     </DeviceFrame>
   );
 }

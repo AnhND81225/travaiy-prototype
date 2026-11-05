@@ -16,53 +16,10 @@ export const WizardStep1Destination: React.FC<WizardStep1DestinationProps> = ({
   onBack,
 }) => {
   const [searchQuery, setSearchQuery] = useState('');
-  const [favorites, setFavorites] = useState<string[]>(['Đà Lạt']);
+  const [favorites, setFavorites] = useState<string[]>(['TP.HCM']);
 
-  const popular = [
-    {
-      name: 'Đà Lạt',
-      sub: 'Thành phố ngàn hoa',
-      img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuB4S0_utHqNlrpQQ7NOJoc_3pjyBwLRbQOaqMbu9KLLsl5i2h5nctvEmVNayB_AdUQsown1Nf7PiWDjbY0J-ojdo0RVQZIkvRZiwYoNuCMN3PlAf9V-czMN1mScej99LJRwWnTpXeUfeQ6KOpGL6rHvf4Kxt9sTQofwhp8MyoKahhET2meg2CEfpAZfeqgNLcmBJMEgZ9JSIms4qY1dxY83wglILRNMW-4Tbx-2mBVijkXbdCObyg',
-    },
-    {
-      name: 'Đà Nẵng',
-      sub: 'Thành phố biển năng động',
-      img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCiSmA4xNta0kIzk3pYZKe1-m3nZW5qoFayLftmXyx-dmZKPR_lp_SG_SfVAw5lSqLnjyarQtND1fFHgoVaAXJAVlztBY0YMKFPt2j1EMtpycF7okytZIwH8EDevH6Op5nlLypkyIS4Tv5dVlnaYFOPtJtZ9R6KFMeZkm-Yvr0tAisJE3ttn5qo6rP2uUUrouHJUCczEbC50sqXnjxFDgiIXMVJSyKsqkaQBQVQ-Fnzk0Q-eVMCuw',
-    },
-    {
-      name: 'Nha Trang',
-      sub: 'Biển xanh, nắng vàng',
-      img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuA_bvmMFUQ9cp-wQYl1RBqbujEXNUE2wWnk-nqZg-usbCWhJRmrAQoCnxK2Il0IiJimAJXGdXHRxjVsc_3uGf6URTJREo2u-8Hn8VabuV4tBp4Wq9Yi8JKuW18P_ucrapOamlYrxqMWjSLqenjfWNe7UWm30s2TmgxqBQ6vVs9gXv1MW86GM4uwcOIWdlJFJUr_yLRluPjIAp8Uh0WGqHVRUNbYBYmmS3vfwnF-JMA-W7jZSTnU6g',
-    },
-    {
-      name: 'Hội An',
-      sub: 'Nét đẹp cổ kính',
-      img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuD4mM2mnWQ9jOm16yXo8Oi9mWSrpCmTDS0Q6gh0Hc_pe7BBoYZvoT_i7jsJWJM07bwIBcDHWXmZR_CZwaGUGVVTUWNJYOvPafTampf8-ZFVZ_t6hlilrxKiKTF1Of2B1KAFohBoqzIK7Hm8dt8xxjwlumWMw3OZVx-Tij5915YM0VtjeR7dUx7geaPs4A7kdSYnTvpA2AfgizrOFNpHOw3xxbZymb1TmZtiuYKIQnt1BloqfTwoBg',
-    },
-  ];
-
-  const others = [
-    {
-      name: 'Phú Quốc',
-      sub: 'Thiên đường biển đảo',
-      img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDecTG-4n9bt-VSpUjV3PAexFYgCm853v1ly9ccXvaCHQebr-pUOIdbFnDBaJNjPtL1AmfBRs9GWpI5A2zxEEFn7X3AcEfxMjrnO-X8j2d5NsKCs-LwD98TUS_mYzsIVM9bxzYMjeBRWYrYYSakkIAO0oLcnlEkBSoqzntE1_Ciz_TkL1FaaS5u51fjnN1QzHZTRacVO8m3dNAagHI-pANKaUkJSoqeTYPMjAa29aUEgo6NR9nk5A',
-    },
-    {
-      name: 'Sapa',
-      sub: 'Săn mây, khám phá núi rừng',
-      img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBKJ0UPhT9gud9fL2yvcHff7yIaiEJAaSGQWbki14xLzr5c2nVFfB4EkUnfhe6E8dX2IQX6tA6jD-RJwjeTkzoL1JdNctbMW_ygt0OIEJKSJJvc1kYgZHZC4y7hpYrxwuVLP3lqAk09muAx5oEx3ukbpbqD2WoI4dOq8hWII2vaSrZEcrNau23_Qwp1Ex3hVl48bTS9uh5i5LOdfhXrIYfxfw5DJLukm7T0fwl4rpgFiAuOHLkRTg',
-    },
-    {
-      name: 'Huế',
-      sub: 'Cố đô trầm mặc',
-      img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCy-kY7OYgSnU-byvkh0MlQYeK0kHA1jWBu4Unzk3X9KFnFmir_Nevzl4Z-TUCm-gQDIg-pHZmuJ7JCk9QOc8h5WD-fh3PT7TedcwpZbJAESMLZ8CqUtj3LZeK4vbovDR8IolS8Z3tpmAIjsw7pCCmMkuviQutV-gNXebHoqr2JnhCAcpFKERW_Jql6bImL04zgiw1R5VEjINvnChaEPOAKVMDoktb5Gk8ZrUPhODSdM9w2tBeL2Q',
-    },
-    {
-      name: 'Ninh Bình',
-      sub: 'Non nước hữu tình',
-      img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCduywWHA4u8zFrCOhmevvbfeo1UbBCxOorXn3L89bLOuNNlscoeCJvY6lFyFfcPtRW4mA0UfpurBGlUPuLi25AHNDVlKnxEE1IMpmh9WhinW6hbZzdb766oxBqJfEzYc9NWU9AHyRBDKfAd7XZzaXKVJ4GtHzRVDlo02illQLHBfQD0ao6aGlPkPz51iJgVDgZon-ne-7wSTTnY4O8f3DNEdwob97t4V2wNpdlZilq0fRbzj-oaw',
-    },
-  ];
+  const popular = [{name:'TP.HCM',sub:'Khám phá Sài Gòn theo sở thích của bạn',img:'/images/vietnam-hero.png'}];
+  const others:typeof popular=[];
 
   const toggleFav = (name: string, e: React.MouseEvent) => {
     e.stopPropagation();
@@ -120,7 +77,7 @@ export const WizardStep1Destination: React.FC<WizardStep1DestinationProps> = ({
             Bạn muốn đi đâu?
           </h1>
           <p className="text-xs text-slate-500 mt-1">
-            Khám phá và lên lịch trình cho điểm đến mơ ước của bạn
+            Bản demo hiện hỗ trợ lên lịch trong TP.HCM.
           </p>
         </div>
 

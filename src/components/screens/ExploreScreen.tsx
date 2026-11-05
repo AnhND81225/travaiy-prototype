@@ -223,7 +223,7 @@ export const ExploreScreen: React.FC<ExploreScreenProps> = ({
 
         {selectedCategory!=='Tất cả'&&<ExplorePlaceResults category={selectedCategory} query={searchQuery} onOpen={onOpenPlaceDetail}/>}
         {selectedCategory==='Tất cả'&&<>
-        <section className="explore-hotels"><div className="travel-section-title"><div><span className="travel-eyebrow">NƠI NGHỈ CHO CHUYẾN ĐI</span><h2>Khách sạn & chỗ ở</h2></div><button onClick={()=>navigate('/explore/stays')}>Xem tất cả <ArrowUpRight size={15}/></button></div><div className="explore-hotels-row">{STAYS.map(s=><button key={s.id} className="explore-hotel-card" onClick={()=>navigate(`/stay/${s.id}`)}><img src={s.image} alt="Phòng nghỉ minh họa"/><div><span>{s.type} · {s.rating} ★</span><h3>{s.name}</h3><p>{s.area}</p><b>{s.price.toLocaleString('vi-VN')}đ <small>/đêm</small></b></div></button>)}</div><p className="travel-footnote">Chỗ ở và giá minh họa tại Đà Nẵng và Đà Lạt.</p></section>
+        <section className="explore-hotels"><div className="travel-section-title"><div><span className="travel-eyebrow">NƠI NGHỈ CHO CHUYẾN ĐI</span><h2>Khách sạn & chỗ ở</h2></div><button onClick={()=>navigate('/explore/stays')}>Xem tất cả <ArrowUpRight size={15}/></button></div><div className="explore-hotels-row">{STAYS.map(s=><button key={s.id} className="explore-hotel-card" onClick={()=>navigate(`/stay/${s.id}`)}><img src={s.image} alt="Phòng nghỉ minh họa"/><div><span>{s.type} · {s.rating} ★</span><h3>{s.name}</h3><p>{s.area}</p><b>{s.price.toLocaleString('vi-VN')}đ <small>/đêm</small></b></div></button>)}</div><p className="travel-footnote">Chỗ ở hư cấu và giá minh họa; chưa có đặt phòng thật.</p></section>
         {/* Large Destination Cards Feed */}
         <div className="flex flex-col gap-4">
           {filteredDestinations.map((dest) => (
@@ -366,7 +366,7 @@ export const ExploreScreen: React.FC<ExploreScreenProps> = ({
         <div className="w-full flex flex-col gap-2 pt-2 border-t border-gray-100">
           <span className="text-[12px] font-semibold text-gray-400">Gợi ý từ khóa:</span>
           <div className="flex flex-wrap gap-2">
-            {['Cà phê ngắm hoàng hôn', 'Hải sản ngon Đà Nẵng', 'Chỗ check-in Hội An'].map(
+            {['Cà phê ngắm hoàng hôn', 'Hải sản ngon TP.HCM', 'Chỗ check-in Hội An'].map(
               (hint) => (
                 <button
                   key={hint}

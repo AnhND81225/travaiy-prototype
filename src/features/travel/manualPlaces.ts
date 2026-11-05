@@ -1,5 +1,5 @@
 import {MOCK_PLACES} from '../../data/mockData';
-import {INITIAL_PLAN,images} from './fixtures';
+import {images} from './fixtures';
 import type {GeoPoint} from './model';
 export type ManualPlace={id:string;name:string;category:string;image:string;address:string;location?:GeoPoint;duration?:string};
 // Approximate coordinates and illustrative images for offline prototype selection.
@@ -12,10 +12,10 @@ const extra:Record<string,[string,number,number,string][]>={
  'Ninh Bình':[['Tràng An',20.25,105.917,images.bay],['Hang Múa',20.23,105.937,images.hero],['Tam Cốc',20.216,105.938,images.bay]],
 };
 export function manualPlacesFor(city:string):ManualPlace[]{
- const center:Record<string,[number,number]>={'Đà Nẵng':[16.066,108.224],'Đà Lạt':[11.943,108.445],'Hội An':[15.879,108.33],'Nha Trang':[12.24,109.19],'Phú Quốc':[10.217,103.96],'Sapa':[22.336,103.843],'Huế':[16.469,107.578],'Ninh Bình':[20.25,105.937]};
+ const center:Record<string,[number,number]>={'TP.HCM':[10.7769,106.7009],'Đà Lạt':[11.943,108.445],'Hội An':[15.879,108.33],'Nha Trang':[12.24,109.19],'Phú Quốc':[10.217,103.96],'Sapa':[22.336,103.843],'Huế':[16.469,107.578],'Ninh Bình':[20.25,105.937]};
  const point=center[city];
  const additional:ManualPlace[]=point?[{id:`food-${city}`,name:`Thưởng thức ẩm thực ${city}`,category:'Ăn uống',image:images.food,address:city,location:{lat:point[0],lng:point[1]},duration:'1 giờ'},{id:`experience-${city}`,name:`Trải nghiệm địa phương ${city}`,category:'Trải nghiệm',image:city==='Đà Lạt'?images.dalatCabin:images.bay,address:city,location:{lat:point[0]+.005,lng:point[1]+.005},duration:'2 giờ'}]:[];
  const existing=MOCK_PLACES.filter(p=>p.city===city).map(p=>({id:p.id,name:p.name,category:p.category,image:p.images[0],address:p.address,location:p.coordinates?.lat!==undefined&&p.coordinates.lng!==undefined?{lat:p.coordinates.lat,lng:p.coordinates.lng}:undefined}));
- if(city==='Đà Nẵng')return [...INITIAL_PLAN.daysSchedule.slice(0,2).flatMap(d=>d.items).filter(i=>i.location).map(i=>({id:i.id,name:i.placeName,category:i.category,image:i.image||images.bridge,address:city,location:i.location,duration:i.duration})),...additional];
+ if(city==='TP.HCM')return existing;
  return [...existing,...(extra[city]||[]).map(([name,lat,lng,image],index)=>({id:`manual-${city}-${index}`,name,category:'Tham quan',image,address:city,location:{lat,lng}})),...additional];
 }

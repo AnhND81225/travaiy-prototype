@@ -62,7 +62,7 @@ export const TripPreparationScreen: React.FC<TripPreparationScreenProps> = ({
                 Chuẩn bị chuyến đi
               </span>
               <h1 className="font-bold text-[18px] text-slate-900 leading-tight font-heading">
-                Đà Nẵng (12 - 14 Thg 6)
+                TP.HCM (12 - 14 Thg 6)
               </h1>
             </div>
           </div>
@@ -77,7 +77,7 @@ export const TripPreparationScreen: React.FC<TripPreparationScreenProps> = ({
         <div className="p-4 rounded-3xl bg-gradient-to-br from-blue-500 via-indigo-600 to-[#0A1680] text-white shadow-md">
           <div className="flex items-center justify-between mb-2">
             <span className="text-xs font-semibold text-blue-100 font-heading">
-              Dự báo thời tiết Đà Nẵng
+              Dự báo thời tiết TP.HCM
             </span>
             <span className="text-[11px] px-2 py-0.5 rounded-full bg-white/20 backdrop-blur-md">
               Rất lý tưởng
@@ -198,7 +198,7 @@ export const TripPreparationScreen: React.FC<TripPreparationScreenProps> = ({
           </h3>
           <div className="space-y-1.5 text-xs">
             <div className="flex items-center justify-between text-slate-600">
-              <span>Trung tâm hỗ trợ du khách Đà Nẵng:</span>
+              <span>Trung tâm hỗ trợ du khách TP.HCM:</span>
               <strong className="text-[#0A1680] font-mono font-bold">0236 3550 111</strong>
             </div>
             <div className="flex items-center justify-between text-slate-600">

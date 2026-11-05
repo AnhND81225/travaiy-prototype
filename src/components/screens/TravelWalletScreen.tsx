@@ -32,7 +32,7 @@ export const TravelWalletScreen: React.FC<TravelWalletScreenProps> = ({
       type: 'ticket',
       category: 'HÀNG KHÔNG',
       subCode: 'VJ628',
-      title: 'Vé máy bay TP.HCM – Đà Nẵng',
+      title: 'Vé máy bay TP.HCM – TP.HCM',
       provider: 'Vietjet Air',
       timeLabel: 'Thời gian khởi hành',
       timeValue: '12 Thg 6, 2025 · 06:15',
@@ -49,8 +49,8 @@ export const TravelWalletScreen: React.FC<TravelWalletScreenProps> = ({
       id: 'hotel-tms',
       type: 'hotel',
       category: 'KHÁCH SẠN',
-      subCode: 'Bãi biển Mỹ Khê',
-      title: 'TMS Hotel Da Nang Beach',
+      subCode: 'Công viên Tao Đàn',
+      title: 'TMS Hotel Ho Chi Minh City Beach',
       provider: 'Phòng Ocean King Suite · Tầng cao',
       timeLabel: 'Thời gian lưu trú',
       timeValue: '12 - 15 Thg 6 (3 đêm)',
@@ -163,7 +163,7 @@ export const TravelWalletScreen: React.FC<TravelWalletScreenProps> = ({
           <div className="flex items-center gap-2 min-w-0">
             <span className="text-[#0A1680] text-sm">🧭</span>
             <span className="font-heading font-semibold text-[13px] text-[#191c1e] truncate">
-              Đà Nẵng 3N2Đ (12 - 15 Thg 6)
+              TP.HCM 3N2Đ (12 - 15 Thg 6)
             </span>
           </div>
           <span className="text-xs text-slate-500 font-bold">▾</span>

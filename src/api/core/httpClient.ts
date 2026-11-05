@@ -133,7 +133,7 @@ async function httpRequest<T = unknown>(
               throw new Error('Token not found in refresh response');
             }
 
-            TokenStorage.setAccessToken(newAccessToken);
+            TokenStorage.setTokens(newAccessToken, refreshData.refreshToken || refreshData.data?.refreshToken || refreshData.result?.refreshToken);
             processQueue(null, newAccessToken);
 
             return httpRequest<T>(endpoint, method, body, {
@@ -186,7 +186,7 @@ async function httpRequest<T = unknown>(
 
     // 5. Parse phản hồi từ Backend
     const contentType = response.headers.get('content-type') || '';
-    const isJson = contentType.includes('application/json');
+    const isJson = contentType.includes('application/json') || contentType.includes('+json');
     const responsePayload = isJson ? await response.json() : await response.text();
 
     // 6. Xử lý lỗi HTTP status >= 400

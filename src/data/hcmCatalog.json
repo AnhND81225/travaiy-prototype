@@ -1,0 +1,4002 @@
+[
+  {
+    "id": "00c559f9-855f-5048-8d20-7538cb4012a8",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Phở 24",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Phở 24, Hẻm 158 Pasteur, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7771167,
+      "lng": 106.6996747
+    },
+    "durationMinutes": 60,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "01b41d3c-0578-598e-9f58-6912ad7f0ae0",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Nhà Hàng Hương Lài",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Nhà Hàng Hương Lài, 38, Đường Lý Tự Trọng, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.77734,
+      "lng": 106.700248
+    },
+    "durationMinutes": 60,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "02190ec6-57e9-5779-96d2-8a7c389a4f45",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Trung Nguyên Coffee",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Cà phê Trung Nguyên, Đường Nam Kỳ Khởi Nghĩa, Phường Bến Thành, Thành phố Hồ Chí Minh, 71009, Việt Nam",
+    "indoor": true,
+    "location": {
+      "lat": 10.7736119,
+      "lng": 106.7000454
+    },
+    "durationMinutes": 45,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "0340d217-6c93-52a9-bf5c-86d75055940b",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Cà Phê Mylife",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Cà Phê Mylife, Đường Nguyễn Du, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": true,
+    "location": {
+      "lat": 10.7769687,
+      "lng": 106.6980029
+    },
+    "durationMinutes": 45,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "042a2de6-d0cc-5d4d-bad2-d6ace3eaf13d",
+    "destinationId": "hcm-mvp",
+    "category": "culture",
+    "name": "Ben Nghe Street Food",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Ben Nghe Street Food, Đường Nam Kỳ Khởi Nghĩa, Phường Bến Thành, Thành phố Hồ Chí Minh, 71009, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7776249,
+      "lng": 106.6978228
+    },
+    "durationMinutes": 30,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "0449159d-513a-52db-85a4-2f0334e3ef7c",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Cà Phê Princess And The Pea",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Cà Phê Princess And The Pea, Hẻm 63 Pasteur, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": true,
+    "location": {
+      "lat": 10.7749587,
+      "lng": 106.7005062
+    },
+    "durationMinutes": 45,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "0498692b-629e-5d16-972a-907d1a41a76d",
+    "destinationId": "hcm-mvp",
+    "category": "nature",
+    "name": "Công viên bờ sông Sài Gòn",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Công viên bờ sông Sài Gòn, Phường An Khánh, Thành phố Hồ Chí Minh, 71108, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7719581,
+      "lng": 106.7096809
+    },
+    "durationMinutes": 60,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "04bba701-89bc-5b0c-8303-693fe019070e",
+    "destinationId": "hcm-mvp",
+    "category": "nature",
+    "name": "Công viên Lê Văn Tám",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Công viên Lê Văn Tám, Phường Tân Định, Thành phố Hồ Chí Minh, 71008, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7881913,
+      "lng": 106.6937582
+    },
+    "durationMinutes": 60,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "05dedd42-64fd-53d2-9fc8-6f2ea89f3747",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Highlands Coffee",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Highlands Coffee, 65, Đường Lê Lợi, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71006, Việt Nam",
+    "indoor": true,
+    "location": {
+      "lat": 10.7736729,
+      "lng": 106.7007717
+    },
+    "durationMinutes": 45,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "063a06e8-f4e7-5c35-b2bd-d5c8d2bdb441",
+    "destinationId": "hcm-mvp",
+    "category": "culture",
+    "name": "Sculpture Garden",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Sculpture Garden, Trương Định, Phường Bến Thành, Thành phố Hồ Chí Minh, 71009, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7747342,
+      "lng": 106.6938172
+    },
+    "durationMinutes": 30,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "0670e567-13bc-570b-8ad0-b4c1972f6b33",
+    "destinationId": "hcm-mvp",
+    "category": "culture",
+    "name": "買佛頭",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "買佛頭, Đường Bùi Viện, Phường Bến Thành, Thành phố Hồ Chí Minh, 71009, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7662905,
+      "lng": 106.6913686
+    },
+    "durationMinutes": 30,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "06cb8169-a527-5446-a816-b66ca42a3b64",
+    "destinationId": "hcm-mvp",
+    "category": "culture",
+    "name": "Kakteen-Garten",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Kakteen-Garten, Trương Định, Phường Bến Thành, Thành phố Hồ Chí Minh, 71009, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.774699,
+      "lng": 106.692279
+    },
+    "durationMinutes": 30,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "08c22129-5f0f-519c-b835-9dfc524deb82",
+    "destinationId": "hcm-mvp",
+    "category": "nature",
+    "name": "Công viên Thích Quảng Đức",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Công viên Thích Quảng Đức, Phường Xuân Hòa, Thành phố Hồ Chí Minh, 72421, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7755331,
+      "lng": 106.6868242
+    },
+    "durationMinutes": 60,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "099fbe35-1d60-55a6-8e5b-c18af55bc503",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Nhà Hàng My Bahn Mi",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Nhà Hàng My Bahn Mi, 57, Đường Nguyễn Du, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7794971,
+      "lng": 106.7005803
+    },
+    "durationMinutes": 60,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "0a5ceb0f-39d0-5110-a824-8c662028075f",
+    "destinationId": "hcm-mvp",
+    "category": "culture",
+    "name": "Elephants Statue",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Elephants Statue, Nguyễn Văn Thủ, Phường Tân Định, Thành phố Hồ Chí Minh, 71008, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7902787,
+      "lng": 106.6994063
+    },
+    "durationMinutes": 30,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "0b94baf9-353f-5950-958b-7cb4949fee7d",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Nhà Hàng Jaspas",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Nhà Hàng Jaspas, Hẻm 74 Hai Bà Trưng, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.778168,
+      "lng": 106.7037041
+    },
+    "durationMinutes": 60,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "0e3fce7d-f95d-56f8-aa24-e31f052c4b01",
+    "destinationId": "hcm-mvp",
+    "category": "culture",
+    "name": "Cambodia Bus Companies (many)",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Cambodia Bus Companies (many), Đường Phạm Ngũ Lão, Phường Bến Thành, Thành phố Hồ Chí Minh, 71009, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7678095,
+      "lng": 106.6915258
+    },
+    "durationMinutes": 30,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "11ae625a-f313-57a3-89cd-323e6a80ab10",
+    "destinationId": "hcm-mvp",
+    "category": "culture",
+    "name": "Vườn bướm",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Vườn bướm, Đường Nguyễn Bỉnh Khiêm, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7876304,
+      "lng": 106.7064562
+    },
+    "durationMinutes": 30,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "12417c69-cda9-576b-bc4c-4058e66c5c04",
+    "destinationId": "hcm-mvp",
+    "category": "nature",
+    "name": "Vườn hoa Tượng đài Bác Hồ",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Vườn hoa Tượng đài Bác Hồ, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7759918,
+      "lng": 106.70158
+    },
+    "durationMinutes": 60,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "139546f2-7353-5da5-a942-fa6728577bc0",
+    "destinationId": "hcm-mvp",
+    "category": "culture",
+    "name": "Tượng Tôn Đức Thắng",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Tượng Tôn Đức Thắng, 65, Đường Huỳnh Thúc Kháng, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7718087,
+      "lng": 106.7014732
+    },
+    "durationMinutes": 30,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "1520a772-9c1d-5644-8666-96f68993f688",
+    "destinationId": "hcm-mvp",
+    "category": "culture",
+    "name": "Bảo tàng Tôn Đức Thắng",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Bảo tàng Tôn Đức Thắng, Đường Thi Sách, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": true,
+    "location": {
+      "lat": 10.7774476,
+      "lng": 106.706435
+    },
+    "durationMinutes": 90,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "16587e96-cf3d-58de-a343-241cd5746a6b",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Little streetfood stall - Broken Rice with steak (25.000 Dong)",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Little streetfood stall - Broken Rice with steak (25.000 Dong), Hẻm 158 Pasteur, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7770806,
+      "lng": 106.6997383
+    },
+    "durationMinutes": 60,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "19339f1b-05d0-5347-9c61-d9f1876b2575",
+    "destinationId": "hcm-mvp",
+    "category": "nature",
+    "name": "Công viên Chi Lăng",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Công viên Chi Lăng, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7777652,
+      "lng": 106.7015783
+    },
+    "durationMinutes": 60,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "198f9242-5f23-5ddf-8c20-b983c204b1ff",
+    "destinationId": "hcm-mvp",
+    "category": "culture",
+    "name": "Mohandas Gandhi",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Mohandas Gandhi, Trương Định, Phường Bến Thành, Thành phố Hồ Chí Minh, 71009, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7748178,
+      "lng": 106.693746
+    },
+    "durationMinutes": 30,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "20509662-96bf-53a9-87f9-f36ca0e0c222",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Mang's Mania Vegan Restaurant",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Mang's Mania Vegan Restaurant, 86, Đường Nguyễn Huệ, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7751819,
+      "lng": 106.7027648
+    },
+    "durationMinutes": 60,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "215efdbb-6296-5fab-8332-1a34e7a0ea61",
+    "destinationId": "hcm-mvp",
+    "category": "nature",
+    "name": "The Commons Thu Thiem",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "The Commons Thu Thiem, 33/10, Phường An Khánh, Thành phố Hồ Chí Minh, 71108, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7822851,
+      "lng": 106.7133158
+    },
+    "durationMinutes": 60,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "2192fb0c-6186-5951-b44f-35b59a9b1a3f",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Lounge",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Lounge, Đường Nguyễn Trung Trực, Phường Bến Thành, Thành phố Hồ Chí Minh, 71009, Việt Nam",
+    "indoor": true,
+    "location": {
+      "lat": 10.7739893,
+      "lng": 106.6990368
+    },
+    "durationMinutes": 45,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "234e80b3-6b76-5165-b9ae-d79031b40abb",
+    "destinationId": "hcm-mvp",
+    "category": "culture",
+    "name": "Voi",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Voi, Trường Sa, Phường Thạnh Mỹ Tây, Thành phố Hồ Chí Minh, 72331, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7886498,
+      "lng": 106.7071674
+    },
+    "durationMinutes": 30,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "237c5a96-0d0b-5246-8212-c1c8ba996466",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Nhà Hàng Nướng Barbecue Garden",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Nhà Hàng Nướng Barbecue Garden, 134, Đường Nam Kỳ Khởi Nghĩa, Phường Bến Thành, Thành phố Hồ Chí Minh, 71009, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7772965,
+      "lng": 106.69776
+    },
+    "durationMinutes": 60,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "24b6b756-2147-5667-a3d8-86c2a6d4fa44",
+    "destinationId": "hcm-mvp",
+    "category": "nature",
+    "name": "Common area Aqua 2",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Common area Aqua 2, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7865234,
+      "lng": 106.7113853
+    },
+    "durationMinutes": 60,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "2525b07b-ea96-5f4a-89e7-57b3ce302038",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Ms. Coffee",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Ms. Coffee, 7, Đường Hàn Thuyên, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": true,
+    "location": {
+      "lat": 10.7789519,
+      "lng": 106.6983631
+    },
+    "durationMinutes": 45,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "2537de1d-3100-5695-b011-5a0570640928",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Nhà Hàng Beirut",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Nhà Hàng Beirut, 74/13D, Đường Hai Bà Trưng, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7780733,
+      "lng": 106.7039174
+    },
+    "durationMinutes": 60,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "2551414a-e884-5e83-a06e-881e6163b014",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Shamballa Vegetarian",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Shamballa Vegetarian, 31, Đường Lý Tự Trọng, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.779601,
+      "lng": 106.7027786
+    },
+    "durationMinutes": 60,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "27a12b57-7356-5788-90c7-10c6b0d66a52",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Cà Phê The Refinery",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Cà Phê The Refinery, Hẻm 74 Hai Bà Trưng, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": true,
+    "location": {
+      "lat": 10.7782301,
+      "lng": 106.7037621
+    },
+    "durationMinutes": 45,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "27bd1208-c0c7-5f2a-b9ed-6b78b14851a9",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Scarab Saigon",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Scarab Saigon, 27, Đường Nguyễn Trung Trực, Phường Bến Thành, Thành phố Hồ Chí Minh, 71009, Việt Nam",
+    "indoor": true,
+    "location": {
+      "lat": 10.7744347,
+      "lng": 106.6984912
+    },
+    "durationMinutes": 45,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "2b4d2040-f056-563c-8bdf-2dbe9d5d0c3e",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Nhà Hàng Namo",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Nhà Hàng Namo, 74/6, Đường Hai Bà Trưng, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.777874,
+      "lng": 106.7037686
+    },
+    "durationMinutes": 60,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "2dcf36c4-cdad-53cf-906e-078b70e193c9",
+    "destinationId": "hcm-mvp",
+    "category": "culture",
+    "name": "Street Market with Pho",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Street Market with Pho, Đường Phan Chu Trinh, Phường Bến Thành, Thành phố Hồ Chí Minh, 71009, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7720792,
+      "lng": 106.6976304
+    },
+    "durationMinutes": 30,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "2e883fee-1e22-5f6a-b7ca-bd0934c9d0aa",
+    "destinationId": "hcm-mvp",
+    "category": "nature",
+    "name": "Công viên Âu Lạc",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Công viên Âu Lạc, Phường Chợ Quán, Thành phố Hồ Chí Minh, 72722, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7648936,
+      "lng": 106.6808996
+    },
+    "durationMinutes": 60,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "2ee7ae39-a43d-5561-a39b-67102c99543e",
+    "destinationId": "hcm-mvp",
+    "category": "culture",
+    "name": "Phòng Truyền thống Thành Đoàn",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Phòng Truyền thống Thành Đoàn, Đường Nguyễn Thị Minh Khai, Phường Xuân Hòa, Thành phố Hồ Chí Minh, 72421, Việt Nam",
+    "indoor": true,
+    "location": {
+      "lat": 10.7820744,
+      "lng": 106.6977069
+    },
+    "durationMinutes": 90,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "2f5e2f6f-530c-53f5-a523-1d0c9aa17343",
+    "destinationId": "hcm-mvp",
+    "category": "culture",
+    "name": "名信片",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "名信片, Đường Lê Lợi, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7737987,
+      "lng": 106.7002497
+    },
+    "durationMinutes": 30,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "3252df3c-4a55-57a1-9e41-94285e6a8451",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "TukTuk Thai Bistro",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "TukTuk Thai Bistro, Đường Lý Tự Trọng, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7775128,
+      "lng": 106.7003806
+    },
+    "durationMinutes": 60,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "32a73b08-56ad-543f-8b67-5ef2e627b019",
+    "destinationId": "hcm-mvp",
+    "category": "culture",
+    "name": "Tượng Bác Hồ Với Thiếu Nhi",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Tượng Bác Hồ Với Thiếu Nhi, Đường Nam Kỳ Khởi Nghĩa, Phường Xuân Hòa, Thành phố Hồ Chí Minh, 72421, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7842543,
+      "lng": 106.6892031
+    },
+    "durationMinutes": 30,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "34478086-07a0-5a31-87a8-f8c6e134ae27",
+    "destinationId": "hcm-mvp",
+    "category": "culture",
+    "name": "Bảo tàng Chiến dịch Hồ Chí Minh",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Bảo tàng Chiến dịch Hồ Chí Minh, 2, Đường Lê Duẩn, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": true,
+    "location": {
+      "lat": 10.7869819,
+      "lng": 106.704239
+    },
+    "durationMinutes": 90,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "35e5bdb3-e9e7-54b1-a766-fabe38f6a2d1",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Nhà Hàng Secret Garden",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Nhà Hàng Secret Garden, 158, Hẻm 158 Pasteur, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7773229,
+      "lng": 106.6998263
+    },
+    "durationMinutes": 60,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "360aeb4c-2706-5a59-a596-57f8d81cab18",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Cà Phê Terrace",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Cà Phê Terrace, 65, Đường Lê Lợi, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71006, Việt Nam",
+    "indoor": true,
+    "location": {
+      "lat": 10.7737673,
+      "lng": 106.7011077
+    },
+    "durationMinutes": 45,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "3643f774-93d5-5193-8c81-9087951d6d57",
+    "destinationId": "hcm-mvp",
+    "category": "culture",
+    "name": "偽装床屋エリア",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "偽装床屋エリア, Nguyễn Phi Khanh, Phường Tân Định, Thành phố Hồ Chí Minh, 71008, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7918935,
+      "lng": 106.6937784
+    },
+    "durationMinutes": 30,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "3820e708-f20e-580c-832b-c4069d9183b9",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Cà Phê Teaspoon",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Cà Phê Teaspoon, Đường Lý Tự Trọng, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": true,
+    "location": {
+      "lat": 10.7793691,
+      "lng": 106.702413
+    },
+    "durationMinutes": 45,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "395c647d-7c86-5e96-b7a3-7120a175cc04",
+    "destinationId": "hcm-mvp",
+    "category": "culture",
+    "name": "Công viên bờ sông Sài Gòn",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Công viên bờ sông Sài Gòn, Nhà Thờ, Phường An Khánh, Thành phố Hồ Chí Minh, 71108, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7716671,
+      "lng": 106.7097359
+    },
+    "durationMinutes": 30,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "3dd4bec7-f6c2-5cb4-9568-cbe2be217fd4",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Cà Phê Passio",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Cà Phê Passio, Đường Nguyễn Du, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": true,
+    "location": {
+      "lat": 10.779941,
+      "lng": 106.701006
+    },
+    "durationMinutes": 45,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "3f033f3a-0c86-5c62-b33b-fe474b741910",
+    "destinationId": "hcm-mvp",
+    "category": "nature",
+    "name": "Creative Park",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Creative Park, Phường An Khánh, Thành phố Hồ Chí Minh, 71108, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7800421,
+      "lng": 106.7125189
+    },
+    "durationMinutes": 60,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "408527e2-2ae6-5040-862b-e57537f8daaf",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Nhà Hàng Poke Saigon",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Nhà Hàng Poke Saigon, 42, Đường Lý Tự Trọng, Phường Sài Gòn, Thành phố Hồ Chí Minh, 70000, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7772881,
+      "lng": 106.7000639
+    },
+    "durationMinutes": 60,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "41223522-0f51-5a92-bad8-ace689e3ef58",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Cà Phê Thức",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Cà Phê Thức, Hẻm 158 Pasteur, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": true,
+    "location": {
+      "lat": 10.7770535,
+      "lng": 106.6997485
+    },
+    "durationMinutes": 45,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "420e2f5e-9e05-5335-9c7e-3bef591c5e40",
+    "destinationId": "hcm-mvp",
+    "category": "culture",
+    "name": "Trưng bày Từ Dinh Norodom đến Dinh Độc Lập",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Trưng bày Từ Dinh Norodom đến Dinh Độc Lập, 106, Đường Nguyễn Du, Phường Bến Thành, Thành phố Hồ Chí Minh, 71009, Việt Nam",
+    "indoor": true,
+    "location": {
+      "lat": 10.7765844,
+      "lng": 106.6972837
+    },
+    "durationMinutes": 90,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "42592baa-7984-516e-81c8-eba5971e2dea",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Nhà Hàng Miyama",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Nhà Hàng Miyama, 65, Đường Lê Lợi, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7736479,
+      "lng": 106.7009196
+    },
+    "durationMinutes": 60,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "429f8f6a-5a54-583e-a430-5c176899644c",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Highlands Coffee",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Highlands Coffee, Đường Nguyễn Trung Trực, Phường Bến Thành, Thành phố Hồ Chí Minh, 71009, Việt Nam",
+    "indoor": true,
+    "location": {
+      "lat": 10.7747454,
+      "lng": 106.6982421
+    },
+    "durationMinutes": 45,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "42a56f05-abab-5fc6-8af8-05229fb38f0f",
+    "destinationId": "hcm-mvp",
+    "category": "culture",
+    "name": "Mai's Gallery",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Mai's Gallery, Hẻm 15B Lê Thánh Tôn, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7798243,
+      "lng": 106.7059373
+    },
+    "durationMinutes": 30,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "44646436-8159-57b1-9dc2-d31e2e0fe41a",
+    "destinationId": "hcm-mvp",
+    "category": "nature",
+    "name": "Công viên 23 tháng 9",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Công viên 23 tháng 9, Phường Bến Thành, Thành phố Hồ Chí Minh, 71009, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7689566,
+      "lng": 106.6925933
+    },
+    "durationMinutes": 60,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "4524d1b0-a20c-519d-9136-9f4a6e40bbd8",
+    "destinationId": "hcm-mvp",
+    "category": "culture",
+    "name": "Bảo tàng Thành phố Hồ Chí Minh",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Bảo tàng Thành phố Hồ Chí Minh, Đường Lý Tự Trọng, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71006, Việt Nam",
+    "indoor": true,
+    "location": {
+      "lat": 10.7759106,
+      "lng": 106.6996214
+    },
+    "durationMinutes": 90,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "4554a998-188a-529d-8456-48777dfae2dd",
+    "destinationId": "hcm-mvp",
+    "category": "culture",
+    "name": "Tượng Phù Đổng Thiên Vương",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Tượng Phù Đổng Thiên Vương, Ngã sáu Phù Đổng, Phường Bến Thành, Thành phố Hồ Chí Minh, 71009, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7713487,
+      "lng": 106.693241
+    },
+    "durationMinutes": 30,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "485ec42d-7633-534b-bff2-7f540c4f96ac",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Nhà Hàng Ru Nam D'or",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Nhà Hàng Ru Nam D'or, Công trường Công xã Paris, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7792416,
+      "lng": 106.6989688
+    },
+    "durationMinutes": 60,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "48aa34f7-6026-5ad5-8937-4f5e980cca31",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Nhà Hàng Ghém",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Nhà Hàng Ghém, Đường Pasteur, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7782608,
+      "lng": 106.6982021
+    },
+    "durationMinutes": 60,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "48fa453b-474b-5827-8cd7-dca9530c4855",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Mountain Retreat",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Mountain Retreat, Đường Lê Lợi, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7744459,
+      "lng": 106.7006746
+    },
+    "durationMinutes": 60,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "4aab77e4-bcc6-5266-9714-5e2c6cbef175",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Nhà Hàng Lemongrass",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Nhà Hàng Lemongrass, Đường Nguyễn Thiệp, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7754055,
+      "lng": 106.7033338
+    },
+    "durationMinutes": 60,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "4ac34169-c780-5da3-9e55-000ee8758c8e",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Nhà Hàng Bông Súng",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Nhà Hàng Bông Súng, Đường Nguyễn Du, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7782363,
+      "lng": 106.6990416
+    },
+    "durationMinutes": 60,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "4ae0a00c-c84c-59b4-85e0-cb4d3f59aa70",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Nhà Hàng Cung Đình Rex",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "146 Nhà hàng Cung Đình Rex, 146, Đường Pasteur, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7754972,
+      "lng": 106.7007063
+    },
+    "durationMinutes": 60,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "4c09e993-5ef0-58fd-8fb0-010e8c5fc885",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Saigon Sakura",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Saigon Sakura, 100, Đường Nguyễn Du, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7773654,
+      "lng": 106.6981202
+    },
+    "durationMinutes": 60,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "4d19a860-672c-5b7b-8613-5b21b1f20376",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Secret Cottage",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Secret Cottage, Đường Nguyễn Thiệp, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7752622,
+      "lng": 106.7032246
+    },
+    "durationMinutes": 60,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "4e51a88e-2860-5606-ae78-d1e7572907e6",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Nhà Hàng Cơm Nhà Homemade Meals",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Nhà Hàng Cơm Nhà Homemade Meals, 151, Đường Đồng Khởi, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7758733,
+      "lng": 106.7034298
+    },
+    "durationMinutes": 60,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "4e99041f-4e4c-5a4d-b818-48bea6aa4019",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Cà Phê Regina",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Cà Phê Regina, Đường Nguyễn Du, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": true,
+    "location": {
+      "lat": 10.778345,
+      "lng": 106.699128
+    },
+    "durationMinutes": 45,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "4e9f9389-44f7-5507-ae65-5c1aeb2ccd5c",
+    "destinationId": "hcm-mvp",
+    "category": "culture",
+    "name": "Chuồng khỉ",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Chuồng khỉ, Trường Sa, Phường Thạnh Mỹ Tây, Thành phố Hồ Chí Minh, 72331, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.787941,
+      "lng": 106.7068702
+    },
+    "durationMinutes": 30,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "508f4ef5-c1bc-5b9a-b0e6-50a46f568253",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Cà Phê Chateraise Lê Thánh Tôn",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Cà Phê Chateraise Lê Thánh Tôn, 29A, Đường Lê Thánh Tôn, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": true,
+    "location": {
+      "lat": 10.77908,
+      "lng": 106.7035922
+    },
+    "durationMinutes": 45,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "5171a388-396a-55be-b923-bd12161a9f7b",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "The Coffee Bean & Tea Leaf;235 Đồng Khởi",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "The Coffee Bean & Tea Leaf;235 Đồng Khởi, 235, Đường Đồng Khởi, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": true,
+    "location": {
+      "lat": 10.7786273,
+      "lng": 106.6999908
+    },
+    "durationMinutes": 45,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "52ce4662-e8e5-5b3a-ab15-1fd5ac7a8d83",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Gióng",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Gióng, 57, Đường Nguyễn Du, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": true,
+    "location": {
+      "lat": 10.7793468,
+      "lng": 106.7004214
+    },
+    "durationMinutes": 45,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "53648b47-d046-5e45-bae1-ccd5f477741a",
+    "destinationId": "hcm-mvp",
+    "category": "culture",
+    "name": "Động vật bò sát",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Động vật bò sát, Đường Nguyễn Thị Minh Khai, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7901336,
+      "lng": 106.7058841
+    },
+    "durationMinutes": 30,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "54088254-fada-5a49-bb17-05f46317fb8c",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Starbucks",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Starbucks, 93, Đường Nguyễn Du, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": true,
+    "location": {
+      "lat": 10.7767726,
+      "lng": 106.6983083
+    },
+    "durationMinutes": 45,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "55abcc9c-eb5a-5a4e-97a3-90f883aa7774",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Highlands Coffee",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Highlands Coffee, Đường Nam Kỳ Khởi Nghĩa, Phường Bến Thành, Thành phố Hồ Chí Minh, 71009, Việt Nam",
+    "indoor": true,
+    "location": {
+      "lat": 10.7754667,
+      "lng": 106.6994608
+    },
+    "durationMinutes": 45,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "5604fb48-383c-529d-a021-c546c8c0e863",
+    "destinationId": "hcm-mvp",
+    "category": "culture",
+    "name": "Bảo tàng Mỹ thuật Thành phố Hồ Chí Minh",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Bảo tàng Mỹ thuật Thành phố Hồ Chí Minh, 97A, Đường Phó Đức Chính, Phường Bến Thành, Thành phố Hồ Chí Minh, 71010, Việt Nam",
+    "indoor": true,
+    "location": {
+      "lat": 10.769596,
+      "lng": 106.69927
+    },
+    "durationMinutes": 90,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "5630de53-ba27-5f33-afcf-d8ad153288b2",
+    "destinationId": "hcm-mvp",
+    "category": "nature",
+    "name": "Công viên Văn hóa Phú Nhuận",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Công viên Văn hóa Phú Nhuận, 49, Phường Cầu Kiệu, Thành phố Hồ Chí Minh, 72222, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.8028204,
+      "lng": 106.6904263
+    },
+    "durationMinutes": 60,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "567b7c58-15cc-556c-b72f-1d254772dd28",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Nhà Hàng El Gaucho",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Nhà Hàng El Gaucho, Đường Hai Bà Trưng, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7780321,
+      "lng": 106.7036328
+    },
+    "durationMinutes": 60,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "576443ce-1649-5ca0-a1fb-5750cca1872b",
+    "destinationId": "hcm-mvp",
+    "category": "nature",
+    "name": "Công Viên Sala",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Công Viên Sala, Phường An Khánh, Thành phố Hồ Chí Minh, 71108, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7712694,
+      "lng": 106.7250457
+    },
+    "durationMinutes": 60,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "5a55f91c-622b-50e5-9b11-76b9f9b873ce",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Cộng Cà Phê",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Cộng Cà Phê, 26, Đường Lý Tự Trọng, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": true,
+    "location": {
+      "lat": 10.7781683,
+      "lng": 106.7010262
+    },
+    "durationMinutes": 45,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "5a870698-d979-52a7-8734-aa61de02bddd",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Okkio",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Okkio, 151, Đường Đồng Khởi, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": true,
+    "location": {
+      "lat": 10.7757723,
+      "lng": 106.7032334
+    },
+    "durationMinutes": 45,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "5b2e8ac5-7a7d-5a10-a733-733b6a3fb2f9",
+    "destinationId": "hcm-mvp",
+    "category": "nature",
+    "name": "Công viên Lam Sơn",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Công viên Lam Sơn, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7759652,
+      "lng": 106.7025529
+    },
+    "durationMinutes": 60,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "5b59f9c9-0db4-55af-8253-427f531ddc96",
+    "destinationId": "hcm-mvp",
+    "category": "culture",
+    "name": "Đường Sách",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Đường Sách, Đường Nguyễn Văn Bình, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7805735,
+      "lng": 106.6996948
+    },
+    "durationMinutes": 30,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "5b652ced-4ad5-512e-8e41-eb5468d612ac",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Starbucks",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Starbucks Hàn Thuyên, 11-13, Đường Hàn Thuyên, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": true,
+    "location": {
+      "lat": 10.7788646,
+      "lng": 106.6982455
+    },
+    "durationMinutes": 45,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "5c6dcf24-168d-5f9b-ae0d-8ecd992fc4b2",
+    "destinationId": "hcm-mvp",
+    "category": "culture",
+    "name": "Bảo tàng Chứng tích Chiến tranh",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Bảo tàng Chứng tích Chiến tranh, 28, Đường Võ Văn Tần, Phường Xuân Hòa, Thành phố Hồ Chí Minh, 72421, Việt Nam",
+    "indoor": true,
+    "location": {
+      "lat": 10.7793647,
+      "lng": 106.6922806
+    },
+    "durationMinutes": 90,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "603663d2-329d-5da4-a81a-48f668ece42d",
+    "destinationId": "hcm-mvp",
+    "category": "nature",
+    "name": "Công trình cảnh quan Nhà thi đấu Phan Đình Phùng",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Công trình cảnh quan Nhà thi đấu Phan Đình Phùng, 8, Phường Xuân Hòa, Thành phố Hồ Chí Minh, 72421, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7814919,
+      "lng": 106.6938719
+    },
+    "durationMinutes": 60,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "624ff6b5-b088-593f-bb3f-e73273812ed6",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "T-Plus Coffee",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "T-Plus Coffee, Đường Lê Thánh Tôn, Phường Bến Thành, Thành phố Hồ Chí Minh, 71009, Việt Nam",
+    "indoor": true,
+    "location": {
+      "lat": 10.7743341,
+      "lng": 106.6990072
+    },
+    "durationMinutes": 45,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "62db3bc8-bb8c-5a02-8c55-a37c4f044c08",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Quán Cà Phê Mellower",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Quán Cà Phê Mellower, Đường Nguyễn Du, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": true,
+    "location": {
+      "lat": 10.7786352,
+      "lng": 106.699858
+    },
+    "durationMinutes": 45,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "6310ec5e-67a4-543a-b69d-946117cb3d81",
+    "destinationId": "hcm-mvp",
+    "category": "culture",
+    "name": "Tượng Đức Thánh Trần Hưng Đạo",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Tượng Đức Thánh Trần Hưng Đạo, Đường Tôn Ðức Thắng, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7752864,
+      "lng": 106.706468
+    },
+    "durationMinutes": 30,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "633fbf91-fea1-5f72-8d3d-ed3bcf8c74c3",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Cà Phê La Fenetre Soleil",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Cà Phê La Fenetre Soleil, 44, 1st floor, Đường Lý Tự Trọng, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": true,
+    "location": {
+      "lat": 10.7773999,
+      "lng": 106.7003456
+    },
+    "durationMinutes": 45,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "639a12f5-f033-5007-832b-94ac4cc5e4a8",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Cà Phê Ciao",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Cà Phê Ciao, 74-76, Đường Nguyễn Huệ, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": true,
+    "location": {
+      "lat": 10.7751001,
+      "lng": 106.7029693
+    },
+    "durationMinutes": 45,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "64801cf0-a7f3-5284-9cfd-f228ea09d70e",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "The Old Compass Cafe and Bar",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "The Old Compass Cafe and Bar, 63/11 Floor 3, Đường Pasteur, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": true,
+    "location": {
+      "lat": 10.7749924,
+      "lng": 106.7005975
+    },
+    "durationMinutes": 45,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "65f94a38-7dab-5af9-a6ee-a41e5d16ce3e",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Nhà Hàng Ngon",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Nhà Hàng Ngon, 160, Đường Pasteur, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7773464,
+      "lng": 106.6996325
+    },
+    "durationMinutes": 60,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "66ec3e5a-bb88-54d9-bfaf-6b815aded141",
+    "destinationId": "hcm-mvp",
+    "category": "nature",
+    "name": "Công viên Phường 5",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Công viên Phường 5, Phường Vĩnh Hội, Thành phố Hồ Chí Minh, 72821, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7578467,
+      "lng": 106.6995328
+    },
+    "durationMinutes": 60,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "67830fb7-0af4-5305-80d7-84241646c418",
+    "destinationId": "hcm-mvp",
+    "category": "nature",
+    "name": "Đài liệt sĩ Quận 3",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Đài liệt sĩ Quận 3, Phường Xuân Hòa, Thành phố Hồ Chí Minh, 72421, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7911763,
+      "lng": 106.6830836
+    },
+    "durationMinutes": 60,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "67867bad-35cd-5af5-b4b6-79c89bcb664e",
+    "destinationId": "hcm-mvp",
+    "category": "culture",
+    "name": "Cây đàn Việt Nam",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Cây đàn Việt Nam, Công trường Lam Sơn, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7771736,
+      "lng": 106.7036964
+    },
+    "durationMinutes": 30,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "67ae6b38-6c83-5377-b2f2-72840c39321b",
+    "destinationId": "hcm-mvp",
+    "category": "culture",
+    "name": "Bảo tàng Lịch sử Thành phố Hồ Chí Minh",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Bảo tàng Lịch sử Thành phố Hồ Chí Minh, 2, Đường Nguyễn Thị Minh Khai, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": true,
+    "location": {
+      "lat": 10.7879719,
+      "lng": 106.7049563
+    },
+    "durationMinutes": 90,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "682b48bc-7b1f-5f0e-a7bb-0d1c6c23b4f8",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Starbucks",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Starbucks, 141, Đường Nguyễn Huệ, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71006, Việt Nam",
+    "indoor": true,
+    "location": {
+      "lat": 10.7756464,
+      "lng": 106.7005642
+    },
+    "durationMinutes": 45,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "687b9136-316f-541a-b89b-a7f3a13dad8e",
+    "destinationId": "hcm-mvp",
+    "category": "culture",
+    "name": "Secret Weapon Bunker Museum - Tet Offensive",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Secret Weapon Bunker Museum - Tet Offensive, Đường Võ Văn Tần, Phường Bàn Cờ, Thành phố Hồ Chí Minh, 72420, Việt Nam",
+    "indoor": true,
+    "location": {
+      "lat": 10.7720281,
+      "lng": 106.6860762
+    },
+    "durationMinutes": 90,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "6a013483-9181-5994-a6ce-dd218d87d90d",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Văn minh cà phê",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Văn minh cà phê, Đường Đồng Khởi, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": true,
+    "location": {
+      "lat": 10.7751982,
+      "lng": 106.7040925
+    },
+    "durationMinutes": 45,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "6c0e3cd3-108d-5098-8575-4222ba19e2f0",
+    "destinationId": "hcm-mvp",
+    "category": "nature",
+    "name": "Công viên Phong Châu",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Công viên Phong Châu, Phường Cầu Ông Lãnh, Thành phố Hồ Chí Minh, 71011, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7662602,
+      "lng": 106.6826741
+    },
+    "durationMinutes": 60,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "6de66660-64ee-59a6-9bfb-e79081c250da",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Nhà Hàng Mai Xuân Canh",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Nhà Hàng Mai Xuân Canh, Đường Nguyễn Du, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.779395,
+      "lng": 106.7005031
+    },
+    "durationMinutes": 60,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "6f2edafe-8c83-5b0a-a431-11ba0a4d7ce1",
+    "destinationId": "hcm-mvp",
+    "category": "culture",
+    "name": "J.B.Louis Pierre",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "J.B.Louis Pierre, Đường Nguyễn Bỉnh Khiêm, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7879816,
+      "lng": 106.7056785
+    },
+    "durationMinutes": 30,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "704e9503-5ef4-5917-8ad4-b46d47bc14a6",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Nhà Hàng Hoa Túc",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Nhà Hàng Hoa Túc, 74, Đường Hai Bà Trưng, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7783472,
+      "lng": 106.7038891
+    },
+    "durationMinutes": 60,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "70af493b-b90f-58fa-a8ed-988b76f8d30c",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Lương Sơn Quán",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Lương Sơn Quán, Đường Lý Tự Trọng, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7796141,
+      "lng": 106.7026193
+    },
+    "durationMinutes": 60,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "71f6619c-73a1-54e2-a72e-6db2c51ebbd7",
+    "destinationId": "hcm-mvp",
+    "category": "culture",
+    "name": "Tượng Voi Vua Prajadhipok",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Tượng Voi Vua Prajadhipok, Đường Nguyễn Bỉnh Khiêm, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7874383,
+      "lng": 106.7058903
+    },
+    "durationMinutes": 30,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "745305be-68ae-501d-be7c-0c798ec29f82",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Đen Đá Coffee - Pasteur",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Đen Đá Coffee - Pasteur, Đường Pasteur, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": true,
+    "location": {
+      "lat": 10.7783879,
+      "lng": 106.6982947
+    },
+    "durationMinutes": 45,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "788bfee5-fdc4-5fc8-b73c-ea6b9d66d35b",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Nhà Hàng Saigon Garden",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Nhà Hàng Saigon Garden, 99, Đường Nguyễn Huệ, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7755232,
+      "lng": 106.702529
+    },
+    "durationMinutes": 60,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "7b8c4afa-a150-5d40-a2fc-fd0f225279b3",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Eddie's New York Deli & Diner",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Eddie's New York Deli & Diner, Đường Pasteur, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7751007,
+      "lng": 106.7006098
+    },
+    "durationMinutes": 60,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "7c9f5f1c-456f-51eb-a8fa-55302cacc89e",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Nhà Hàng Blanchy Street",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Nhà Hàng Blanchy Street, 74, Đường Hai Bà Trưng, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7780081,
+      "lng": 106.7038501
+    },
+    "durationMinutes": 60,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "7d9d5e0d-8b60-5d36-826f-bdcab51f3999",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Kalf Coffee & Tea",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Kalf Coffee & Tea, 178/15B, Đường Pasteur, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": true,
+    "location": {
+      "lat": 10.7784708,
+      "lng": 106.6985896
+    },
+    "durationMinutes": 45,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "7e3d146e-b137-5080-8764-158c208d3162",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Cà Phê Live Jazz",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Cà Phê Live Jazz, Đường Lê Lợi, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": true,
+    "location": {
+      "lat": 10.7743567,
+      "lng": 106.7006343
+    },
+    "durationMinutes": 45,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "80ae6bd9-c9b1-5bc9-84bc-0e4d0329fbca",
+    "destinationId": "hcm-mvp",
+    "category": "nature",
+    "name": "Công viên Khánh Hội",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Công viên Khánh Hội, Phường Vĩnh Hội, Thành phố Hồ Chí Minh, 72821, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7577476,
+      "lng": 106.6980544
+    },
+    "durationMinutes": 60,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "81837aa4-f2b4-5877-924d-60645bcdcc03",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Curry-licious",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Curry-licious, Công trường Lam Sơn, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.776982,
+      "lng": 106.7038982
+    },
+    "durationMinutes": 60,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "86007676-1460-5b9c-ab77-2dca18f75502",
+    "destinationId": "hcm-mvp",
+    "category": "culture",
+    "name": "Art Arcade",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Art Arcade, 151, Đường Đồng Khởi, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7757081,
+      "lng": 106.7033003
+    },
+    "durationMinutes": 30,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "87201dbb-bf2c-5f58-a966-5ab884c9a690",
+    "destinationId": "hcm-mvp",
+    "category": "culture",
+    "name": "Street Art Street (partially demolished)",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Street Art Street (partially demolished), Hẻm 15B Đường Lê Thánh Tôn, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.780298,
+      "lng": 106.705046
+    },
+    "durationMinutes": 30,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "8857101e-8c67-5cc3-8e15-3b89c6e57d47",
+    "destinationId": "hcm-mvp",
+    "category": "culture",
+    "name": "Tạp hóa",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Tạp hóa, Hẻm 135 Trần Hưng Ðạo, Phường Cầu Ông Lãnh, Thành phố Hồ Chí Minh, 71011, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7670435,
+      "lng": 106.6948007
+    },
+    "durationMinutes": 30,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "88eb42ee-e218-52ef-ae3e-1d73ec6daeb9",
+    "destinationId": "hcm-mvp",
+    "category": "nature",
+    "name": "Công viên Bến Bạch Đằng",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Công viên Bến Bạch Đằng, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7784042,
+      "lng": 106.7075008
+    },
+    "durationMinutes": 60,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "8a491253-8512-56c1-92b5-eca1c4747c30",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Morico",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Morico, Đường Lê Lợi, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7743273,
+      "lng": 106.700606
+    },
+    "durationMinutes": 60,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "8a8d5fa8-d897-52dd-8a15-6b50ebe48eae",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Nhà Hàng Shamoji",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Nhà Hàng Shamoji, Đường Nguyễn Huệ, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7745701,
+      "lng": 106.7026895
+    },
+    "durationMinutes": 60,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "8b9c947f-d523-5fae-96eb-d67a7e5e6ce4",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "The Coffee Bean & Tea Leaf",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "The Coffee Bean & Tea Leaf, 27, Đường Hàn Thuyên, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": true,
+    "location": {
+      "lat": 10.778667,
+      "lng": 106.6980739
+    },
+    "durationMinutes": 45,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "8bfcad5c-b817-58fa-a4b8-07aea05aad28",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "The Mach House",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "The Mach House, Đường Pasteur, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.775207,
+      "lng": 106.7006022
+    },
+    "durationMinutes": 60,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "8c41d283-29da-5ca5-93a5-771f2cb150f6",
+    "destinationId": "hcm-mvp",
+    "category": "nature",
+    "name": "Công viên 30/4",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Công viên 30 Tháng 4, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.778917,
+      "lng": 106.696586
+    },
+    "durationMinutes": 60,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "8cd60c0b-dba1-5838-9706-79ed8e983920",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Nhà Hàng Lion Beer",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Nhà Hàng Lion Beer, 11-13, Công trường Lam Sơn, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.776619,
+      "lng": 106.7039069
+    },
+    "durationMinutes": 60,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "8dce307a-a31c-53ab-80d7-03df153edcf3",
+    "destinationId": "hcm-mvp",
+    "category": "nature",
+    "name": "Công viên Thương xá Tax",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Công viên Thương xá Tax, 135, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7746858,
+      "lng": 106.7021111
+    },
+    "durationMinutes": 60,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "9087d739-c097-5ee2-8eb3-5c4b4e8cd75d",
+    "destinationId": "hcm-mvp",
+    "category": "nature",
+    "name": "Khu du lịch Kỳ Hòa",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Khu du lịch Kỳ Hòa, Phường Hòa Hưng, Thành phố Hồ Chí Minh, 72523, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7735494,
+      "lng": 106.6733092
+    },
+    "durationMinutes": 60,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "92a0a25d-2249-59d6-a47f-4f93ba7d5211",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Cà Phê Au Parc",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Cà Phê Au Parc, 32, Đường Hàn Thuyên, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": true,
+    "location": {
+      "lat": 10.7787503,
+      "lng": 106.6981182
+    },
+    "durationMinutes": 45,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "97e17448-5ac5-517c-a4f9-59ac93d480f4",
+    "destinationId": "hcm-mvp",
+    "category": "nature",
+    "name": "Công viên Tao Đàn",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Công viên Tao Đàn, Phường Bến Thành, Thành phố Hồ Chí Minh, 71009, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7748307,
+      "lng": 106.6932718
+    },
+    "durationMinutes": 60,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "97f2000f-4fbc-5640-9aeb-d60b2930078a",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Cà Phê Thức",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Cà Phê Thức, Q1, Đường Pasteur, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": true,
+    "location": {
+      "lat": 10.7784297,
+      "lng": 106.6982091
+    },
+    "durationMinutes": 45,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "98229e20-878d-53fc-b84b-62941abdd44a",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Tam Caphe",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Tam Caphe, Đường Lê Thánh Tôn, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": true,
+    "location": {
+      "lat": 10.7785281,
+      "lng": 106.7029446
+    },
+    "durationMinutes": 45,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "9844f680-a34f-55ce-9f4b-d8f96744ebde",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Bề Bề Nội - Hương Vị Hà Nội Xưa",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Bề Bề Nội - Hương Vị Hà Nội Xưa, 63/5, Hẻm 63 Pasteur, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7748387,
+      "lng": 106.7003476
+    },
+    "durationMinutes": 60,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "99f1dcb8-8a9d-5328-a151-6fbea1e36383",
+    "destinationId": "hcm-mvp",
+    "category": "nature",
+    "name": "Công viên bờ sông Sài Gòn",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Công viên bờ sông Sài Gòn, Phường An Khánh, Thành phố Hồ Chí Minh, 71108, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7705461,
+      "lng": 106.7120693
+    },
+    "durationMinutes": 60,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "9bf1fff3-6bc9-53d9-9125-c08d35ff4d2a",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Nhà Hàng Bornga",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Nhà Hàng Bornga, Đường Lý Tự Trọng, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7788067,
+      "lng": 106.7020073
+    },
+    "durationMinutes": 60,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "9e6780c1-e151-5b94-853c-55238493f346",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Italiani's Pizza Han Thuyen",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Italiani's Pizza Han Thuyen, 17, Đường Hàn Thuyên, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7788383,
+      "lng": 106.6981831
+    },
+    "durationMinutes": 60,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "9f1e9d42-5e9c-5b9e-83f9-e11080fafb6a",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Cà Phê Mùa Hè",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Cà Phê Mùa Hè, 115, Đường Hai Bà Trưng, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": true,
+    "location": {
+      "lat": 10.7789735,
+      "lng": 106.7023243
+    },
+    "durationMinutes": 45,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "9f414696-7d30-5416-ad52-79a62df7e1fc",
+    "destinationId": "hcm-mvp",
+    "category": "nature",
+    "name": "Công viên số 1 Lý Thái Tổ",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Công viên số 1 Lý Thái Tổ, Phường Vườn Lài, Thành phố Hồ Chí Minh, 72522, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7645889,
+      "lng": 106.6791576
+    },
+    "durationMinutes": 60,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "9f66919d-5072-5573-af80-aafc4e07aae4",
+    "destinationId": "hcm-mvp",
+    "category": "culture",
+    "name": "Nhà Thiếu Nhi Quận 1",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Nhà Thiếu Nhi Quận 1, Đường Trần Cao Vân, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": true,
+    "location": {
+      "lat": 10.7849924,
+      "lng": 106.698682
+    },
+    "durationMinutes": 90,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "a57de80f-ba4f-5bb3-bc29-71da83d6a25e",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Loft Café",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Loft Café, Đường Đồng Khởi, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": true,
+    "location": {
+      "lat": 10.7782363,
+      "lng": 106.7008592
+    },
+    "durationMinutes": 45,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "a5d483f4-a85a-57f9-9b6e-c09d4e907c7f",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Cafés Le",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Cafés Le, Đường Nguyễn Trung Trực, Phường Bến Thành, Thành phố Hồ Chí Minh, 71009, Việt Nam",
+    "indoor": true,
+    "location": {
+      "lat": 10.774285,
+      "lng": 106.6986867
+    },
+    "durationMinutes": 45,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "a6925f1e-1fd9-5f86-b902-b6607b54e218",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Sushi Hokkaido Sachi - Pasteur",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Sushi Hokkaido Sachi - Pasteur, Hẻm 178 Pasteur, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7784255,
+      "lng": 106.6986185
+    },
+    "durationMinutes": 60,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "a9b94992-fc3d-58ff-9fb2-4b431cebe197",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Okkio",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Okkio, Đường Đồng Khởi, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": true,
+    "location": {
+      "lat": 10.7760322,
+      "lng": 106.7033275
+    },
+    "durationMinutes": 45,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "abb62079-11a5-58a3-9448-dab0677cc88b",
+    "destinationId": "hcm-mvp",
+    "category": "culture",
+    "name": "Tượng Mary",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Tượng Mary, Nguyễn Thiện Thành, Phường An Khánh, Thành phố Hồ Chí Minh, 71108, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.77215,
+      "lng": 106.7108067
+    },
+    "durationMinutes": 30,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "acf2d855-7c70-5230-bb12-ae12c2271e82",
+    "destinationId": "hcm-mvp",
+    "category": "nature",
+    "name": "Khu du lịch Văn Thánh",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Khu du lịch Văn Thánh, Phường Thạnh Mỹ Tây, Thành phố Hồ Chí Minh, 72331, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7976083,
+      "lng": 106.7156151
+    },
+    "durationMinutes": 60,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "ae12fa3e-ecb9-51dd-a84c-2324e0851e34",
+    "destinationId": "hcm-mvp",
+    "category": "culture",
+    "name": "Attractions",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Attractions, Đường Nguyễn Thị Minh Khai, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7894608,
+      "lng": 106.7048403
+    },
+    "durationMinutes": 30,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "b01f8ef7-3ca1-503f-8b79-c413de1968cc",
+    "destinationId": "hcm-mvp",
+    "category": "culture",
+    "name": "Bảo tàng Phụ nữ Nam Bộ",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Bảo tàng Phụ nữ Nam Bộ, Hẻm 99 Trần Quốc Toản, Phường Xuân Hòa, Thành phố Hồ Chí Minh, 72421, Việt Nam",
+    "indoor": true,
+    "location": {
+      "lat": 10.7841475,
+      "lng": 106.6873753
+    },
+    "durationMinutes": 90,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "b1f756ae-a605-5436-933b-0a8ebc1c979e",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Nhà Hàng Ý Capricciosa",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Nhà Hàng Ý Capricciosa, Vạn Hoa 4, Phường Thạnh Mỹ Tây, Thành phố Hồ Chí Minh, 72331, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7947358,
+      "lng": 106.7212314
+    },
+    "durationMinutes": 60,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "b2489037-6a2e-5cb5-96f2-cfcbdc359bc6",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Highlands Coffee",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Highlands Coffee, Đường Nguyễn Du, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": true,
+    "location": {
+      "lat": 10.7777461,
+      "lng": 106.6991246
+    },
+    "durationMinutes": 45,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "b2a80aaf-47e5-53bf-8c64-741a8e085b3c",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Chiyoda Sushi",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Chiyoda Sushi, 178, Đường Pasteur, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7782374,
+      "lng": 106.6984734
+    },
+    "durationMinutes": 60,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "b446ec59-4d4a-5e2d-a4e6-d4c272a5a787",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Cà Phê The Central",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Cà Phê The Central, Đường Nguyễn Huệ, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": true,
+    "location": {
+      "lat": 10.7745417,
+      "lng": 106.7027372
+    },
+    "durationMinutes": 45,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "b50ae9c0-e21d-5057-9619-fdf0b47afa8c",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Căn Tin 37",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Căn Tin 37, Đường Lý Tự Trọng, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7793435,
+      "lng": 106.7023879
+    },
+    "durationMinutes": 60,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "b64d9364-58e8-55a4-b24b-29a3258d3cea",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Phòng trà Đồng Dao",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Phòng trà Đồng Dao, Đường Pasteur, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": true,
+    "location": {
+      "lat": 10.7776238,
+      "lng": 106.6995942
+    },
+    "durationMinutes": 45,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "b8fbe9de-6659-5b03-bf99-d2129995335c",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "The Coffee Bean & Tea Leaf",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "The Coffee Bean & Tea Leaf, 97, Đường Hai Bà Trưng, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": true,
+    "location": {
+      "lat": 10.777277,
+      "lng": 106.704149
+    },
+    "durationMinutes": 45,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "b9ec178f-4929-508c-992b-ec3072e09eff",
+    "destinationId": "hcm-mvp",
+    "category": "culture",
+    "name": "Tượng Nguyễn Tất Thành",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Tượng Nguyễn Tất Thành, Hầm Sông Sài Gòn, Phường Xóm Chiếu, Thành phố Hồ Chí Minh, 72823, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7685137,
+      "lng": 106.7066918
+    },
+    "durationMinutes": 30,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "ba35355d-5f02-5cdc-a76e-822524291b52",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Quán Bụi",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Quán Bụi, 39, Đường Lý Tự Trọng, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7791849,
+      "lng": 106.7022879
+    },
+    "durationMinutes": 60,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "bbe89bcd-82c1-57e3-a0ad-a918def25f89",
+    "destinationId": "hcm-mvp",
+    "category": "culture",
+    "name": "Sàn Art",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Sàn Art, Hẻm 48 Mê Linh, Phường Thạnh Mỹ Tây, Thành phố Hồ Chí Minh, 72331, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7899039,
+      "lng": 106.7099257
+    },
+    "durationMinutes": 30,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "bdd3e5c0-579d-544e-8f79-345864ed98e4",
+    "destinationId": "hcm-mvp",
+    "category": "nature",
+    "name": "Công trường Mê Linh",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Công trường Mê Linh, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7753092,
+      "lng": 106.7062992
+    },
+    "durationMinutes": 60,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "be5ef2ec-e155-5248-902b-87d05e2f7f68",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Loft Café",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Loft Café, Đường Pasteur, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": true,
+    "location": {
+      "lat": 10.7776417,
+      "lng": 106.6989508
+    },
+    "durationMinutes": 45,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "bf80bb6e-1a07-5ba8-8059-254e712955ad",
+    "destinationId": "hcm-mvp",
+    "category": "nature",
+    "name": "Chung cư City Garden",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Chung cư City Garden, 59, Phường Thạnh Mỹ Tây, Thành phố Hồ Chí Minh, 72331, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7935082,
+      "lng": 106.7128606
+    },
+    "durationMinutes": 60,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "c237910b-7cf1-555a-bdcb-9b329b7b6a88",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Trung Nguyên Coffee",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Cà phê Trung Nguyên, Đường Đông Du, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": true,
+    "location": {
+      "lat": 10.7753501,
+      "lng": 106.7040924
+    },
+    "durationMinutes": 45,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "c3f0b7ac-9616-511e-a1fe-32a2b5b737b8",
+    "destinationId": "hcm-mvp",
+    "category": "nature",
+    "name": "Công viên Bến Bạch Đằng",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Công viên Bến Bạch Đằng, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7722753,
+      "lng": 106.7066166
+    },
+    "durationMinutes": 60,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "c55eef6e-4e87-588e-bc65-759e4328e135",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Cà Phê Royaltea",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Cà Phê Royaltea, Đường Nguyễn Huệ, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": true,
+    "location": {
+      "lat": 10.7752924,
+      "lng": 106.7028656
+    },
+    "durationMinutes": 45,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "c7f4ffe2-7866-53fa-8468-44e4b77c0822",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Nhà Hàng Secret Cottage Café Dining",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Nhà Hàng Secret Cottage Café Dining, 12-14, Đường Nguyễn Thiệp, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7752236,
+      "lng": 106.7033247
+    },
+    "durationMinutes": 60,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "c847c71a-0af1-557a-866e-6c21d12dc23e",
+    "destinationId": "hcm-mvp",
+    "category": "nature",
+    "name": "Công viên Vinhomes Central Park",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Công viên Vinhomes Central Park, Phường Thạnh Mỹ Tây, Thành phố Hồ Chí Minh, 72331, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7934852,
+      "lng": 106.7242056
+    },
+    "durationMinutes": 60,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "c8a26b58-2ae2-577a-a715-9fcbd2451cc2",
+    "destinationId": "hcm-mvp",
+    "category": "culture",
+    "name": "Saigon Skydeck",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Saigon Skydeck, 02, Đường Hải Triều, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7717177,
+      "lng": 106.7045283
+    },
+    "durationMinutes": 30,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "c9aaf3db-bc5c-58d0-bc78-55bcf4f0b1b0",
+    "destinationId": "hcm-mvp",
+    "category": "culture",
+    "name": "Biệt thự Nguyễn Văn Hảo",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Biệt thự Nguyễn Văn Hảo, Đường Ký Con, Phường Bến Thành, Thành phố Hồ Chí Minh, 71009, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7687248,
+      "lng": 106.6968391
+    },
+    "durationMinutes": 30,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "caecf059-cb61-543f-96e7-5ee5133f4949",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Highlands Coffee",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Cafe Highlands, Công trường Lam Sơn, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": true,
+    "location": {
+      "lat": 10.7769684,
+      "lng": 106.70344
+    },
+    "durationMinutes": 45,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "cc4fdf78-d374-5128-889d-cb8ce77b71cc",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "gummy chicken",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "gummy chicken, Đường Nguyễn Du, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7775468,
+      "lng": 106.6987987
+    },
+    "durationMinutes": 60,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "cc823c60-63fc-51a6-a242-6b30fff30d50",
+    "destinationId": "hcm-mvp",
+    "category": "culture",
+    "name": "Dinh Độc Lập",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Dinh Độc Lập, 135, Đường Nam Kỳ Khởi Nghĩa, Phường Bến Thành, Thành phố Hồ Chí Minh, 71009, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7770348,
+      "lng": 106.695488
+    },
+    "durationMinutes": 30,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "cce007e6-b266-5f20-92e1-ed729f13d353",
+    "destinationId": "hcm-mvp",
+    "category": "nature",
+    "name": "Thảo Cầm Viên Sài Gòn",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Thảo Cầm Viên Sài Gòn, 2, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7878424,
+      "lng": 106.7063352
+    },
+    "durationMinutes": 60,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "cd122bcc-f92b-500a-955b-352a3ddb319a",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Thinker&Dreamer Coffee",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Thinker&Dreamer Coffee, Đường Lê Lợi, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": true,
+    "location": {
+      "lat": 10.7748219,
+      "lng": 106.7010571
+    },
+    "durationMinutes": 45,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "cecdc406-12a8-5697-b853-60392d791113",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Tous les Jours",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Tous les Jours, 44, Đường Lê Lợi, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": true,
+    "location": {
+      "lat": 10.7740844,
+      "lng": 106.7005221
+    },
+    "durationMinutes": 45,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "d0d2acb4-d946-5e5e-8f17-1ec63e38966e",
+    "destinationId": "hcm-mvp",
+    "category": "nature",
+    "name": "Công viên Cầu Rạch Ông",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Công viên Cầu Rạch Ông, Phường Tân Hưng, Thành phố Hồ Chí Minh, 70000, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7515418,
+      "lng": 106.6920249
+    },
+    "durationMinutes": 60,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "d36e4d37-1233-5f7e-b6e2-666431b9d976",
+    "destinationId": "hcm-mvp",
+    "category": "culture",
+    "name": "Bảo tàng Hồ Chí Minh",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Bảo tàng Hồ Chí Minh, Đường Nguyễn Tất Thành, Phường Xóm Chiếu, Thành phố Hồ Chí Minh, 72823, Việt Nam",
+    "indoor": true,
+    "location": {
+      "lat": 10.7682508,
+      "lng": 106.7068074
+    },
+    "durationMinutes": 90,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "d4f3e5df-7c9d-513b-8caf-ed67b943a509",
+    "destinationId": "hcm-mvp",
+    "category": "nature",
+    "name": "Công viên Đống Đa",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Công viên Đống Đa, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7758758,
+      "lng": 106.7017186
+    },
+    "durationMinutes": 60,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "d53d47c1-4951-549d-b8ba-bc2adae49db3",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Central Parc Bánh Mì",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Central Parc Bánh Mì, Đường Pasteur, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": true,
+    "location": {
+      "lat": 10.7787487,
+      "lng": 106.6985432
+    },
+    "durationMinutes": 45,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "d5da7327-fd2e-5bee-acf2-a6da327f1e06",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Saigon Grill Restaurant",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Saigon Grill Restaurant, 91, Đường Pasteur, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7769262,
+      "lng": 106.6993038
+    },
+    "durationMinutes": 60,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "da3fd78a-fa98-538a-8df7-2b2894396633",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Cà Phê Donna",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Cà Phê Donna, 18A, Đường Nguyễn Huệ, Phường Sài Gòn, Thành phố Hồ Chí Minh, 70000, Việt Nam",
+    "indoor": true,
+    "location": {
+      "lat": 10.7752521,
+      "lng": 106.7025547
+    },
+    "durationMinutes": 45,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "dd8f39bf-e252-5c1d-8f17-e0c63c65aad1",
+    "destinationId": "hcm-mvp",
+    "category": "nature",
+    "name": "Công viên SJC Tower",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Công viên SJC Tower, Phường Bến Thành, Thành phố Hồ Chí Minh, 71009, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.773792,
+      "lng": 106.6996429
+    },
+    "durationMinutes": 60,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "de4ad479-c600-509f-8a64-0dfd913f289f",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Nhà Hàng Le Bourgeois",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Nhà Hàng Le Bourgeois, 132-134, Đường Đồng Khởi, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7768577,
+      "lng": 106.7024065
+    },
+    "durationMinutes": 60,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "e14becd6-ea72-5363-8bcc-f182c9a68658",
+    "destinationId": "hcm-mvp",
+    "category": "culture",
+    "name": "The Commons Thu Thiem",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "The Commons Thu Thiem, 33/10, Lương Định Của, Phường An Khánh, Thành phố Hồ Chí Minh, 71108, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7820925,
+      "lng": 106.7134384
+    },
+    "durationMinutes": 30,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "e1e187b1-fddd-576a-81f4-5447488eb733",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Ba Xa Ch",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Ba Xa Chi nhánh Pasteur, 178/4, Đường Pasteur, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7785214,
+      "lng": 106.6986733
+    },
+    "durationMinutes": 60,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "e3315777-5e0b-54b3-838f-cf28a605cd39",
+    "destinationId": "hcm-mvp",
+    "category": "nature",
+    "name": "Công viên Majestic Hotel",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Công viên Majestic Hotel, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7725305,
+      "lng": 106.7058711
+    },
+    "durationMinutes": 60,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "e86881f0-17bf-55f9-9085-00984e4f55f9",
+    "destinationId": "hcm-mvp",
+    "category": "culture",
+    "name": "Cá sấu",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Cá sấu, Nguyễn Hữu Cảnh, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7862562,
+      "lng": 106.7084761
+    },
+    "durationMinutes": 30,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "e8cf3671-ce0e-547d-908e-aa36fb62ec33",
+    "destinationId": "hcm-mvp",
+    "category": "culture",
+    "name": "Tượng Lý Tự Trọng Khám Lớn",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Tượng Lý Tự Trọng Khám Lớn, Đường Lý Tự Trọng, Phường Bến Thành, Thành phố Hồ Chí Minh, 71009, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7754931,
+      "lng": 106.6988863
+    },
+    "durationMinutes": 30,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "e960eb94-a9d5-5397-8bc7-723abdb8f275",
+    "destinationId": "hcm-mvp",
+    "category": "culture",
+    "name": "Bảo Tàng Địa Chất",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Bảo Tàng Địa Chất, Đường Nguyễn Bỉnh Khiêm, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": true,
+    "location": {
+      "lat": 10.7849957,
+      "lng": 106.7076753
+    },
+    "durationMinutes": 90,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "ec645b8c-799e-5b81-9c4f-8abc5988a0c1",
+    "destinationId": "hcm-mvp",
+    "category": "culture",
+    "name": "Vườn hồng hạc",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Vườn hồng hạc, Đường Nguyễn Bỉnh Khiêm, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7880477,
+      "lng": 106.7062411
+    },
+    "durationMinutes": 30,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "ec97ef46-83f9-53ee-aeab-00aa92d9d2c2",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Nhà Hàng Hoằng Long",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Nhà Hàng Hoằng Long, Công trường Lam Sơn, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7768249,
+      "lng": 106.703813
+    },
+    "durationMinutes": 60,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "ef005e1d-dc5c-512b-8512-570b8e0f42c7",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Sky Bistro",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Sky Bistro, 79, Đường Pasteur, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7751496,
+      "lng": 106.7005091
+    },
+    "durationMinutes": 60,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "ef6e828a-e07d-5a70-860c-75f0efb4a3e1",
+    "destinationId": "hcm-mvp",
+    "category": "culture",
+    "name": "Various Cannons",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Various Cannons, Đường Tôn Ðức Thắng, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7762451,
+      "lng": 106.7069417
+    },
+    "durationMinutes": 30,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "f123bf9e-7d14-5450-9666-e59456a859f9",
+    "destinationId": "hcm-mvp",
+    "category": "culture",
+    "name": "Hươu cao cổ",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Hươu cao cổ, Trường Sa, Phường Thạnh Mỹ Tây, Thành phố Hồ Chí Minh, 72331, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7880953,
+      "lng": 106.7078014
+    },
+    "durationMinutes": 30,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "f22c560a-4ee4-5af8-aeae-8140bd39b97b",
+    "destinationId": "hcm-mvp",
+    "category": "culture",
+    "name": "Little Japan district",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Little Japan district, Hẻm 8A Đường Thái Văn Lung, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7797801,
+      "lng": 106.7050605
+    },
+    "durationMinutes": 30,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "f2b54623-44d9-5e80-98cd-e6fe91a34c12",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Nhà Hàng Nướng Barbecue Garden",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Nhà Hàng Nướng Barbecue Garden, 135, Đường Nam Kỳ Khởi Nghĩa, Phường Bến Thành, Thành phố Hồ Chí Minh, 71009, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7748184,
+      "lng": 106.6992492
+    },
+    "durationMinutes": 60,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "f3486826-6724-5c28-83a4-de9d9760ad4a",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Bún riêu ganh",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Bún riêu ganh, Đường Lê Thánh Tôn, Phường Bến Thành, Thành phố Hồ Chí Minh, 71009, Việt Nam",
+    "indoor": true,
+    "location": {
+      "lat": 10.7739063,
+      "lng": 106.698934
+    },
+    "durationMinutes": 45,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "f5004d45-25d0-5f2c-8153-7da8189b65e0",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Nhà Hàng - Không Thể Thiếu Nhau",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Nhà Hàng - Không Thể Thiếu Nhau, 104, Đường Nguyễn Du, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7770498,
+      "lng": 106.6979588
+    },
+    "durationMinutes": 60,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "f516f3d6-810e-5c7a-9572-952ba0233ed2",
+    "destinationId": "hcm-mvp",
+    "category": "nature",
+    "name": "Công viên Phường 12",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Công viên Phường 12, Phường Xóm Chiếu, Thành phố Hồ Chí Minh, 72823, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7641794,
+      "lng": 106.7042733
+    },
+    "durationMinutes": 60,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "f99c7f16-5836-5fe8-b1d7-972ee9489ddc",
+    "destinationId": "hcm-mvp",
+    "category": "nature",
+    "name": "Công viên Bách Tùng Diệp",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Công viên Bách Tùng Diệp, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7764279,
+      "lng": 106.6990846
+    },
+    "durationMinutes": 60,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "f9e92770-76d2-598d-9dc0-3d8a6db7727b",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Phở 24",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Phở 24, 72, Đường Lê Thánh Tôn, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71016, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.7779136,
+      "lng": 106.7019753
+    },
+    "durationMinutes": 60,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "feafb727-3f62-593e-90c6-437457f8ecbf",
+    "destinationId": "hcm-mvp",
+    "category": "food",
+    "name": "Cà Phê La Dolce Vita",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Cà Phê La Dolce Vita, 35 BIS - 45, Đường Lê Thánh Tôn, Phường Sài Gòn, Thành phố Hồ Chí Minh, 71006, Việt Nam",
+    "indoor": true,
+    "location": {
+      "lat": 10.7770275,
+      "lng": 106.7022407
+    },
+    "durationMinutes": 45,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  },
+  {
+    "id": "ff856c14-b2ab-5d7e-ac6f-0e53f7d70fdc",
+    "destinationId": "hcm-mvp",
+    "category": "nature",
+    "name": "Công viên thú cưng Empire City",
+    "description": "Nguồn Geoapify / OpenStreetMap. Thời lượng và trong/ngoài trời là giả định cho demo, không phải thông tin đã xác minh.",
+    "address": "Công viên thú cưng Empire City, Phường An Khánh, Thành phố Hồ Chí Minh, 71108, Việt Nam",
+    "indoor": false,
+    "location": {
+      "lat": 10.768095,
+      "lng": 106.7125351
+    },
+    "durationMinutes": 60,
+    "estimatedCostVnd": null,
+    "openingHoursKnown": false,
+    "stayCheckIn": null,
+    "stayCheckOut": null,
+    "averageRating": null,
+    "reviewCount": 0
+  }
+]

@@ -1,8 +1,8 @@
 import type { TripDayItem, TripPlan } from '../../types/travel';
 export type GeoPoint = { lat: number; lng: number };
 export type Stay = { id: string; name: string; area: string; type: string; price: number; rating: number; image: string; gallery: string[]; location: GeoPoint; amenities: string[]; description: string };
-export type LocatedItem = TripDayItem & { location?: GeoPoint; locked?: boolean };
-export type ActivePlan = Omit<TripPlan, 'daysSchedule'> & { planningMode?: 'ai' | 'manual'; placeSelection?: string[]; placesChosen?: boolean; companionType?: 'solo' | 'group'; companionCount?: number; departureTime?: string; returnTime?: string; budgetAmount?: number; stayId?: string; stayRoomCount?: number; hotelBudgetPerNight?: number; startDate?: string; endDate?: string; checkIn?: string; checkOut?: string; daysSchedule: (Omit<TripPlan['daysSchedule'][number], 'items'> & { items: LocatedItem[] })[] };
+export type LocatedItem = TripDayItem & { backendPlaceId?: string | null; location?: GeoPoint; locked?: boolean };
+export type ActivePlan = Omit<TripPlan, 'daysSchedule'> & { backendTripId?: string; backendVersion?: number; backendMode?: string; backendStatus?: string; backendCompletedIds?: string[]; backendWarnings?: string[]; planningMode?: 'ai' | 'manual'; placeSelection?: string[]; placesChosen?: boolean; companionType?: 'solo' | 'group'; companionCount?: number; departureTime?: string; returnTime?: string; budgetAmount?: number; stayId?: string; stayRoomCount?: number; hotelBudgetPerNight?: number; startDate?: string; endDate?: string; checkIn?: string; checkOut?: string; daysSchedule: (Omit<TripPlan['daysSchedule'][number], 'items'> & { items: LocatedItem[] })[] };
 export type PhotoMoment = { id: string; tripId: string; src: string; title: string; region: string; date: string; location?: GeoPoint; isSample?: boolean; createdAt?: string; placeId?: string; frameId?: string; trashedAt?: string };
 export const distanceKm = (a: GeoPoint, b: GeoPoint) => {
   const rad = Math.PI / 180; const dlat = (b.lat-a.lat)*rad; const dlng=(b.lng-a.lng)*rad;

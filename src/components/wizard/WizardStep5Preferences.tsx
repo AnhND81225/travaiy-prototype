@@ -41,7 +41,7 @@ export const WizardStep5Preferences: React.FC<WizardStep5PreferencesProps> = ({
   );
   const [isAccordionOpen, setIsAccordionOpen] = useState<boolean>(true);
   const [placesList, setPlacesList] = useState<string[]>(
-    mustVisitPlaces || ['Cầu Vàng', 'Bán đảo Sơn Trà', 'Phố cổ Hội An']
+    mustVisitPlaces || ['Bưu điện Thành phố', 'Thảo Cầm Viên', 'Phố cổ Hội An']
   );
   const [noteText, setNoteText] = useState<string>(notes || '');
   const [showAddPlaceSheet, setShowAddPlaceSheet] = useState<boolean>(false);
@@ -372,7 +372,7 @@ export const WizardStep5Preferences: React.FC<WizardStep5PreferencesProps> = ({
                 type="text"
                 value={searchNewPlaceQuery}
                 onChange={(e) => setSearchNewPlaceQuery(e.target.value)}
-                placeholder="Tìm địa điểm (ví dụ: Ngũ Hành Sơn)..."
+                placeholder="Tìm địa điểm (ví dụ: Bảo tàng Thành phố Hồ Chí Minh)..."
                 className="w-full pl-10 pr-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-[14px] text-slate-800 focus:outline-none focus:border-[#0A1680]"
               />
             </div>
@@ -383,13 +383,13 @@ export const WizardStep5Preferences: React.FC<WizardStep5PreferencesProps> = ({
               </span>
               <div className="flex flex-wrap gap-2">
                 {[
-                  'Cầu Vàng',
-                  'Bán đảo Sơn Trà',
+                  'Bưu điện Thành phố',
+                  'Thảo Cầm Viên',
                   'Phố cổ Hội An',
-                  'Ngũ Hành Sơn',
-                  'Bà Nà Hills',
-                  'Bãi biển Mỹ Khê',
-                  'Cầu Rồng Phun Lửa',
+                  'Bảo tàng Thành phố Hồ Chí Minh',
+                  'Dinh Độc Lập',
+                  'Công viên Tao Đàn',
+                  'Bến Bạch Đằng Phun Lửa',
                 ].map((sugg) => (
                   <button
                     key={sugg}

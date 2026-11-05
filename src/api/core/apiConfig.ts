@@ -51,6 +51,7 @@ export const TokenStorage = {
     localStorage.removeItem(API_CONFIG.STORAGE_KEYS.ACCESS_TOKEN);
     localStorage.removeItem(API_CONFIG.STORAGE_KEYS.REFRESH_TOKEN);
     localStorage.removeItem(API_CONFIG.STORAGE_KEYS.USER);
+    window.dispatchEvent(new Event('travaiy-auth-change'));
   },
 
   isAuthenticated(): boolean {

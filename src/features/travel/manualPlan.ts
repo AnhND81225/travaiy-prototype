@@ -6,8 +6,8 @@ export function createManualPlan(destination:string,startDate:string,endDate:str
  const days=dayCount(startDate,endDate);
  if(!destination.trim()||!Number.isInteger(days)||days<1||days>30)throw new Error('Chọn điểm đến và thời gian từ 1 đến 30 ngày.');
  const stay=STAYS.find(s=>s.id===stayId&&s.area.includes(destination));
- if(days>1&&!stay)throw new Error('Chọn một chỗ ở cho chuyến đi qua đêm.');
- const cover=destination==='Đà Nẵng'?images.bridge:destination==='Đà Lạt'?images.dalatCabin:destination==='Hội An'?images.town:images.hero;
+ if(destination!=='TP.HCM'&&days>1&&!stay)throw new Error('Chọn một chỗ ở cho chuyến đi qua đêm.');
+ const cover=destination==='TP.HCM'?images.bridge:destination==='Đà Lạt'?images.dalatCabin:destination==='Hội An'?images.town:images.hero;
  return {id:`manual-${crypto.randomUUID()}`,planningMode:'manual',stayId:stay?.id,checkIn:stay?startDate:undefined,checkOut:stay?endDate:undefined,destination,title:`${destination} · Tự lên lịch`,days,startDate,endDate,dates:`${startDate.split('-').reverse().join('/')} – ${endDate.split('-').reverse().join('/')}`,coverImage:cover,estimatedCostPerPerson:'Chưa dự tính',daysSchedule:Array.from({length:days},(_,index)=>({dayNumber:index+1,title:`Ngày ${index+1} · ${destination}`,dateText:new Date(Date.parse(startDate+'T12:00:00Z')+index*86400000).toISOString().slice(5,10).split('-').reverse().join('/'),dayCost:'Chưa dự tính',items:[]}))};
 }
 
