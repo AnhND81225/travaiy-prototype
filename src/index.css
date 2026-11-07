@@ -499,7 +499,7 @@ nav[aria-label="Thanh điều hướng"] svg {
   box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.05) !important;
 }
 
-/* 9. Thanh điều hướng dưới cùng (BottomNav): Trắng Kính Cao Cấp */
+/* 9. Thanh điều hướng dưới cùng (BottomNav): Trắng Kính Cao Cấp - Chữ Trắng, Icon Vàng */
 nav[aria-label="Thanh điều hướng"] {
   background: rgba(255, 255, 255, 0.98) !important;
   backdrop-filter: blur(20px) !important;
@@ -516,10 +516,15 @@ nav[aria-label="Thanh điều hướng"] svg {
 nav[aria-label="Thanh điều hướng"] button.bg-\[\#0A1680\],
 nav[aria-label="Thanh điều hướng"] button.bg-\[\#0F2C59\] {
   background: #0F2C59 !important;
-  color: #FFA62B !important;
+  color: #FFFFFF !important;
   font-weight: 800 !important;
   border: none !important;
   box-shadow: 0 2px 8px rgba(15, 44, 89, 0.25) !important;
+}
+
+nav[aria-label="Thanh điều hướng"] button.bg-\[\#0A1680\] span,
+nav[aria-label="Thanh điều hướng"] button.bg-\[\#0F2C59\] span {
+  color: #FFFFFF !important;
 }
 
 nav[aria-label="Thanh điều hướng"] button.bg-\[\#0A1680\] svg,
@@ -532,6 +537,27 @@ nav[aria-label="Thanh điều hướng"] span.bg-\[\#F1B94C\],
 nav[aria-label="Thanh điều hướng"] span.bg-\[\#FFA62B\] {
   background: #FFA62B !important;
   box-shadow: none !important;
+}
+
+/* Đồng bộ Quick Links trên Homescreen: Nền Trắng, Chữ Navy Sắc Nét, Icon Vàng */
+.travel-device .home-quick-links button,
+.travel-device .home-quick-links button:last-child {
+  background: #FFFFFF !important;
+  color: #0F2C59 !important;
+  border: none !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06) !important;
+}
+
+.travel-device .home-quick-links button span,
+.travel-device .home-quick-links button:last-child span {
+  color: #0F2C59 !important;
+  font-weight: 700 !important;
+}
+
+.travel-device .home-quick-links button svg,
+.travel-device .home-quick-links button:last-child svg {
+  color: #FFA62B !important;
+  stroke: #FFA62B !important;
 }
 
 /* 10. Chips & Nút lọc (Filter Pills) */
