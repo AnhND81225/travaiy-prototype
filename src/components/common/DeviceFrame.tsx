@@ -80,14 +80,7 @@ export const DeviceFrame: React.FC<DeviceFrameProps> = ({
   ];
 
   return (
-    <div className="relative w-full h-[100dvh] sm:h-screen bg-gradient-to-br from-[#EBF2FE] via-[#F4F7FD] to-[#FEF8E7] flex flex-col items-center justify-start sm:justify-center p-0 sm:py-2 sm:px-4 overflow-hidden">
-      {/* Decorative Brand Gradient Orbs based on Mascot Colors */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="hidden sm:block absolute -top-32 -left-32 w-[420px] h-[420px] rounded-full bg-[#93B2F8]/25 blur-3xl" />
-        <div className="hidden sm:block absolute -bottom-32 -right-32 w-[420px] h-[420px] rounded-full bg-[#FBEDB0]/45 blur-3xl" />
-        <div className="hidden sm:block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] rounded-full bg-white/40 blur-2xl" />
-      </div>
-
+    <div className="relative w-full h-[100dvh] sm:h-screen bg-[#F8FAFC] flex flex-col items-center justify-start sm:justify-center p-0 sm:py-2 sm:px-4 overflow-hidden">
       {/* Top Floating Dev & Navigator Toolbar */}
       <aside
         aria-label="Dev Toolbar"

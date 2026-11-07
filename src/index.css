@@ -141,88 +141,559 @@ h1, h2, h3, h4, h5, h6, .font-heading, .travaiy-pill-btn, .home-wordmark {
   background: radial-gradient(circle, rgba(251, 237, 176, 0.45) 0%, rgba(147, 178, 248, 0.15) 50%, transparent 75%);
 }
 
-/* Home Screen: Thẻ & Nút phối theo màu Bé Sao */
-.home-top {
-  background: linear-gradient(180deg, #FFFFFF 0%, rgba(252, 253, 255, 0.85) 100%);
+/* ==========================================================
+   HOME SCREEN ONLY:
+   - NỀN: Loang Xanh Biển (#86C5FF) & Trắng Tinh Khôi (#FFFFFF)
+   - NÚT BẤM & THẺ: Màu Trắng Đơn Sắc Thuần Khiết (#FFFFFF) - KHÔNG LOANG
+   - NỔI TỰ NHIÊN: Nổi bật trên nền xanh bằng tương phản trắng phẳng + bóng nhẹ tự nhiên
+   - BỎ TOÀN BỘ VIỀN: (border: none !important)
+   - CHỮ: Xanh Navy Đậm (#0F2C59) Tương Phản Sắc Nét
+   - ICONS: Màu Vàng Citrus Zest (#FFA62B) Nổi Bật & Tươi Tắn
+   ========================================================== */
+
+/* 1. Màn hình & Nền loang xanh trắng Trang chủ */
+.home-reference {
+  --color-primary: #86C5FF;
+  --color-secondary: #0F2C59;
+  --color-accent: #FFA62B;
+  --color-cream: #FFFFFF;
+  --travel-primary: #86C5FF;
+  --travel-secondary: #0F2C59;
+  --travel-accent: #FFA62B;
+  position: relative;
+  overflow: hidden;
+  background: #F4F8FD !important;
+  color: #0F2C59;
 }
 
-.home-search {
-  background: #FFFFFF !important;
-  border: 1.5px solid #DCE7FA !important;
-  box-shadow: 0 4px 18px -4px rgba(10, 22, 128, 0.05) !important;
-  transition: all 0.2s ease;
-}
-.home-search:hover {
-  border-color: #93B2F8 !important;
-  box-shadow: 0 6px 20px -4px rgba(10, 22, 128, 0.08) !important;
-}
-.home-search .home-search-arrow {
-  background: #FBEDB0 !important;
-  color: #0A1680 !important;
-  transition: transform 0.2s ease;
-}
-.home-search:hover .home-search-arrow {
-  transform: scale(1.05);
+/* Toàn bộ UI icon (Lucide) trên Trang chủ: Màu Vàng Citrus Zest (#FFA62B) */
+.home-reference .lucide,
+.home-reference .home-top .travel-icon svg,
+.home-reference .home-search svg,
+.home-reference .home-quick-links svg,
+.home-reference .home-active-trip svg,
+.home-reference .travel-section-title svg,
+.home-reference .community-preview svg,
+.home-reference .home-saved-link svg,
+.home-reference nav[aria-label="Thanh điều hướng"] svg {
+  color: #FFA62B !important;
+  stroke: #FFA62B !important;
 }
 
-/* Quick Links: Thiết kế đồng bộ, thanh lịch và sạch sẽ */
-.home-quick-links button {
-  background: #FFFFFF !important;
-  border: 1.5px solid #DCE7FA !important;
-  color: #0A1680 !important;
-  box-shadow: 0 3px 12px -3px rgba(10, 22, 128, 0.05);
-  transition: all 0.2s ease;
+/* Triệt tiêu 100% viền của mọi nút và thẻ trên Trang chủ */
+.home-reference button,
+.home-reference a,
+.home-reference input,
+.home-reference section,
+.home-reference article,
+.home-reference nav,
+.home-reference header,
+.home-reference div {
+  border: none !important;
+  outline: none !important;
 }
-.home-quick-links button:hover {
-  border-color: #93B2F8 !important;
+
+/* Các quầng sáng loang màu Xanh & Trắng mịn màng */
+.home-reference::before {
+  content: '';
+  position: absolute;
+  top: -70px;
+  left: -70px;
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(134, 197, 255, 0.65) 0%, rgba(186, 224, 255, 0.35) 45%, transparent 70%);
+  filter: blur(55px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.home-reference::after {
+  content: '';
+  position: absolute;
+  top: 60px;
+  right: -60px;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.95) 0%, rgba(200, 230, 255, 0.45) 45%, transparent 70%);
+  filter: blur(50px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Nền cuộn chính: Loang Xanh & Trắng đa tầng */
+.home-reference .home-scroll {
+  position: relative;
+  z-index: 1;
+  background:
+    radial-gradient(ellipse 75% 45% at 10% 28%, rgba(134, 197, 255, 0.45) 0%, transparent 60%),
+    radial-gradient(ellipse 70% 45% at 92% 44%, rgba(255, 255, 255, 0.95) 0%, rgba(198, 229, 255, 0.35) 45%, transparent 65%),
+    radial-gradient(ellipse 80% 50% at 15% 72%, rgba(134, 197, 255, 0.4) 0%, transparent 60%),
+    radial-gradient(ellipse 75% 45% at 88% 88%, rgba(200, 230, 255, 0.5) 0%, transparent 60%),
+    linear-gradient(180deg, #FFFFFF 0%, #EEF6FF 50%, #F5F9FD 100%);
+  background-attachment: local;
+}
+
+/* 2. Header trên cùng Trang chủ */
+.home-reference .home-top {
+  position: relative;
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.92) !important;
+  backdrop-filter: blur(18px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(18px) saturate(180%) !important;
+  border: none !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04) !important;
+}
+
+.home-reference .home-top p {
+  color: #334E68 !important;
+  font-weight: 600;
+}
+
+/* Nút Thông báo: Trắng Đơn Sắc - Icon Vàng Citrus */
+.home-reference .home-top .travel-icon {
+  background: #FFFFFF !important;
+  border: none !important;
+  color: #FFA62B !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07) !important;
+  transition: all 0.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.home-reference .home-top .travel-icon:hover {
+  background: #F8FAFC !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
   transform: translateY(-1px);
 }
-.home-quick-links button svg {
-  color: #0A1680 !important;
+
+.home-reference .home-top .travel-icon:active {
+  transform: scale(0.96);
 }
 
-/* Thẻ chuyến đi đang tiếp tục */
-.home-active-trip > button {
+.home-reference .home-top i {
+  background: #FFA62B !important;
+  box-shadow: 0 0 0 2px #FFFFFF !important;
+}
+
+/* 3. Thanh tìm kiếm: Trắng Đơn Sắc - Icon Vàng Citrus */
+.home-reference .home-search {
   background: #FFFFFF !important;
-  border: 1.5px solid #DCE7FA !important;
-  box-shadow: 0 4px 18px -4px rgba(10, 22, 128, 0.05);
+  border: none !important;
+  color: #0F2C59 !important;
+  font-weight: 700 !important;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06) !important;
+  transition: all 0.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.home-reference .home-search:hover {
+  background: #FFFFFF !important;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.09) !important;
+  transform: translateY(-1px);
+}
+
+.home-reference .home-search:active {
+  transform: scale(0.99);
+}
+
+.home-reference .home-search svg {
+  color: #FFA62B !important;
+}
+
+/* Nút tròn mũi tên */
+.home-reference .home-search .home-search-arrow {
+  background: #F1F5F9 !important;
+  border: none !important;
+  color: #FFA62B !important;
+  box-shadow: none !important;
   transition: all 0.2s ease;
 }
-.home-active-trip > button:hover {
-  border-color: #93B2F8 !important;
+
+.home-reference .home-search:hover .home-search-arrow {
+  background: #0F2C59 !important;
+  color: #FFA62B !important;
+  transform: scale(1.08);
 }
-.home-active-trip .travel-eyebrow {
-  color: #0A1680 !important;
+
+/* 4. Banner Hero điện ảnh */
+.home-reference .home-cinematic {
+  border: none !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15) !important;
+}
+
+.home-reference .home-cinematic-overlay {
+  background: linear-gradient(
+    0deg,
+    rgba(15, 44, 89, 0.95) 0%,
+    rgba(30, 78, 148, 0.65) 40%,
+    rgba(134, 197, 255, 0.25) 75%,
+    transparent 100%
+  ) !important;
+}
+
+.home-reference .home-hero-caption {
+  color: #86C5FF !important;
+  font-weight: 800 !important;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6) !important;
+}
+
+.home-reference .home-hero-copy > span {
+  color: #FED268 !important;
+  font-weight: 800 !important;
+  letter-spacing: 2px !important;
+}
+
+.home-reference .home-hero-copy h1 {
+  color: #FFFFFF !important;
+  text-shadow: 0 2px 14px rgba(15, 44, 89, 0.8) !important;
+}
+
+.home-reference .home-hero-copy p {
+  color: #F0F6FF !important;
+}
+
+/* Nút Hero "Chọn điểm đến": Trắng Đơn Sắc - Mũi tên Vàng */
+.home-reference .home-hero-copy button {
+  background: #FFFFFF !important;
+  color: #0F2C59 !important;
+  font-weight: 800 !important;
+  border: none !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18) !important;
+  transition: all 0.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.home-reference .home-hero-copy button:hover {
+  background: #F8FAFC !important;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.24) !important;
+  transform: translateY(-1px);
+}
+
+.home-reference .home-hero-copy button:active {
+  transform: scale(0.97);
+}
+
+.home-reference .home-hero-copy button .travel-arrow {
+  background: #F1F5F9 !important;
+  color: #FFA62B !important;
+  border: none !important;
+  box-shadow: none !important;
+  transition: transform 0.2s ease;
+}
+
+.home-reference .home-hero-copy button:hover .travel-arrow {
+  transform: translateX(4px);
+  background: #0F2C59 !important;
+  color: #FFA62B !important;
+}
+
+/* 5. Phím tắt nhanh (Quick Links): Trắng Đơn Sắc - Icon Vàng Citrus */
+.home-reference .home-quick-links button {
+  background: #FFFFFF !important;
+  border: none !important;
+  color: #0F2C59 !important;
+  font-weight: 750 !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06) !important;
+  transition: all 0.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.home-reference .home-quick-links button:hover {
+  background: #F8FAFC !important;
+  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.09) !important;
+  transform: translateY(-1px);
+}
+
+.home-reference .home-quick-links button:active {
+  transform: scale(0.97);
+}
+
+.home-reference .home-quick-links button svg:first-child {
+  color: #FFA62B !important;
+}
+
+.home-reference .home-quick-links button svg:last-child {
+  color: #FFA62B !important;
+}
+
+/* 6. Thẻ chuyến đi đang lên lịch (Active Trip): Trắng Đơn Sắc - Icon Vàng */
+.home-reference .home-active-trip > button {
+  background: #FFFFFF !important;
+  border: none !important;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06) !important;
+  transition: all 0.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.home-reference .home-active-trip > button:hover {
+  background: #FFFFFF !important;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.09) !important;
+  transform: translateY(-1px);
+}
+
+.home-reference .home-active-trip > button:active {
+  transform: scale(0.98);
+}
+
+.home-reference .home-active-trip .travel-eyebrow {
+  color: #64748B !important;
   font-weight: 800 !important;
 }
 
-/* Thẻ Địa điểm bạn muốn ghé */
-.home-saved-link {
-  background: #FFFFFF !important;
-  border: 1.5px solid #DCE7FA !important;
-  color: #0A1680 !important;
-  font-weight: 650 !important;
-  box-shadow: 0 3px 14px -3px rgba(10, 22, 128, 0.05);
+.home-reference .home-active-trip h2 {
+  color: #0F2C59 !important;
+  font-weight: 800 !important;
+}
+
+.home-reference .home-active-trip p {
+  color: #4A5F7A !important;
+  font-weight: 500;
+}
+
+/* Nút mũi tên tròn trên thẻ chuyến đi */
+.home-reference .home-active-trip svg {
+  color: #FFA62B !important;
+  background: #F1F5F9 !important;
+  border: none !important;
+  border-radius: 50%;
+  padding: 4px;
+  width: 28px;
+  height: 28px;
+  box-shadow: none !important;
   transition: all 0.2s ease;
 }
-.home-saved-link:hover {
-  border-color: #93B2F8 !important;
+
+.home-reference .home-active-trip > button:hover svg {
+  background: #0F2C59 !important;
+  color: #FFA62B !important;
+  transform: translate(2px, -2px);
+}
+
+/* 7. Tiêu đề các mục & Nút "Xem thêm": Icon Vàng Citrus */
+.home-reference .travel-section-title h2 {
+  color: #0F2C59 !important;
+  font-weight: 800 !important;
+}
+
+.home-reference .travel-section-title h2 svg {
+  color: #FFA62B !important;
+}
+
+.home-reference .travel-section-title .travel-eyebrow {
+  color: #64748B !important;
+  font-weight: 800 !important;
+}
+
+/* Nút "Xem thêm" Trắng Đơn Sắc - Mũi tên Vàng */
+.home-reference .travel-section-title button {
+  background: #FFFFFF !important;
+  border: none !important;
+  border-radius: 999px !important;
+  padding: 5px 14px !important;
+  color: #0F2C59 !important;
+  font-weight: 750 !important;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06) !important;
+  transition: all 0.2s ease;
+}
+
+.home-reference .travel-section-title button:hover {
+  background: #F8FAFC !important;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.09) !important;
   transform: translateY(-1px);
 }
 
-/* Nút Hero chính */
-.home-hero-copy button .travel-arrow {
-  background: #EFF3FF !important;
-  color: #0A1680 !important;
+.home-reference .travel-section-title button svg {
+  color: #FFA62B !important;
 }
 
-/* Thông báo hộp thoại */
-.home-notification {
-  background: #F0F5FF !important;
-  border: 1px solid rgba(147, 178, 248, 0.35) !important;
+/* 8. Thẻ xem trước cộng đồng & các nút hành động: Icon Vàng Citrus */
+.home-reference .community-preview {
+  background: #FFFFFF !important;
+  border: none !important;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06) !important;
 }
-.home-notification b {
-  color: #0A1680 !important;
+
+.home-reference .community-initial {
+  background: #F1F5F9 !important;
+  color: #FFA62B !important;
+  font-weight: 800 !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.home-reference .community-preview-author b {
+  color: #0F2C59 !important;
+  font-weight: 750 !important;
+}
+
+.home-reference .community-preview-author button {
+  background: #F1F5F9 !important;
+  border: none !important;
+  border-radius: 50% !important;
+  color: #FFA62B !important;
+  box-shadow: none !important;
+  transition: all 0.2s ease;
+}
+
+.home-reference .community-preview-author button:hover {
+  background: #0F2C59 !important;
+  color: #FFA62B !important;
+  transform: scale(1.08);
+}
+
+/* Các nút hành động bài viết: Icon Vàng */
+.home-reference .community-preview-actions > button {
+  background: #F8FAFC !important;
+  border: none !important;
+  border-radius: 999px !important;
+  padding: 5px 12px !important;
+  color: #0F2C59 !important;
+  font-weight: 750 !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05) !important;
+  transition: all 0.2s ease;
+}
+
+.home-reference .community-preview-actions > button svg {
+  color: #FFA62B !important;
+}
+
+.home-reference .community-preview-actions > button:hover {
+  background: #F1F5F9 !important;
+  transform: translateY(-1px);
+}
+
+.home-reference .community-preview-actions > button[aria-pressed="true"] {
+  background: #FFF0F3 !important;
+  color: #E11D48 !important;
+  box-shadow: 0 1px 3px rgba(225, 29, 72, 0.15) !important;
+}
+
+.home-reference .community-preview-actions > button[aria-pressed="true"] svg {
+  color: #E11D48 !important;
+  stroke: #E11D48 !important;
+}
+
+.home-reference .community-preview-actions > span {
+  background: #F1F5F9 !important;
+  border: none !important;
+  color: #64748B !important;
+  font-weight: 700 !important;
+  padding: 3px 9px !important;
+  border-radius: 999px !important;
+  box-shadow: none !important;
+}
+
+/* 9. Dải thẻ điểm đến gợi ý (Destination Strip) */
+.home-reference .home-destination-strip > button {
+  border: none !important;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1) !important;
+  transition: all 0.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.home-reference .home-destination-strip > button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.14) !important;
+}
+
+.home-reference .home-destination-strip > button:after {
+  background: linear-gradient(transparent 30%, rgba(15, 44, 89, 0.9) 100%) !important;
+}
+
+.home-reference .home-destination-strip span {
+  background: rgba(15, 44, 89, 0.6) !important;
+  backdrop-filter: blur(10px) !important;
+  border: none !important;
+  padding: 4px 10px !important;
+  border-radius: 12px !important;
+  color: #FFFFFF !important;
+  font-weight: 800 !important;
+}
+
+/* 10. Nút liên kết Những địa điểm muốn ghé: Icon Vàng */
+.home-reference .home-saved-link {
+  background: #FFFFFF !important;
+  border: none !important;
+  color: #0F2C59 !important;
+  font-weight: 800 !important;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06) !important;
+  transition: all 0.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.home-reference .home-saved-link:hover {
+  background: #FFFFFF !important;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.09) !important;
+  transform: translateY(-1px);
+}
+
+.home-reference .home-saved-link:active {
+  transform: scale(0.98);
+}
+
+.home-reference .home-saved-link svg {
+  color: #FFA62B !important;
+  transition: transform 0.2s ease;
+}
+
+.home-reference .home-saved-link:hover svg {
+  transform: translate(3px, -3px);
+}
+
+/* 11. Thẻ thông báo thích nghi AI trên Trang chủ */
+.home-reference .adaptive-notice {
+  background: #FFFFFF !important;
+  border: none !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05) !important;
+}
+
+.home-reference .adaptive-notice strong {
+  color: #0F2C59 !important;
+  font-weight: 750 !important;
+}
+
+.home-reference .adaptive-badge {
+  background: #F1F5F9 !important;
+  border: none !important;
+  color: #FFA62B !important;
+  font-weight: 800 !important;
+  box-shadow: none !important;
+}
+
+/* 12. Hộp thoại Thông báo (Modal Sheet) */
+.home-reference .home-notification {
+  background: #FFFFFF !important;
+  border: none !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05) !important;
+}
+
+.home-reference .home-notification b {
+  color: #0F2C59 !important;
+}
+
+/* 13. Thanh BottomNav khi ở Trang chủ */
+.home-reference nav[aria-label="Thanh điều hướng"] {
+  background: rgba(255, 255, 255, 0.98) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  border: none !important;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08) !important;
+}
+
+.home-reference nav[aria-label="Thanh điều hướng"] button svg {
+  color: #FFA62B !important;
+}
+
+/* Active Pill Button: Đơn sắc Xanh Navy sang trọng - Icon Vàng Citrus nổi rực rỡ */
+.home-reference nav[aria-label="Thanh điều hướng"] button.bg-\[\#0A1680\] {
+  background: #0F2C59 !important;
+  color: #FFA62B !important;
+  font-weight: 800 !important;
+  border: none !important;
+  box-shadow: 0 2px 8px rgba(15, 44, 89, 0.25) !important;
+}
+
+.home-reference nav[aria-label="Thanh điều hướng"] button.bg-\[\#0A1680\] svg {
+  color: #FFA62B !important;
+}
+
+.home-reference nav[aria-label="Thanh điều hướng"] span.bg-\[\#F1B94C\] {
+  background: #FFA62B !important;
+  box-shadow: none !important;
 }
 
 /* Chips du lịch có viền thương hiệu */
