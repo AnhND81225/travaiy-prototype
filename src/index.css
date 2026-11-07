@@ -164,7 +164,7 @@ h1, h2, h3, h4, h5, h6, .font-heading, .travaiy-pill-btn, .home-wordmark {
    - NGOẠI LỆ: Giữ nguyên chế độ phòng tối studio của Photobooth (#070D34) & tim đã thích (#E11D48)
    ========================================================== */
 
-/* 1. Màn hình & Nền loang xanh trắng toàn ứng dụng */
+/* 1. Màn hình & Nền toàn ứng dụng: Nền xanh sáng thuần khiết #F4F8FD, KHÔNG LOANG LÊN NỘI DUNG */
 .travel-device,
 .travel-screen:not(.photobooth-screen):not(.booth-screen),
 .home-reference {
@@ -181,54 +181,64 @@ h1, h2, h3, h4, h5, h6, .font-heading, .travaiy-pill-btn, .home-wordmark {
   color: #0F2C59;
 }
 
-/* Các quầng sáng loang màu Xanh & Trắng mịn màng */
+/* Triệt tiêu 100% các lớp pseudo-element loang mờ lơ lửng che lên nút và thẻ */
 .travel-device::before,
-.travel-screen:not(.photobooth-screen):not(.booth-screen)::before,
-.home-reference::before {
-  content: '';
-  position: absolute;
-  top: -70px;
-  left: -70px;
-  width: 420px;
-  height: 420px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(134, 197, 255, 0.65) 0%, rgba(186, 224, 255, 0.35) 45%, transparent 70%);
-  filter: blur(55px);
-  pointer-events: none;
-  z-index: 0;
-}
-
 .travel-device::after,
-.travel-screen:not(.photobooth-screen):not(.booth-screen)::after,
+.travel-screen::before,
+.travel-screen::after,
+.home-reference::before,
 .home-reference::after {
-  content: '';
-  position: absolute;
-  top: 60px;
-  right: -60px;
-  width: 400px;
-  height: 400px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.95) 0%, rgba(200, 230, 255, 0.45) 45%, transparent 70%);
-  filter: blur(50px);
-  pointer-events: none;
-  z-index: 0;
+  display: none !important;
+  content: none !important;
 }
 
-/* Nền cuộn chính: Loang Xanh & Trắng đa tầng */
-.travel-screen:not(.photobooth-screen):not(.booth-screen) .travel-scroll,
-.travel-screen:not(.photobooth-screen):not(.booth-screen) .daily-scroll,
-.travel-screen:not(.photobooth-screen):not(.booth-screen) .wizard-body,
-.travel-screen:not(.photobooth-screen):not(.booth-screen) .polish-stack,
-.home-reference .home-scroll {
-  position: relative;
-  z-index: 1;
-  background:
-    radial-gradient(ellipse 75% 45% at 10% 28%, rgba(134, 197, 255, 0.45) 0%, transparent 60%),
-    radial-gradient(ellipse 70% 45% at 92% 44%, rgba(255, 255, 255, 0.95) 0%, rgba(198, 229, 255, 0.35) 45%, transparent 65%),
-    radial-gradient(ellipse 80% 50% at 15% 72%, rgba(134, 197, 255, 0.4) 0%, transparent 60%),
-    radial-gradient(ellipse 75% 45% at 88% 88%, rgba(200, 230, 255, 0.5) 0%, transparent 60%),
-    linear-gradient(180deg, #FFFFFF 0%, #EEF6FF 50%, #F5F9FD 100%);
-  background-attachment: local;
+/* Triệt tiêu 100% gradient / loang màu trên mọi nút bấm và thẻ */
+.travel-device button,
+.travel-screen button,
+.travel-device [role="button"],
+.travel-screen [role="button"] {
+  background-image: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+/* Nút được chọn (Active / Selected): Đơn sắc Xanh Amalfi Navy (#0F2C59) thuần khiết, TUYỆT ĐỐI KHÔNG LOANG */
+.travel-device button[class*="bg-[#0A1680]"],
+.travel-device button[class*="bg-[#0F2C59]"],
+.travel-device button.bg-primary,
+.travel-device .travel-pill:not(.secondary),
+.travel-device .travaiy-pill-btn:not(.secondary),
+.travel-device .travel-chips > button.active,
+.travel-device .daily-rail > button.active,
+.travel-device .map-layer-chips > button.active,
+.travel-device .camera-mode-tabs button[aria-pressed="true"],
+.travel-device .polish-segments button[aria-pressed="true"],
+.travel-device .wizard-calendar button.edge,
+.travel-device .selected .wizard-stay-price > button,
+.travel-screen button[class*="bg-[#0A1680]"],
+.travel-screen button[class*="bg-[#0F2C59]"],
+.travel-screen .travel-pill:not(.secondary),
+.travel-screen .travel-chips > button.active,
+.travel-screen .daily-rail > button.active {
+  background-color: #0F2C59 !important;
+  background-image: none !important;
+  color: #FFFFFF !important;
+  border: none !important;
+  box-shadow: 0 2px 8px rgba(15, 44, 89, 0.22) !important;
+}
+
+/* Nút không chọn (Inactive / Unselected): Đơn sắc Trắng tinh khôi (#FFFFFF), KHÔNG LOANG, NỔI TỰ NHIÊN */
+.travel-device button[class*="bg-white"],
+.travel-device button.bg-white,
+.travel-screen button[class*="bg-white"],
+.travel-screen button.bg-white,
+.travel-device .travel-chips > button:not(.active),
+.travel-device .daily-rail > button:not(.active) {
+  background-color: #FFFFFF !important;
+  background-image: none !important;
+  color: #0F2C59 !important;
+  border: none !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06) !important;
 }
 
 /* 2. Triệt tiêu 100% viền của mọi nút, thẻ, header, input toàn app (BỎ VIỀN) */
