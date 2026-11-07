@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300..1000;1,300..1000&family=Be+Vietnam+Pro:ital,wght@0,500;0,600;0,700;0,800;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300..1000;1,300..1000&family=Plus+Jakarta+Sans:ital,wght@0,500;0,600;0,700;0,800;1,700&display=swap');
 @import "tailwindcss";
 
 @font-face {
@@ -38,8 +38,8 @@
   --color-brand-destructive: #BA1A1A;
   --color-brand-success: #16A34A;
   
-  --font-sans: 'Nunito Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-heading: 'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-sans: 'Nunito', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-heading: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 @layer utilities {
@@ -65,7 +65,7 @@
     height: 50px;
     min-height: 48px;
     border-radius: 9999px;
-    font-family: 'Be Vietnam Pro', sans-serif;
+    font-family: 'Plus Jakarta Sans', sans-serif;
     font-weight: 700;
     font-size: 0.9375rem;
     transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
@@ -108,7 +108,7 @@ body,
 .travel-screen small,
 .travel-screen b:not(h1 b):not(h2 b):not(h3 b),
 .travel-screen li {
-  font-family: 'Nunito Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: 'Nunito', -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 body {
@@ -121,7 +121,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6, .font-heading, .travaiy-pill-btn, .home-wordmark {
-  font-family: 'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 @keyframes floatSlow {
@@ -611,27 +611,115 @@ nav[aria-label="Thanh điều hướng"] span.bg-\[\#FFA62B\] {
 }
 
 /* 13. Toàn bộ chữ & Tiêu đề: Amalfi Navy (#0F2C59) & Slate Gray (#4A5F7A) */
-.travel-device h1,
-.travel-device h2,
-.travel-device h3,
-.travel-device h4,
-.travel-device h5,
-.travel-device h6,
-.travel-device .font-heading,
-.travel-device b:not(.text-white):not([class*="text-slate-100"]):not(.today-hero-info *),
-.travel-device strong:not(.text-white):not([class*="text-slate-100"]):not(.today-hero-info *) {
+.travel-device h1:not([class*="text-white"]):not(.home-cinematic *):not(.today-hero *):not(.explore-stay-banner *):not(.journal-memory-card *):not(.overview-photo-hero *):not(.proposal-summary *):not(.hotel-budget-summary *):not(button:not(.secondary) *),
+.travel-device h2:not([class*="text-white"]):not(.home-cinematic *):not(.today-hero *):not(.explore-stay-banner *):not(.journal-memory-card *):not(.overview-photo-hero *):not(.proposal-summary *):not(.hotel-budget-summary *):not(button:not(.secondary) *),
+.travel-device h3:not([class*="text-white"]):not(.home-cinematic *):not(.today-hero *):not(.explore-stay-banner *):not(.journal-memory-card *):not(.overview-photo-hero *):not(.proposal-summary *):not(.hotel-budget-summary *):not(button:not(.secondary) *),
+.travel-device h4:not([class*="text-white"]):not(.home-cinematic *):not(.today-hero *):not(.explore-stay-banner *):not(.journal-memory-card *):not(.overview-photo-hero *):not(.proposal-summary *):not(.hotel-budget-summary *):not(button:not(.secondary) *),
+.travel-device h5:not([class*="text-white"]),
+.travel-device h6:not([class*="text-white"]),
+.travel-device b:not([class*="text-white"]):not([class*="text-slate-100"]):not(.home-cinematic *):not(.today-hero *):not(.explore-stay-banner *):not(.journal-memory-card *):not(.overview-photo-hero *):not(.proposal-summary *):not(.hotel-budget-summary *):not(button:not(.secondary) *),
+.travel-device strong:not([class*="text-white"]):not([class*="text-slate-100"]):not(.home-cinematic *):not(.today-hero *):not(.explore-stay-banner *):not(.journal-memory-card *):not(.overview-photo-hero *):not(.proposal-summary *):not(.hotel-budget-summary *):not(button:not(.secondary) *) {
   color: #0F2C59;
 }
 
-.travel-device p,
-.travel-device span:not(.font-heading):not(.text-white):not([class*="bg-"]):not(.travel-arrow):not(.today-hero *),
-.travel-device small {
+.travel-device p:not([class*="text-white"]):not([class*="text-slate-100"]):not([class*="text-white/"]):not(.home-cinematic *):not(.today-hero *):not(.explore-stay-banner *):not(.journal-memory-card *):not(.overview-photo-hero *):not(.proposal-summary *):not(.hotel-budget-summary *):not(button:not(.secondary) *),
+.travel-device span:not(.font-heading):not([class*="text-white"]):not([class*="text-slate-100"]):not([class*="text-white/"]):not([class*="bg-"]):not(.travel-arrow):not(.home-cinematic *):not(.today-hero *):not(.explore-stay-banner *):not(.journal-memory-card *):not(.overview-photo-hero *):not(.proposal-summary *):not(.hotel-budget-summary *):not(button:not(.secondary) *),
+.travel-device small:not([class*="text-white"]):not([class*="text-slate-100"]):not([class*="text-white/"]):not(.home-cinematic *):not(.today-hero *):not(.explore-stay-banner *):not(.journal-memory-card *):not(.overview-photo-hero *):not(.proposal-summary *):not(.hotel-budget-summary *):not(button:not(.secondary) *) {
   color: #4A5F7A;
 }
 
 .travel-device .travel-eyebrow {
   color: #64748B !important;
   font-weight: 800 !important;
+}
+
+/* ==========================================================
+   CHỐNG CHÌM CHỮ (EXPLICIT WHITE TEXT ON DARK SURFACES):
+   Mọi chữ, nhãn, số nằm trên nền tối hoặc nút chính đều hiển thị màu TRẮNG tinh khôi
+   ========================================================== */
+.travel-device [class*="text-white"],
+.travel-device [class*="text-white/"],
+.travel-device .text-white,
+.travel-device [class*="text-slate-100"],
+.travel-device [class*="text-slate-200"],
+.travel-device [class*="text-[#fff]"],
+.travel-device [class*="text-gray-100"],
+.travel-device [class*="text-gray-200"],
+.travel-device [class*="bg-[#0A1680]"] *:not(svg):not(i):not(img):not(.travel-arrow *):not(button *),
+.travel-device [class*="bg-[#0F2C59]"] *:not(svg):not(i):not(img):not(.travel-arrow *):not(button *),
+.travel-device [class*="bg-slate-900"] *:not(svg):not(i):not(img):not(button *),
+.travel-device [class*="bg-slate-950"] *:not(svg):not(i):not(img):not(button *),
+.travel-device [class*="bg-black"] *:not(svg):not(i):not(img):not(button *),
+.travel-device .travel-pill:not(.secondary) *:not(svg):not(i):not(img):not(.travel-arrow *),
+.travel-device .travaiy-pill-btn:not(.secondary) *:not(svg):not(i):not(img),
+.travel-device .travel-chips > button.active,
+.travel-device .travel-chips > button.active *,
+.travel-device .map-layer-chips > button.active,
+.travel-device .map-layer-chips > button.active *,
+.travel-device .camera-mode-tabs button[aria-pressed="true"],
+.travel-device .camera-mode-tabs button[aria-pressed="true"] *,
+.travel-device .daily-rail > button.active,
+.travel-device .daily-rail > button.active *,
+.travel-device .polish-segments button[aria-pressed="true"],
+.travel-device .polish-segments button[aria-pressed="true"] *,
+.travel-device .wizard-calendar button.edge,
+.travel-device .wizard-calendar button.edge *,
+.travel-device .selected .wizard-stay-price > button,
+.travel-device .selected .wizard-stay-price > button *,
+.travel-device .home-cinematic h1,
+.travel-device .home-cinematic p,
+.travel-device .home-cinematic > span,
+.travel-device .home-hero-copy h1,
+.travel-device .home-hero-copy p,
+.travel-device .home-hero-copy > span,
+.travel-device .home-hero-caption,
+.travel-device .home-destination-strip span,
+.travel-device .explore-stay-banner h2,
+.travel-device .explore-stay-banner p,
+.travel-device .explore-stay-banner span,
+.travel-device .explore-stay-banner b,
+.travel-device .today-hero-info h2,
+.travel-device .today-hero-info p,
+.travel-device .today-hero-badges span,
+.travel-device .today-hero-status,
+.travel-device .today-hero-sample,
+.travel-device .today-checkin,
+.travel-device .today-checkin *,
+.travel-device .journal-memory-card h1,
+.travel-device .journal-memory-card h2,
+.travel-device .journal-memory-card p,
+.travel-device .journal-memory-card span,
+.travel-device .journal-memory-card b,
+.travel-device .overview-photo-hero h1,
+.travel-device .overview-photo-hero p,
+.travel-device .overview-photo-hero span,
+.travel-device .overview-photo-hero b,
+.travel-device .proposal-summary h1,
+.travel-device .proposal-summary h2,
+.travel-device .proposal-summary p,
+.travel-device .proposal-summary span,
+.travel-device .proposal-summary b,
+.travel-device .hotel-budget-summary strong,
+.travel-device .hotel-budget-summary span,
+.travel-device .hotel-budget-summary p,
+.travel-device .hotel-budget-summary small,
+.travel-device .hotel-budget-summary b,
+.travel-device .route-map-direct-link,
+.travel-device .route-map-direct-link * {
+  color: #FFFFFF !important;
+}
+
+/* Nút trắng nằm bên trong vùng banner tối giữ màu chữ Navy sắc nét */
+.travel-device .home-hero-copy button,
+.travel-device .home-hero-copy button *,
+.travel-device .today-directions,
+.travel-device .today-directions * {
+  color: #0F2C59 !important;
+}
+.travel-device .home-hero-copy button .travel-arrow svg,
+.travel-device .today-directions svg {
+  color: #FFA62B !important;
+  stroke: #FFA62B !important;
 }
 
 /* 14. Đồng bộ màu thương hiệu qua tiện ích class cũ */
