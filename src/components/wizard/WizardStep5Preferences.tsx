@@ -364,8 +364,8 @@ export const WizardStep5Preferences: React.FC<WizardStep5PreferencesProps> = ({
               </button>
             </div>
 
-            <div className="relative flex items-center">
-              <svg className="w-4 h-4 text-slate-400 absolute left-3.5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+            <div className="relative flex items-center h-12 bg-slate-50 rounded-full px-4 shadow-2xs">
+              <svg className="w-4 h-4 text-[#FFA62B] mr-2.5 shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                 <circle cx="11" cy="11" r="8" />
                 <line x1="21" y1="21" x2="16.65" y2="16.65" />
               </svg>
@@ -374,7 +374,7 @@ export const WizardStep5Preferences: React.FC<WizardStep5PreferencesProps> = ({
                 value={searchNewPlaceQuery}
                 onChange={(e) => setSearchNewPlaceQuery(e.target.value)}
                 placeholder="Tìm địa điểm (ví dụ: Bảo tàng Thành phố Hồ Chí Minh)..."
-                className="w-full pl-10 pr-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-[14px] text-slate-800 focus:outline-none focus:border-[#0A1680]"
+                className="w-full bg-transparent text-[13.5px] text-[#0F2C59] placeholder:text-slate-400 focus:outline-none border-0 shadow-none"
               />
             </div>
 

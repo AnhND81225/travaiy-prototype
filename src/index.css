@@ -265,6 +265,7 @@ div[class*="min-h-"][class*="bg-[#F4F8FD]"] {
 .travel-device article,
 .travel-device nav,
 .travel-device header,
+.travel-device div:not(.leaflet-pane):not(.leaflet-tile-container),
 .travel-screen:not(.photobooth-screen):not(.booth-screen) button,
 .travel-screen:not(.photobooth-screen):not(.booth-screen) a,
 .travel-screen:not(.photobooth-screen):not(.booth-screen) input,
@@ -600,16 +601,77 @@ nav[aria-label="Thanh điều hướng"] span.bg-\[\#FFA62B\] {
   box-shadow: 0 -8px 30px rgba(0, 0, 0, 0.08) !important;
 }
 
-/* 12. Chi tiết các màn hình con (Stay, Wizard, Itinerary, Proposal, Spend) */
+/* 12. Chuẩn hóa toàn bộ THANH TÌM KIẾM toàn app: Trắng tinh, bo tròn, BỎ VIỀN, Nổi tự nhiên */
+.travel-device .home-search,
+.travel-device .stay-search,
+.travel-device .map-search-overlay,
+.travel-device div:has(> input[placeholder*="Tìm"]),
+.travel-device div:has(> input[placeholder*="thành phố"]),
+.travel-device div:has(> input[type="search"]),
+.travel-screen:not(.photobooth-screen) .home-search,
+.travel-screen:not(.photobooth-screen) .stay-search,
+.travel-screen:not(.photobooth-screen) .map-search-overlay {
+  background: #FFFFFF !important;
+  border: none !important;
+  outline: none !important;
+  border-radius: 9999px !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06) !important;
+  transition: all 0.2s ease !important;
+}
+
+.travel-device .home-search:focus-within,
+.travel-device .stay-search:focus-within,
+.travel-device .map-search-overlay:focus-within,
+.travel-device div:has(> input[placeholder*="Tìm"]):focus-within,
+.travel-device div:has(> input[placeholder*="thành phố"]):focus-within {
+  box-shadow: 0 4px 16px rgba(15, 44, 89, 0.12) !important;
+  border: none !important;
+  outline: none !important;
+}
+
+/* Ô nhập chữ (Input) bên trong thanh tìm kiếm: TRONG SUỐT 100%, KHÔNG CÓ KHỐI XÁM, KHÔNG VIỀN, KHÔNG BÓNG CHÌM */
+.travel-device .home-search input,
 .travel-device .stay-search input,
 .travel-device .map-search-overlay input,
-.travel-device input:not([type="checkbox"]):not([type="radio"]),
-.travel-device textarea,
-.travel-device select {
-  background: #F8FAFC !important;
+.travel-device div:has(> input[placeholder*="Tìm"]) input,
+.travel-device div:has(> input[placeholder*="thành phố"]) input,
+.travel-device input[placeholder*="Tìm"],
+.travel-device input[placeholder*="thành phố"],
+.travel-device input[placeholder*="địa điểm"],
+.travel-device input[placeholder*="món ngon"],
+.travel-screen:not(.photobooth-screen) .stay-search input,
+.travel-screen:not(.photobooth-screen) input[placeholder*="Tìm"] {
+  background: transparent !important;
+  background-color: transparent !important;
   border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
   color: #0F2C59 !important;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04) inset !important;
+  font-size: 13.5px !important;
+  box-sizing: border-box !important;
+}
+
+/* Các ô nhập liệu form độc lập (Date, Number, Textarea, Select): Trắng tinh, Bỏ viền, Nổi nhẹ */
+.travel-device input:not([type="checkbox"]):not([type="radio"]):not([placeholder*="Tìm"]):not([placeholder*="thành phố"]):not([placeholder*="địa điểm"]),
+.travel-device textarea,
+.travel-device select,
+.travel-screen:not(.photobooth-screen) input:not([type="checkbox"]):not([type="radio"]):not([placeholder*="Tìm"]):not([placeholder*="thành phố"]):not([placeholder*="địa điểm"]),
+.travel-screen:not(.photobooth-screen) textarea,
+.travel-screen:not(.photobooth-screen) select {
+  background: #FFFFFF !important;
+  border: none !important;
+  outline: none !important;
+  color: #0F2C59 !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05) !important;
+  border-radius: 14px !important;
+}
+
+.travel-device input::placeholder,
+.travel-device textarea::placeholder,
+.travel-screen input::placeholder,
+.travel-screen textarea::placeholder {
+  color: #8C9FB5 !important;
+  opacity: 1 !important;
 }
 
 .travel-device .stay-amenities span,

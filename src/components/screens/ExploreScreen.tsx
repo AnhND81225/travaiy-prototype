@@ -96,8 +96,8 @@ export const ExploreScreen: React.FC<ExploreScreenProps> = ({
         </div>
 
         {/* Search Bar */}
-        <div className="flex items-center gap-2.5 bg-[#f8f9fb] rounded-full px-4 py-2.5 border border-slate-200/70 mt-3 shadow-2xs">
-          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-gray-400 shrink-0">
+        <div className="flex items-center gap-2.5 bg-white rounded-full px-4 py-3 shadow-sm border-0 mt-3">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-[#FFA62B] shrink-0">
             <circle cx="11" cy="11" r="8" />
             <line x1="21" y1="21" x2="16.65" y2="16.65" />
           </svg>
@@ -106,7 +106,7 @@ export const ExploreScreen: React.FC<ExploreScreenProps> = ({
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             placeholder="Tìm điểm đến, món ngon, trải nghiệm..."
-            className="w-full bg-transparent text-[13px] text-gray-800 placeholder-gray-400 focus:outline-none font-medium"
+            className="w-full bg-transparent text-[13.5px] text-[#0F2C59] placeholder:text-slate-400 focus:outline-none font-medium border-0 shadow-none"
           />
           <button
             type="button"

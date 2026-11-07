@@ -203,7 +203,7 @@ export const TravelWalletScreen: React.FC<TravelWalletScreenProps> = ({
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
             placeholder="Tìm tên vé, khách sạn, số định danh..."
-            className="w-full h-11 pl-10 pr-10 bg-white rounded-full text-xs text-slate-800 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-[#0A1680]/20 shadow-2xs border border-slate-200 transition-colors"
+            className="w-full h-11 pl-10 pr-10 bg-white rounded-full text-xs text-[#0F2C59] placeholder:text-slate-400 focus:outline-none shadow-sm border-0 transition-colors"
           />
           {searchTerm && (
             <button

@@ -82,8 +82,8 @@ export const WizardStep1Destination: React.FC<WizardStep1DestinationProps> = ({
         </div>
 
         {/* Search Input */}
-        <div className="relative flex items-center h-12 bg-white rounded-2xl shadow-xs px-4 border border-slate-200 focus-within:border-[#0A1680]">
-          <svg className="w-5 h-5 text-[#0A1680] mr-2.5 shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+        <div className="relative flex items-center h-12 bg-white rounded-full shadow-xs px-4 border-0 focus-within:shadow-md transition-shadow">
+          <svg className="w-5 h-5 text-[#FFA62B] mr-2.5 shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
             <circle cx="11" cy="11" r="8" />
             <path strokeLinecap="round" strokeLinejoin="round" d="m21 21-4.35-4.35" />
           </svg>
@@ -92,7 +92,7 @@ export const WizardStep1Destination: React.FC<WizardStep1DestinationProps> = ({
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             placeholder="Tìm kiếm thành phố, điểm du lịch..."
-            className="w-full bg-transparent text-sm text-slate-800 placeholder:text-slate-400 focus:outline-none"
+            className="w-full bg-transparent text-sm text-[#0F2C59] placeholder:text-slate-400 focus:outline-none border-0 shadow-none"
           />
         </div>
 
@@ -101,7 +101,7 @@ export const WizardStep1Destination: React.FC<WizardStep1DestinationProps> = ({
           <div className="flex items-center justify-between mb-2.5">
             <div className="flex items-center gap-1.5">
               <span className="text-[15px] font-bold text-slate-900 font-heading">Gợi ý phổ biến</span>
-              <span className="text-[#0A1680] text-sm">✨</span>
+              <span className="text-[#FFA62B] text-sm">✨</span>
             </div>
             <span className="text-xs text-[#0A1680] font-semibold cursor-pointer hover:underline">
               Xem tất cả
@@ -116,8 +116,8 @@ export const WizardStep1Destination: React.FC<WizardStep1DestinationProps> = ({
                 <div
                   key={item.name}
                   onClick={() => onSelect(item.name, item.sub, item.img)}
-                  className={`group relative flex flex-col rounded-[24px] overflow-hidden bg-white shadow-xs cursor-pointer transition-all active:scale-[0.98] ${
-                    isSelected ? 'border-2 border-[#0A1680]' : 'border border-slate-200'
+                  className={`group relative flex flex-col rounded-[24px] overflow-hidden bg-white cursor-pointer transition-all active:scale-[0.98] ${
+                    isSelected ? 'shadow-md shadow-[#0F2C59]/15 ring-2 ring-[#0F2C59]' : 'shadow-xs hover:shadow-sm'
                   }`}
                 >
                   <div className="relative w-full h-[116px] overflow-hidden bg-slate-100">

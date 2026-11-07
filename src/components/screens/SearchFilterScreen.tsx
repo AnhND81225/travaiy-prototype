@@ -109,13 +109,13 @@ export const SearchFilterScreen: React.FC<SearchFilterScreenProps> = ({
                 </svg>
               </button>
 
-              <div className="flex-1 flex items-center bg-white border border-slate-200/80 rounded-[16px] px-3.5 py-2 shadow-2xs gap-2 min-w-0">
-                <svg className="w-4 h-4 text-slate-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <div className="flex-1 flex items-center bg-white rounded-full px-4 py-2.5 shadow-sm gap-2 min-w-0">
+                <svg className="w-4 h-4 text-[#FFA62B] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                   <circle cx="11" cy="11" r="8" />
                   <path d="m21 21-4.3-4.3" />
                 </svg>
                 <input
-                  className="bg-transparent flex-1 text-[#191c1e] text-[14px] font-medium outline-none placeholder:text-slate-400 w-full min-w-0"
+                  className="bg-transparent flex-1 text-[#0F2C59] text-[14px] font-medium outline-none placeholder:text-slate-400 w-full min-w-0 border-0 shadow-none"
                   type="text"
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
@@ -138,7 +138,7 @@ export const SearchFilterScreen: React.FC<SearchFilterScreenProps> = ({
                 type="button"
                 onClick={() => setScreenMode('filter-sheet')}
                 aria-label="Bộ lọc tìm kiếm"
-                className="w-10 h-10 flex items-center justify-center rounded-full text-[#0A1680] hover:bg-slate-100 transition-all shrink-0 relative bg-white border border-slate-200/80 shadow-2xs cursor-pointer"
+                className="w-10 h-10 flex items-center justify-center rounded-full text-[#0F2C59] hover:bg-slate-50 transition-all shrink-0 relative bg-white shadow-sm cursor-pointer"
               >
                 <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                   <line x1="21" x2="14" y1="4" y2="4" />

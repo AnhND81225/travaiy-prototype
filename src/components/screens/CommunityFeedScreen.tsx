@@ -48,12 +48,12 @@ export const CommunityFeedScreen: React.FC<CommunityFeedScreenProps> = ({
       <header className="shrink-0 z-30 bg-white/90 backdrop-blur-xl border-b border-slate-200/60">
         <IOSStatusBar light={false} />
         <div className="h-[56px] px-5 flex items-center justify-between gap-3">
-          <div className="flex-1 flex items-center gap-2.5 bg-slate-100 border border-slate-200/60 px-4 py-2 rounded-full text-slate-500 text-xs">
+          <div className="flex-1 flex items-center gap-2.5 bg-white px-4 py-2.5 rounded-full text-slate-500 text-xs shadow-xs border-0">
             <span>🔍</span>
             <input
               type="text"
               placeholder="Tìm kiếm cộng đồng TravAIy..."
-              className="bg-transparent w-full text-xs text-slate-900 focus:outline-none"
+              className="bg-transparent w-full text-xs text-[#0F2C59] placeholder:text-slate-400 focus:outline-none border-0 shadow-none"
             />
           </div>
           <button
