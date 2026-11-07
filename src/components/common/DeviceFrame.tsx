@@ -90,7 +90,7 @@ export const DeviceFrame: React.FC<DeviceFrameProps> = ({
           {/* Brand Tag */}
           <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-white shadow-2xs border border-slate-200">
             <img src="/images/app-icon-dark.png" alt="TravAly" className="w-4 h-4 rounded-md object-contain" />
-            <span className="text-[11px] sm:text-[12px] font-bold text-[#0A1680] font-heading">
+            <span className="text-[11px] sm:text-[12px] font-bold text-[#0F2C59] font-heading">
               TravAly
             </span>
           </div>
@@ -101,7 +101,7 @@ export const DeviceFrame: React.FC<DeviceFrameProps> = ({
             onClick={() => setShowScreenDrawer(!showScreenDrawer)}
             aria-expanded={showScreenDrawer}
             aria-haspopup="dialog"
-            className="px-2.5 py-1 rounded-full bg-[#0A1680] text-white text-[11px] sm:text-[12px] font-bold shadow-2xs hover:bg-[#071060] transition-colors flex items-center gap-1 font-heading cursor-pointer active:scale-95"
+            className="px-2.5 py-1 rounded-full bg-[#0F2C59] text-white text-[11px] sm:text-[12px] font-bold shadow-2xs hover:bg-[#153B75] transition-colors flex items-center gap-1 font-heading cursor-pointer active:scale-95"
           >
             <span>📱 {screenList.find((s) => s.id === currentScreen)?.tag || 'Menu'}</span>
             <span className="text-xs">▾</span>
@@ -134,7 +134,7 @@ export const DeviceFrame: React.FC<DeviceFrameProps> = ({
           />
           <div className="relative bg-white rounded-3xl p-4 sm:p-5 shadow-2xl border border-slate-200 max-w-md w-full max-h-[82vh] overflow-y-auto no-scrollbar text-left z-10 animate-in slide-in-from-top duration-200">
             <div className="flex items-center justify-between pb-2.5 border-b border-slate-100 mb-2.5">
-              <h2 className="text-[15px] sm:text-[16px] font-bold text-[#0A1680] font-heading">
+              <h2 className="text-[15px] sm:text-[16px] font-bold text-[#0F2C59] font-heading">
                 Danh sách màn hình giao diện
               </h2>
               <button
@@ -159,7 +159,7 @@ export const DeviceFrame: React.FC<DeviceFrameProps> = ({
                     }}
                     className={`w-full text-left p-2 rounded-xl text-[12px] sm:text-[13px] font-semibold transition-all flex items-center justify-between cursor-pointer font-heading ${
                       isSelected
-                        ? 'bg-[#0A1680] text-white shadow-2xs'
+                        ? 'bg-[#0F2C59] text-white shadow-2xs'
                         : 'hover:bg-slate-100 text-slate-800'
                     }`}
                   >
@@ -183,8 +183,8 @@ export const DeviceFrame: React.FC<DeviceFrameProps> = ({
       <main
         className={`w-full flex-1 sm:flex-initial transition-all duration-300 relative [transform:translateZ(0)] isolate travel-device overflow-hidden flex flex-col justify-between ${
           isSimulatorMode
-            ? 'sm:w-[390px] sm:max-w-[390px] sm:h-[844px] sm:max-h-[calc(100vh-70px)] bg-[#FCFDFF] sm:rounded-[48px] shadow-2xl sm:border-[8px] sm:border-slate-900'
-            : 'sm:w-[480px] sm:max-w-[480px] sm:h-[844px] sm:max-h-[calc(100vh-70px)] bg-[#FCFDFF] sm:rounded-3xl shadow-xl sm:border sm:border-slate-200'
+            ? 'sm:w-[390px] sm:max-w-[390px] sm:h-[844px] sm:max-h-[calc(100vh-70px)] bg-[#F4F8FD] sm:rounded-[48px] shadow-2xl sm:border-[8px] sm:border-slate-900'
+            : 'sm:w-[480px] sm:max-w-[480px] sm:h-[844px] sm:max-h-[calc(100vh-70px)] bg-[#F4F8FD] sm:rounded-3xl shadow-xl sm:border sm:border-slate-200'
         }`}
       >
         {children}
