@@ -112,11 +112,11 @@ export const WizardStep5Preferences: React.FC<WizardStep5PreferencesProps> = ({
   };
 
   return (
-    <div className="relative w-full h-full min-h-[844px] bg-[#FCFDFF] flex flex-col justify-between overflow-hidden select-none text-slate-800">
+    <div className="relative w-full h-full min-h-0 bg-[#FCFDFF] flex flex-col justify-between overflow-hidden select-none text-slate-800">
       {/* Top Header */}
       <header className="pt-2 px-5 shrink-0 bg-[#FCFDFF] z-20">
         <IOSStatusBar light={false} />
-        <div className="flex items-center justify-between pt-1 pb-2">
+        <div className="grid grid-cols-[36px_1fr_36px] items-center pt-1 pb-2">
           <button
             onClick={onBack}
             aria-label="Quay lại"
@@ -127,17 +127,18 @@ export const WizardStep5Preferences: React.FC<WizardStep5PreferencesProps> = ({
               <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
             </svg>
           </button>
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center text-center">
             <h1 className="plan-header-title">
               Sở thích chuyến đi
             </h1>
             <span className="text-[12px] font-medium text-slate-400">Tùy chọn</span>
           </div>
+          <div className="w-9" />
         </div>
       </header>
 
       {/* Main Content */}
-      <main className="flex-1 px-5 pt-2 pb-24 overflow-y-auto no-scrollbar flex flex-col gap-4 text-left">
+      <main className="flex-1 min-h-0 px-5 pt-3 pb-6 overflow-y-auto no-scrollbar flex flex-col gap-4 text-left">
         {/* Section 1: Bạn thích gì? */}
         <section className="flex flex-col gap-2">
           <div className="flex items-center justify-between">
@@ -323,8 +324,8 @@ export const WizardStep5Preferences: React.FC<WizardStep5PreferencesProps> = ({
         </section>
       </main>
 
-      {/* Floating Bottom CTA */}
-      <footer className="fixed bottom-0 max-w-[390px] w-full z-40 bg-white/95 backdrop-blur-xl px-5 py-3 border-t border-slate-200/80 shadow-md">
+      {/* Bottom CTA */}
+      <footer className="shrink-0 w-full z-40 bg-white/95 backdrop-blur-xl px-5 py-3.5 border-t border-slate-200/80 shadow-md">
         <button
           onClick={onNext}
           type="button"

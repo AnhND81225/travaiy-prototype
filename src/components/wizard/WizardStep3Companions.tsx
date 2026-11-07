@@ -65,7 +65,7 @@ export const WizardStep3Companions: React.FC<WizardStep3CompanionsProps> = ({
   };
 
   return (
-    <div className="relative w-full h-full min-h-[844px] bg-[#FCFDFF] flex flex-col justify-between overflow-hidden select-none text-slate-800">
+    <div className="relative w-full h-full min-h-0 bg-[#FCFDFF] flex flex-col justify-between overflow-hidden select-none text-slate-800">
       {/* Top Header */}
       <header className="pt-2 px-5 shrink-0 bg-[#FCFDFF] z-20">
         <IOSStatusBar light={false} />
@@ -246,8 +246,8 @@ export const WizardStep3Companions: React.FC<WizardStep3CompanionsProps> = ({
         )}
       </main>
 
-      {/* Floating Bottom CTA */}
-      <footer className="fixed bottom-0 max-w-[390px] w-full z-40 bg-white/95 backdrop-blur-xl px-5 py-3 border-t border-slate-200/80 shadow-md">
+      {/* Bottom CTA */}
+      <footer className="shrink-0 w-full z-40 bg-white/95 backdrop-blur-xl px-5 py-3 border-t border-slate-200/80 shadow-md">
         <button
           onClick={onNext}
           type="button"

@@ -86,7 +86,7 @@ export const WizardStep4Budget: React.FC<WizardStep4BudgetProps> = ({
   };
 
   return (
-    <div className="relative w-full h-full min-h-[844px] bg-[#FCFDFF] flex flex-col justify-between overflow-hidden select-none text-slate-800">
+    <div className="relative w-full h-full min-h-0 bg-[#FCFDFF] flex flex-col justify-between overflow-hidden select-none text-slate-800">
       {/* Top Header */}
       <header className="pt-2 px-5 shrink-0 bg-[#FCFDFF] z-20">
         <IOSStatusBar light={false} />
@@ -262,8 +262,8 @@ export const WizardStep4Budget: React.FC<WizardStep4BudgetProps> = ({
         {nights>0&&<section className="hotel-budget-card"><h2>Ngân sách khách sạn</h2><p>Mức tối đa để đề xuất chỗ ở ở bước sau.</p><div><label>Mỗi phòng / đêm<input aria-label="Ngân sách khách sạn mỗi phòng mỗi đêm" type="number" min="100000" step="50000" value={hotelBudgetPerNight||''} onChange={e=>onHotelBudgetChange(Number(e.currentTarget.value))}/></label><label>Số phòng<input aria-label="Số phòng" type="number" min="1" max="20" value={roomCount} onChange={e=>onRoomsChange(Math.max(1,Math.min(20,Number(e.currentTarget.value))))}/></label></div><small>Gợi ý ban đầu dành 35% ngân sách cho chỗ ở, 2 người/phòng. Bạn có thể đổi.</small><p><b>{(hotelBudgetPerNight*roomCount*nights).toLocaleString('vi-VN')}đ</b> cho {roomCount} phòng · {nights} đêm</p>{hotelBudgetPerNight<100000&&<p role="alert">Nhập mức từ 100.000đ/phòng/đêm.</p>}</section>}
       </main>
 
-      {/* Floating Bottom CTA */}
-      <footer className="fixed bottom-0 max-w-[390px] w-full z-40 bg-white/95 backdrop-blur-xl px-5 py-3 border-t border-slate-200/80 shadow-md">
+      {/* Bottom CTA */}
+      <footer className="shrink-0 w-full z-40 bg-white/95 backdrop-blur-xl px-5 py-3 border-t border-slate-200/80 shadow-md">
         <button
           onClick={onNext}
           disabled={nights>0&&hotelBudgetPerNight<100000}
