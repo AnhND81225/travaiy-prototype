@@ -164,10 +164,18 @@ h1, h2, h3, h4, h5, h6, .font-heading, .travaiy-pill-btn, .home-wordmark {
    - NGOẠI LỆ: Giữ nguyên chế độ phòng tối studio của Photobooth (#070D34) & tim đã thích (#E11D48)
    ========================================================== */
 
-/* 1. Màn hình & Nền toàn ứng dụng: Nền xanh sáng thuần khiết #F4F8FD, KHÔNG LOANG LÊN NỘI DUNG */
+/* 1. Màn hình & Nền toàn ứng dụng: NỀN LOANG XANH TRẮNG MỊN MÀNG (Amalfi Coastal Gradient) */
 .travel-device,
 .travel-screen:not(.photobooth-screen):not(.booth-screen),
-.home-reference {
+.home-reference,
+.travel-screen:not(.photobooth-screen):not(.booth-screen) .travel-scroll,
+.travel-screen:not(.photobooth-screen):not(.booth-screen) .daily-scroll,
+.travel-screen:not(.photobooth-screen):not(.booth-screen) .wizard-body,
+.travel-screen:not(.photobooth-screen):not(.booth-screen) .polish-stack,
+.home-reference .home-scroll,
+.travel-device main:not(.photobooth-screen),
+div[class*="min-h-"][class*="bg-[#FCFDFF]"],
+div[class*="min-h-"][class*="bg-[#F4F8FD]"] {
   --color-primary: #0F2C59;
   --color-secondary: #86C5FF;
   --color-accent: #FFA62B;
@@ -177,11 +185,17 @@ h1, h2, h3, h4, h5, h6, .font-heading, .travaiy-pill-btn, .home-wordmark {
   --travel-accent: #FFA62B;
   --travel-canvas: #F4F8FD;
   position: relative;
-  background-color: #F4F8FD !important;
+  background:
+    radial-gradient(ellipse 75% 45% at 10% 28%, rgba(134, 197, 255, 0.45) 0%, transparent 60%),
+    radial-gradient(ellipse 70% 45% at 92% 44%, rgba(255, 255, 255, 0.95) 0%, rgba(198, 229, 255, 0.35) 45%, transparent 65%),
+    radial-gradient(ellipse 80% 50% at 15% 72%, rgba(134, 197, 255, 0.4) 0%, transparent 60%),
+    radial-gradient(ellipse 75% 45% at 88% 88%, rgba(200, 230, 255, 0.5) 0%, transparent 60%),
+    linear-gradient(180deg, #FFFFFF 0%, #EEF6FF 50%, #F5F9FD 100%) !important;
+  background-attachment: local !important;
   color: #0F2C59;
 }
 
-/* Triệt tiêu 100% các lớp pseudo-element loang mờ lơ lửng che lên nút và thẻ */
+/* Triệt tiêu 100% các lớp pseudo-element mờ đè lên bề mặt nội dung (ngăn chặn sương mờ che nút) */
 .travel-device::before,
 .travel-device::after,
 .travel-screen::before,
